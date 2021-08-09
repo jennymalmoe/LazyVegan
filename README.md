@@ -1,104 +1,131 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Lazy Vegan Fast Food Recipes!
+[View live website here!](https://jennymalmoe.github.io/###/)
 
-Welcome USER_NAME,
+[View GitHub repository here!](https://github.com/jennymalmoe/###)
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+![site on different devices](assets/images/mock_up.png) 
 
-## Gitpod Reminders
+For testing purposes, please use the following login details:
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Introtext...
 
-`python3 -m http.server`
+general user:
+login: iainm342
+password: glasgow
 
-A blue button should appear to click: _Make Public_,
+admin: login: larderadmin
+password: l4rd3r
 
-Another blue button should appear to click: _Open Browser_.
+## Table of contents
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+___
 
-A blue button should appear to click: _Make Public_,
+1. UX (OBS alla ska länkas)
+    * Project Goals
+    * Business Goals
+    * User Goals
+    * User Stories
+    * Design Choices
+        * Color scheme
+        * Typography
+        * Imagery
+        * Icons
+    * Wireframes
+2. Features
+    * Existing Features
+    * Features Left to Implement
+3. Database Design
+4. Technologies Used
+    * Languages 
+    * Frameworks, Libraries & Programs
+5. Testing
+    * Testing User Stories from User Experience (UX) Section
+    * Further Testing
+    * Known Bugs
+6. Deployment
+    * GitHub Pages
+    * Forking the GitHub Repository
+    * Making a Local Clone
+7. Credits
+    * Code 
+    * Content
+    * Media
+    * Acknowledgements
 
-Another blue button should appear to click: _Open Browser_.
+## 1. UX
+### Project Goals
+The purpose of this project is to *"...build a full-stack site that allows your users to manage a common dataset about a particular domain"* using HTML, CSS, JavaScript, Python+Flask, MongoDB and possible additional libraries and external APIs.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### Business Goals
+Create a web application that allows users to:
+    
+* Add their own recipes to the website (CREATE)
+* Find free recipes online (READ)
+* Edit their recipes (UPDATE)
+* Delete their recipes (DELETE)
+    
+In addition to the goals above; also to promote a brand of cooking tools by linking them to the recipes. 
 
-To log into the Heroku toolbelt CLI:
+Eventually the recipe database will increase in both recipes and users/visitors. The site offer users to interact by adding their own recipes that makes the user feel like being a part of "the community". An important business goal is to be able to contact users using their provided contact information, to offer them additional sales/marketing/offers. 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### User Goals
+Find and share recipes, get inspired by the recipes and get inspired to add own recipes by the site which is signals a that a healty lifestyle doesn't have to be difficult. These easy recipes is done with minimal effort and is ready in no time! 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### User Stories
 
-------
+* First Time Visitor Goals
 
-## Release History
+    * As a first time visitor, I want to easily grasp the sites purpose.
+    * As a first time visitor, I want to find easy vegan fast food recipes.
+    * As a first time visitor, I want to be inspired by the site, the recipes and the design. Get a positive feel. 
+    * As a first time visitor, I want the site navigation to be intutive, user friendly and over all ease-of-use.
+    * As a first time visitor, I want to be able to register as a new user.
+    * As a first time visitor, I want to be able to log in and out (since I registered).
+    * As a first time visitor, I want to be able to read the recipes (added by siteowner and users).
+    * As a first time visitor, I want to be able to search for recipes.
+    * As a first time visitor, I want to add recipes.
+    * As a first time visitor, I want to be able to edit/update the recipes I've added. 
+    * As a first time visitor, I want to be able to delete recipes I've added.
+    * As a first time visitor, I want to locate their social media links to be able to follow and get  a feel for the credibility of the site. 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+* Returning Visitor Goals
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    * As a returning visitor, I want to be able to easily register if I didn't last time visiting. 
+    * As a returning visitor, I want to be able to easily log in, if I registered last time visiting. 
+    * As a returning visitor, I want to be able to read, add, update, delete and search for recipes.
+    * As a returning visitor, I want to be able to reach out to siteowner for possibel collaboration or businessdeals.  
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+* Frequent Visitor Goals
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+    * As a frequent visitor, I want to check to see if there are any newly added recipes.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Design Choices
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* Color scheme
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+    The page consists of a white base with black and Island Green as secondary colors. Text and elements such as call to actions buttons and icons are black to make the text/information stand out and be as clear as possible. When hover buttons, they turn to the Island Green color to tie different elements of the sites together. The chosen colour scheme was specifically selected in order to define the vibe of the page. 
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+    Green is usually associated with healthy, organic and vegetarian food. The Island Green and white color combination is clean, crisp, and are associated with nature and environmental awareness. The Island Green color has a warm vibe while the supporting soft white lend a modern look. 
+    
+    Since green is found commonly in nature, it makes it an excellent choice for recipes sites with healthy and plant based foods. Many Health food stores, Salad bars and Vegan restaurants chooses these kind of colors.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+* Typography
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+    Copse font is the main font used throughout the site with Pacifico and Staatliches as headers fonts. Copse is a low-contrast slab serif that is a little soft around the edges, but with clear and sturdy posture (https://fonts.google.com/specimen/Copse?category=Serif&query=copse#glyphs) and feels modern and clean. It's subtle and it doesn´t take any attention away from the content. Pacifico is a fun brush script handwriting font that gives the site an easy going vibe. Staatliches is a clean but charmig and unconventional font that also gives the site a relaxed vibe. The combination of the three fonts represents both the healty, vegan side aswell as the relaxed fast food approach. 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+* Imagery
+    Images and the choices of the images is an important component of this site. Websites with eye catching, beautiful images that appeal to the public at first glance, tends to get much more views and interests than text dominated sites. 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+* Icons
+    Icons used in footer to set the tone for the sites design approach.(ÄNDRA)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Wireframes (ÄNDRA)
+* [Mobile](https://github.com/#jennymalmoe/MSP2/blob/5c7096b95e7d0f52131faebcc375e8f3b0f25a3d/assets/docs/mobile_wireframes.pdf) 
+* [Tablet](https://github.com/jennymalmoe/MSP2/blob/5c7096b95e7d0f52131faebcc375e8f3b0f25a3d/assets/docs/tablet_wireframes.pdf)
+* [Desktop](https://github.com/jennymalmoe/MSP2/blob/5c7096b95e7d0f52131faebcc375e8f3b0f25a3d/assets/docs/desktop_wireframes.pdf)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+Credits 
+https://www.designwizard.com/blog/design-trends/colour-combination
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
