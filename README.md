@@ -119,16 +119,62 @@ Find and share recipes, get inspired by the recipes and get inspired to add own 
 * Icons
     Icons used in footer to set the tone for the sites design approach.(ÄNDRA)
 
-### Wireframes (ÄNDRA)
-* [Mobile](https://github.com/#jennymalmoe/MSP2/blob/5c7096b95e7d0f52131faebcc375e8f3b0f25a3d/assets/docs/mobile_wireframes.pdf) 
-* [Tablet](https://github.com/jennymalmoe/MSP2/blob/5c7096b95e7d0f52131faebcc375e8f3b0f25a3d/assets/docs/tablet_wireframes.pdf)
-* [Desktop](https://github.com/jennymalmoe/MSP2/blob/5c7096b95e7d0f52131faebcc375e8f3b0f25a3d/assets/docs/desktop_wireframes.pdf)
+### Wireframes 
+* [Mobile](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/mobile) 
+* [Tablet](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/tablet)
+* [Desktop](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/desktop)
 
 
 ## 3. Database Design
 MongoDB was used for this project and schema design was created. SE MOVIE BILD(ÄNDRA)
 
-Credits 
-https://www.designwizard.com/blog/design-trends/colour-combination
+## 4. Technologies Used
+
+* Languages, Frameworks and Libraries
+    * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - used to create the site structure.
+    * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - used to create the styling throughout the site.
+    * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - used for the addition/deletion of ingredients and methods buttons. (STÄMMER DET?)
+    * [Python](https://www.python.org/) - used to write the logic that operates the site.
+    * [jQuery](https://jquery.com/) - used to activate the Materialize functionality.
+    * [Flask](https://flask.palletsprojects.com/en/1.1.x/) - used to manage the HTML more efficiently through the use of templates.(SKRIVA OM)
+    * [Materialize](https://materializecss.com/) - used for the responsive grid design, NavBar, Footer, Card and Form elements.(STÄMMER DET?)
+    * [Heroku](https://www.heroku.com/home) - used for hosting website.
+    * [MongoDB](https://www.mongodb.com/3) - used for database functionality.
+    * [Google fonts](https://fonts.google.com/) - used to import fonts.
+    * [Font-Awesome](https://fontawesome.com/v4.7/) - used for icons.
+
+
+
+* Tools and Editors
+
+* [Am I Responsive](http://ami.responsivedesign.is/) - used for testing responsiveness of the site and mock up image.
+* [Balsamiq](https://balsamiq.com/) - used to create the wireframes.
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/)  - used Lighthouse to check sites performance and the dev tool to check responsiveness.
+* [Designwizard](https://www.designwizard.com/) - used for inspirations regarding color combinations.
+* [FreeIcons](https://freeicons.io/) - used for icon in tab.
+* [Git](https://git-scm.com/) - used for version control.
+* [JSHint](https://jshint.com/) - used to test JS code to ensure there were no errors.
+* [Unsplash](https://unsplash.com/) - Images used were obtained from Unsplash.
+* [Pixelmator](https://www.pixelmator.com/mac/) - used to resize images.
+* [Visual Studio Code](https://code.visualstudio.com/) - IDE used for code editing.
+* [W3C Validator](https://validator.w3.org/) - used to test HTML code to ensure there were no errors.
+* [W3C Validator CSS](https://validator.w3.org/) - used to test CSS code to ensure there were no errors.
+
+## 5. Testing
+
+
+## 6. Deployment
+* GitHub Pages
+* Forking the GitHub Repository
+* Making a Local Clone
+
+## 7. Credits
+* Code 
+* Content
+* Media
+* Acknowledgements
+
+
+
 
 
