@@ -5,9 +5,9 @@
 
 ![site on different devices](assets/images/mock_up.png) 
 
-For testing purposes, please use the following login details:
-
 Introtext...
+
+For testing purposes, please use the following login details:
 
 general user:
 login: iainm342
@@ -20,7 +20,7 @@ password: l4rd3r
 
 ___
 
-1. UX (OBS alla ska länkas)
+1. User Experience (UX) (OBS alla ska länkas)
     * Project Goals
     * Business Goals
     * User Goals
@@ -124,6 +124,9 @@ Find and share recipes, get inspired by the recipes and get inspired to add own 
 * [Tablet](https://github.com/jennymalmoe/MSP2/blob/5c7096b95e7d0f52131faebcc375e8f3b0f25a3d/assets/docs/tablet_wireframes.pdf)
 * [Desktop](https://github.com/jennymalmoe/MSP2/blob/5c7096b95e7d0f52131faebcc375e8f3b0f25a3d/assets/docs/desktop_wireframes.pdf)
 
+
+## 3. Database Design
+MongoDB was used for this project and schema design was created. SE MOVIE BILD(ÄNDRA)
 
 Credits 
 https://www.designwizard.com/blog/design-trends/colour-combination
