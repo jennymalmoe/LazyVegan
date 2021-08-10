@@ -5,7 +5,7 @@
 
 ![site on different devices](assets/images/mock_up.png) 
 
-Introtext...
+Super quick recipes for when you're feeling lazy
 
 For testing purposes, please use the following login details:
 
@@ -161,7 +161,7 @@ MongoDB was used for this project and schema design was created. SE MOVIE BILD(Ã
 * [W3C Validator CSS](https://validator.w3.org/) - used to test CSS code to ensure there were no errors.
 
 ## 5. Testing
-All testing done can be found [here]()
+Testing information can be found in separate [testing.md file]()
 
 ## 6. Deployment
 * GitHub Pages
