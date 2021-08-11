@@ -130,7 +130,7 @@ MongoDB was used for this project and schema design was created. SE MOVIE BILD(Ã
     * [Python](https://www.python.org/) - used to write the logic that operates the site.
     * [jQuery](https://jquery.com/) - used to activate the Materialize functionality.
     * [Flask](https://flask.palletsprojects.com/en/1.1.x/) - used to manage the HTML more efficiently through the use of templates.(SKRIVA OM)
-    * [Materialize](https://materializecss.com/) - used for the responsive grid design, NavBar, Footer, Card and Form elements.(STÃ„MMER DET?)
+    * [Materialize](https://materializecss.com/) - library used for styling and responsiveness. 
     * [Heroku](https://www.heroku.com/home) - used for hosting website.
     * [MongoDB](https://www.mongodb.com/3) - used for database functionality.
     * [Google fonts](https://fonts.google.com/) - used to import fonts.
