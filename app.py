@@ -13,6 +13,6 @@ def test():
 # How and where to run app. 
 # Don't forget to change from True to False when submitting and deploying. 
 if __name__ == "__main__":
-    app.run(host=os.environ.get("0.0.0.0"),
+    app.run(host="0.0.0.0",
             port=int(os.environ.get("PORT")),
             debug=True)
