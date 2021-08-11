@@ -5,16 +5,9 @@
 
 ![site on different devices](assets/images/mock_up.png) 
 
-Super quick recipes for when you're feeling lazy
+Super quick recipes for when you're feeling lazy.
 
-For testing purposes, please use the following login details:
 
-general user:
-login: iainm342
-password: glasgow
-
-admin: login: larderadmin
-password: l4rd3r
 
 ## Table of contents
 
@@ -156,6 +149,7 @@ MongoDB was used for this project and schema design was created. SE MOVIE BILD(Ã
 * [JSHint](https://jshint.com/) - used to test JS code to ensure there were no errors.
 * [Unsplash](https://unsplash.com/) - Images used were obtained from Unsplash.
 * [Pixelmator](https://www.pixelmator.com/mac/) - used to resize images.
+* [RandomKeygen](https://randomkeygen.com/) - used to generate secure password to Secret Key. 
 * [Visual Studio Code](https://code.visualstudio.com/) - IDE used for code editing.
 * [W3C Validator](https://validator.w3.org/) - used to test HTML code to ensure there were no errors.
 * [W3C Validator CSS](https://validator.w3.org/) - used to test CSS code to ensure there were no errors.
