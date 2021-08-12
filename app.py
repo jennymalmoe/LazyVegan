@@ -46,11 +46,36 @@ def register():
         session["user"] = request.form.get("username").lower()
         flash("Registration Successful! Welcome to Lazy Wegan Family!")
     return render_template("register.html")
-    
 
 
-# How and where to run app. 
-# Don't forget to change from True to False when submitting and deploying. 
+@app.route("/login", methods=["GET", "POST"])
+def login():
+    if request.method == "POST":
+        # check if username exists in db
+        existing_user = mongo.db.users.find_one(
+            {"username": request.form.get("username").lower()})
+
+        if existing_user:
+            # make sure hashed password matches user input
+            if check_password_hash(
+                existing_user["password"], request.form.get("password")):
+                    session["user"] = request.form.get("username").lower()
+                    flash("Welcome, {}".format(request.form.get("username")))
+            else:
+                # invalid password match
+                flash("Incorrect Username and/or Password")
+                return redirect(url_for("login"))
+
+        else:
+            # username doesn't exist
+            flash("Incorrect Username and/or Password")
+            return redirect(url_for("login"))
+
+    return render_template("login.html")
+
+
+# How and where to run app
+# Don't forget to change from True to False when submitting and deploying 
 if __name__ == "__main__":
     app.run(host="0.0.0.0",
             port=int(os.environ.get("PORT")),
