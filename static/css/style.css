@@ -5,3 +5,11 @@
 .flashes h4 {
     line-height: 2;
 }
+
+nav ul li:hover {
+    background-color: rgb(51, 175, 78);
+ }
+
+nav .brand-logo {
+    font-family: pacifico;
+}
