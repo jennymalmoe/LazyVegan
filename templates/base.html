@@ -25,7 +25,7 @@
                 <li><a href="#">Recipes</a></li>
                 <li><a href="#">Shop</a></li>
                 {% if session.user %}
-                    <li><a href="#">Add Recipes</a></li>
+                    <li><a href="{{ url_for('add_recipe')}}">Add Recipes</a></li>
                     <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                     <li><a href="{{ url_for('logout')}}">Log Out</a></li>
                 {% else %}
@@ -43,7 +43,7 @@
            <li><a href="#">Recipes</a></li>
            <li><a href="#">Shop</a></li>
            {% if session.user %}
-               <li><a href="#">Add Recipes</a></li>
+               <li><a href="{{ url_for('add_recipe')}}">Add Recipes</a></li>
                <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
                <li><a href="{{ url_for('logout')}}">Log Out</a></li>
            {% else %}
@@ -59,7 +59,7 @@
             {% if messages %}
                 {% for message in messages %}
                     <div class="row flashes">
-                        <h4 class="light-blue lighten-4 center-align">{{ message }}</h4>
+                        <h4 class="white-text green accent-4 center-align">{{ message }}</h4>
                     </div>
                 {% endfor %}
             {% endif %}

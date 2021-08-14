@@ -1,15 +1,18 @@
-.text-shadow {
-    text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.589);
-}
-
+/* General */
 .flashes h4 {
     line-height: 2;
+}
+
+/* Navbar */
+nav .brand-logo {
+    padding-left: 60px;
+    font-family: pacifico;
 }
 
 nav ul li:hover {
     background-color: rgb(51, 175, 78);
  }
 
-nav .brand-logo {
+#headline {
     font-family: pacifico;
 }

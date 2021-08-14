@@ -97,6 +97,11 @@ def logout():
     return redirect(url_for("login"))
 
 
+@app.route("/add_recipe.html")
+def add_recipe():
+    return render_template("add_recipe.html")
+
+
 # How and where to run app
 # Don't forget to change from True to False when submitting and deploying 
 if __name__ == "__main__":
