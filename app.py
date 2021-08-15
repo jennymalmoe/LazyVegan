@@ -97,9 +97,23 @@ def logout():
     return redirect(url_for("login"))
 
 
-@app.route("/add_recipe.html")
+@app.route("/add_recipe.html", methods=["GET", "POST"])
 def add_recipe():
-    return render_template("add_recipe.html")
+    if request.method == "POST":
+        gluten_free = "on" if request.form.get("gluten_free") else "off"
+        recipe = {
+            "category_name": request.form.get("category_name"),
+            "recipe_name": request.form.get("recipe_name"),
+            "recipe_directions": request.form.get("recipe_directions"),
+            "gluten_free": gluten_free,
+#           "created_by": session["user"]
+        }
+        mongo.db.recipe.insert_one(recipe)
+        flash("Recipe Successfully Added")
+        return redirect(url_for("get_recipe"))
+
+    categories = mongo.db.categories.find().sort("category_name", 1)
+    return render_template("add_recipe.html", categories=categories)
 
 
 # How and where to run app

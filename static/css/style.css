@@ -17,12 +17,13 @@ nav ul li:hover {
     font-family: pacifico;
 }
 
+/* Switch in Add Recipe form */
 .switch label input[type=checkbox]:checked+.lever {
     background-color: #030303;
 }
 
 .switch label input[type=checkbox]:checked+.lever:after {
-    background-color: #1bb441;
+    background-color: #19b43b;
  }
- 
+
 
