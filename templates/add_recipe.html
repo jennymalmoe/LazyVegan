@@ -3,18 +3,35 @@
 
 <h3 class="black-text center-align">Add Recipe</h3>
 
-<div class="row">
+<div class="row card-panel grey lighten-5">
     <form class="col s12" method="POST" action="">
         <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-seedling prefix"></i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">Recipe Name</label>
+                  <input id="recipe_name" name="recipe_name" minlenght="5" maxlength="30"
+                      type="text" class="validate" required>
+                <label for="recipe_name">Recipe Name</label>
             </div>
+        </div>
+        <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-list-ol prefix"></i>
-                <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Directions</label>
+                <textarea id="recipe_directions" name="recipe_directions" minlength="5"
+                    maxlength="200" class="materialize-textarea validate" required></textarea>
+                <label for="recipe_directions">Directions</label>
+            </div>
+        </div>
+        <!-- Switch -->
+        <div class="row">
+            <div class="input-field col s12">
+                <div class="switch">
+                    <i class="fas fa-bread-slice"></i>
+                    <label for="gluten_free">
+                        <input type="checkbox" id="gluten_free" name="gluten_free">
+                            <span class="lever"></span>
+                            Gluten-Free
+                    </label>
+                </div>
             </div>
         </div>
     </form>

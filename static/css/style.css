@@ -16,3 +16,13 @@ nav ul li:hover {
 #headline {
     font-family: pacifico;
 }
+
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #030303;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #1bb441;
+ }
+ 
+
