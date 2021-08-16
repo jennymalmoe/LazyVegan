@@ -21,8 +21,8 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_recipe")
 def get_recipe():
-    recipe = mongo.db.recipe.find()
-    return render_template("recipe.html", recipe=recipe)
+    recipes = mongo.db.recipe.find()
+    return render_template("recipe.html", recipes=recipes)
 
 
 @app.route("/register", methods=["GET", "POST"])
@@ -62,6 +62,8 @@ def login():
             if check_password_hash(
                     existing_user["password"], request.form.get("password")):
                         session["user"] = request.form.get("username").lower()
+                        session["user_id"] = str(existing_user["_id"])
+                        print(session)
                         flash("Welcome, {}".format(
                             request.form.get("username")))
                         return redirect(url_for(
@@ -104,12 +106,17 @@ def add_recipe():
         recipe = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
+            "recipe_img": request.form.get("recipe_img"),
+            "recipe_url": request.form.get("recipe_url"),
             "recipe_directions": request.form.get("recipe_directions"),
-            "gluten_free": gluten_free,
-#           "created_by": session["user"]
+            "gluten_free": gluten_free, 
+            "created_by_id": session["user_id"],
+            "created_by_name": session["user"]
         }
+        print(session)
         mongo.db.recipe.insert_one(recipe)
         flash("Recipe Successfully Added")
+        
         return redirect(url_for("get_recipe"))
 
     categories = mongo.db.categories.find().sort("category_name", 1)

@@ -26,4 +26,55 @@ nav ul li:hover {
     background-color: #19b43b;
  }
 
+ /* Img in form */
+ .img-container {
+    background-image: -webkit-image-set(url("../images/white-texture.png") 1x, url("../images/white-texture-sm.png") 2x);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 
+    margin: 0 auto 1rem auto;
+    padding: 15px;
+    max-width: 80%;
+    font-family: var(--accent-font);
+    font-size: 1.3em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+
+    -webkit-box-shadow: var(--dark-box) 0px 0 10px;
+    -moz-box-shadow: var(--dark-box) 0 0 10px;
+    box-shadow: var(--dark-box) 0 0 10px;
+}
+.img-container p {
+    margin: 1px;
+}
+.img-window {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    max-height: 15rem;
+    max-width: 100%;    
+}
+.new-img {
+    /* changed using onclick function */
+    display: none;
+}
+
+ /* Sticky Footer */
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }

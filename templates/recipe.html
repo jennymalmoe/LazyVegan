@@ -15,12 +15,28 @@
 
      <h3 class="black-text center-align">Popular Mouth-Watering Recipes</h3>
 
-<!-- how 
-  <p>by: {{ recipe.created_by }}</p> 
--->
 
 <!-- recipe card pancake -->
 <div class="row">
+  <!-- For loop logic of jinja template -->
+  {% for recipe in recipes %}
+  
+  <div class="col s4 m4">
+    <div class="card hoverable">
+      <div class="card-image">
+        <img src="static/images/pancake.jpg">
+        <span class="card-title card-panel green accent-4">{{ recipe.recipe_name }}</span>
+      </div>
+      <div class="card-content">
+        <p>{{ recipe.recipe_directions }}</p>
+      </div>
+      <div class="card-action">
+        <a href="#" class="waves-effect waves-light btn-small black"></i>View Recipe</a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
     <div class="col s4 m4">
       <div class="card hoverable">
         <div class="card-image">
