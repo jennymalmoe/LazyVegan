@@ -1,24 +1,39 @@
 {% extends "base.html" %}
 {% block content %}
+  <div><h1 class="black-text center-align">Lazy Vegan Fast Food Recipes</h1></div>
 
-  <h3 class="black-text center-align">All Recipes</h3>
+  <!-- home page image -->
+
+
+    <img class="girl" src="static/images/girl.jpg" alt="Woman eating pizza">
+    <div class="container">
+      <div class="row">
+          <div class="col-12 my-5">
+            <p class="home-text">There is no need to spend unnecessary time and money taking your family
+            out to dinner when you can make restaurant quality dinners right in your own kitchen.
+            These fast food recipes are extremely simple to make and taste great.
+            No one in your family will complain about what they will be eating for dinner when
+            you serve up these incredible dishes. From juicy and succulent burgers to warm and salty French fries,
+            we have everything you need for the perfect restaurant-style dinner at home. Enjoy!</p>
+          </div>   
+      </div>        
+    </div>
   
-  <p>Try out our tasty & healthy vegan recipes! Vegan cooking is not about taking the meat away
-     and reducing the flavour! It can be absolutely amazing. If you’re trying to broaden your diet
-     and eat more veggies, or cooking for a friend who avoids meat, these recipes are perfect.
-     All recipes are fast and easy to follow, and worth doing even if dining alone.</p>
-
+    
+      <div><h3 class="black-text center-align">Popular Mouth-Watering Recipes</h3></div>
+    
+  
 <!-- recipe card pancake -->
-<div class="row">
+  <div class="row">
   <!-- For loop logic of jinja template -->
   {% for recipe in recipes %}
   
-  <div class="col s4 m4">
-    <div class="card hoverable">
-      <div class="card-image">
-        <img src="static/images/pancake.jpg">
-        <span class="card-title card-panel green accent-4">{{ recipe.recipe_name }}</span>
-      </div>
+    <div class="col s3 s3">
+      <div class="card hoverable">
+        <div class="card-image">
+          <img src="static/images/pancake.jpg">
+          <span class="card-title card-panel green accent-4">{{ recipe.recipe_name }}</span>
+        </div>
       <div class="card-content">
         <p>{{ recipe.recipe_directions }}</p>
       </div>
@@ -82,5 +97,7 @@
     </div>
   </div>
 </div>
+
+
 
 {% endblock %}
