@@ -36,6 +36,11 @@ def search():
     recipes = list(mongo.db.recipe.find({"$text": {"$search": query}}))
     return render_template("recipe.html", recipes=recipes)
 
+@app.route("/")
+@app.route("/shop")
+def shop():
+    home = mongo.db.shop.find()
+    return render_template("shop.html", shop=shop)
 
 @app.route("/register", methods=["GET", "POST"])
 def register():

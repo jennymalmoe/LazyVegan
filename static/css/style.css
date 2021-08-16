@@ -25,6 +25,10 @@ nav ul li:hover {
     float: left;
 }
 
+.search {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
 
 /* Switch in Add Recipe form */
 .switch label input[type=checkbox]:checked+.lever {

@@ -1,15 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
+
   <div><h1 class="black-text center-align">Lazy Vegan Fast Food Recipes</h1></div>
 
   <!-- home page image -->
 
 
-    <img class="girl" src="static/images/girl.jpg" alt="Woman eating pizza">
+    
     <div class="container">
       <div class="row">
-          <div class="col-12 my-5">
-            <p class="home-text">There is no need to spend unnecessary time and money taking your family
+        <div class="col-12 my-5">
+            <img class="girl responsive-img col-5" src="static/images/girl.jpg" alt="Woman eating pizza">
+            <p class="home-text col-5">There is no need to spend unnecessary time and money taking your family
             out to dinner when you can make restaurant quality dinners right in your own kitchen.
             These fast food recipes are extremely simple to make and taste great.
             No one in your family will complain about what they will be eating for dinner when
@@ -31,7 +33,7 @@
     <div class="col s3 s3">
       <div class="card hoverable">
         <div class="card-image">
-          <img src="static/images/pancake.jpg">
+          <img class="responsive-img" src="static/images/pancake.jpg">
           <span class="card-title card-panel green accent-4">{{ recipe.recipe_name }}</span>
         </div>
       <div class="card-content">
@@ -47,7 +49,7 @@
     <div class="col s4 m4">
       <div class="card hoverable">
         <div class="card-image">
-          <img src="static/images/pancake.jpg">
+          <img class="responsive-img" src="static/images/pancake.jpg">
           <span class="card-title card-panel green accent-4">Vegan Pancakes</span>
         </div>
         <div class="card-content">
@@ -66,7 +68,7 @@
  <div class="col s4 m4">
     <div class="card hoverable">
       <div class="card-image">
-        <img src="static/images/burger.png">
+        <img class="responsive-img" src="static/images/burger.png">
         <span class="card-title card-panel green accent-4">Juicy Vegan Burger</span>
       </div>
       <div class="card-content">
@@ -84,7 +86,7 @@
   <div class="col s4 m4">
     <div class="card hoverable">
       <div class="card-image">
-        <img src="static/images/taco.jpg">
+        <img class="responsive-img" src="static/images/taco.jpg">
         <span class="card-title card-panel green accent-4">Tacos</span>
       </div>
       <div class="card-content">

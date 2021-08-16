@@ -1,9 +1,11 @@
 {% extends "base.html" %}
 {% block content %}
 
-  <h3 class="black-text center-align">All Recipes</h3>
+  <h3 class="black-text center-align">Find a Recipe</h3>
 
-  <div class="row card-panel grey lighten-5">
+  <p>In the mood for a juicy Burger? Craving a Pizza? Taco-Time? Look no further! Or I mean... Search for your next meal right here:</p>
+
+  <div class="search row card-panel grey lighten-5">
     <form action="{{ url_for('search') }}" method="post" class="col s12">
         <div class="row valign-wrapper center-align">
             <div class="input-field col s12 m8">
@@ -12,7 +14,7 @@
                 <label for="query">Search Recipes</label>
             </div>
             <div class="col s12 m4">
-                <a href="{{ url_for('recipe') }}" class="red btn text-shadow">Reset</a>
+                <a href="{{ url_for('get_recipe') }}" class="red btn text-shadow">Reset</a>
                 <button type="submit" class="light-blue darken-1 btn text-shadow">
                     <i class="fas fa-search left"></i> Search
                 </button>
@@ -21,6 +23,7 @@
     </form>
 </div>
 
+<h3 class="black-text center-align">All Recipes</h3>
   
   <p>Try out our tasty & healthy vegan recipes! Vegan cooking is not about taking the meat away
      and reducing the flavour! It can be absolutely amazing. If you’re trying to broaden your diet
@@ -35,7 +38,7 @@
   <div class="col s4 m4">
     <div class="card hoverable">
       <div class="card-image">
-        <img src="static/images/pancake.jpg">
+        <img class="responsive-img" src="static/images/pancake.jpg">
         <span class="card-title card-panel green accent-4">{{ recipe.recipe_name }}</span>
       </div>
       <div class="card-content">
@@ -52,7 +55,7 @@
     <div class="col s4 m4">
       <div class="card hoverable">
         <div class="card-image">
-          <img src="static/images/pancake.jpg">
+          <img class="responsive-img" src="static/images/pancake.jpg">
           <span class="card-title card-panel green accent-4">Vegan Pancakes</span>
         </div>
         <div class="card-content">
@@ -71,7 +74,7 @@
  <div class="col s4 m4">
     <div class="card hoverable">
       <div class="card-image">
-        <img src="static/images/burger.png">
+        <img class="responsive-img" src="static/images/burger.png">
         <span class="card-title card-panel green accent-4">Juicy Vegan Burger</span>
       </div>
       <div class="card-content">
@@ -89,7 +92,7 @@
   <div class="col s4 m4">
     <div class="card hoverable">
       <div class="card-image">
-        <img src="static/images/taco.jpg">
+        <img class="responsive-img" src="static/images/taco.jpg">
         <span class="card-title card-panel green accent-4">Tacos</span>
       </div>
       <div class="card-content">
