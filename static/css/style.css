@@ -25,6 +25,7 @@ nav ul li:hover {
     float: left;
 }
 
+
 /* Switch in Add Recipe form */
 .switch label input[type=checkbox]:checked+.lever {
     background-color: #030303;
