@@ -1,6 +1,7 @@
 /* General */
 .flashes h4 {
     line-height: 2;
+    font-family: pacifico;
 }
 
 /* Navbar */
@@ -28,6 +29,10 @@ nav ul li:hover {
 .search {
     margin-top: 50px;
     margin-bottom: 30px;
+}
+
+.profile {
+    font-family: pacifico;
 }
 
 /* Switch in Add Recipe form */
@@ -91,3 +96,7 @@ nav ul li:hover {
   main {
     flex: 1 0 auto;
   }
+
+.page-footer {
+    padding-bottom: 20px;
+}
