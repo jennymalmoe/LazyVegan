@@ -21,7 +21,6 @@
             <a href="{{ url_for('get_recipe')}}" class="brand-logo">Lazy Vegan</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="{{ url_for('get_recipe')}}">Home</a></li>
                 <li><a href="{{ url_for('get_recipe')}}">Recipes</a></li>
                 <li><a href="#">Shop</a></li>
                 {% if session.user %}
@@ -39,7 +38,6 @@
         <!-- mobile sidenav -->
        <ul class="sidenav" id="mobile-demo">
            <li><h4 class="center-align light blue text text darken-2">Lazy Vegan</h4></li>
-           <li><a href="{{ url_for('get_recipe')}}">Home</a></li>
            <li><a href="{{ url_for('get_recipe')}}">Recipes</a></li>
            <li><a href="#">Shop</a></li>
            {% if session.user %}
@@ -67,8 +65,8 @@
     </section>
 
     <main class="container">
-      {% block content %}
-      {% endblock %}
+        {% block content %}
+        {% endblock %}
     </main>
 
     <!-- footer -->
