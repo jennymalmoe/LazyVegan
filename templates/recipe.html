@@ -30,80 +30,37 @@
      and eat more veggies, or cooking for a friend who avoids meat, these recipes are perfect.
      All recipes are fast and easy to follow, and worth doing even if dining alone.</p>
 
-<!-- recipe card pancake -->
-<div class="row">
-  <!-- For loop logic of jinja template -->
-  {% for recipe in recipes %}
-  
-  <div class="col s4 m4">
-    <div class="card hoverable">
-      <div class="card-image">
-        <img class="responsive-img" src="static/images/pancake.jpg">
-        <span class="card-title card-panel green accent-4">{{ recipe.recipe_name }}</span>
-      </div>
-      <div class="card-content">
-        <p>{{ recipe.recipe_directions }}</p>
-      </div>
-      <div class="card-action">
-        <a href="#" class="waves-effect waves-light btn-small black"></i>View Recipe</a>
-      </div>
-    </div>
-  </div>
 
+
+  <!-- recipe card pancake -->
+  <div class="row">
+    <!-- For loop logic of jinja template -->
+    {% for recipe in recipes %}
+  
+      <div class="col s4 m4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img class="responsive-img" src="static/images/default.jpg">
+            <span class="card-title card-panel green accent-4">{{ recipe.recipe_name }}</span>
+
+            {% if recipe.is_gluten_free == "on" %}
+                    <i class="fas fa-exclamation-circle light-blue-text text-lighten-2 tooltipped"
+                        data-position="right" data-tooltip="Gluten Free!"></i>
+                {% endif %}
+
+          </div>
+          <div class="card-content">
+            <p>{{ recipe.category_name }}</p>
+            <p><em>Added By:  {{ recipe.created_by_name }}</em></p>
+          </div>
+          <div class="card-action">
+        <!-- <a href="{{ url_for('recipe', _id=_id) }}" class="waves-effect waves-light btn-small black"></i>View Recipe</a> -->
+          </div>
+        </div>
+      </div>
+  
   {% endfor %}
 
-    <div class="col s4 m4">
-      <div class="card hoverable">
-        <div class="card-image">
-          <img class="responsive-img" src="static/images/pancake.jpg">
-          <span class="card-title card-panel green accent-4">Vegan Pancakes</span>
-        </div>
-        <div class="card-content">
-          <p>These quick and easy pancakes require just 6 ingredients. 
-             Perfect for a lazy weekend morning! Melt-in-your-mouth, easy, light and fluffy 
-             vegan pancakes.</p>
-        </div>
-        <div class="card-action">
-          <a href="#" class="waves-effect waves-light btn-small black"></i>Recipe</a>
-        </div>
-      </div>
-    </div>
-  
 
-  <!-- recipe card burger-->
- <div class="col s4 m4">
-    <div class="card hoverable">
-      <div class="card-image">
-        <img class="responsive-img" src="static/images/burger.png">
-        <span class="card-title card-panel green accent-4">Juicy Vegan Burger</span>
-      </div>
-      <div class="card-content">
-        <p>These veggie burgers are packed with vegetables! See how to make homemade
-           veggie burgers that are hearty, flavorful and full of vegetables.</p>
-      </div>
-      <div class="card-action">
-        <a href="#" class="waves-effect waves-light btn-small black"></i>Recipe</a>
-      </div>
-    </div>
-  </div>
-
-
-<!-- recipe card tacos-->
-  <div class="col s4 m4">
-    <div class="card hoverable">
-      <div class="card-image">
-        <img class="responsive-img" src="static/images/taco.jpg">
-        <span class="card-title card-panel green accent-4">Tacos</span>
-      </div>
-      <div class="card-content">
-        <p>Vegan tacos, made with corn or flour tortillas, black beans, corn, avocado, and vegan sour cream,
-           among other simple ingredients. Super healthy and filling.</p>
-      </div>
-      <div class="card-action">
-        <a href="#" class="waves-effect waves-light btn-small black"></i>Recipe</a>
-      </div>
-    </div>
-  </div>
-</div>
 
 {% endblock %}
