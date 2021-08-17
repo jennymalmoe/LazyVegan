@@ -11,7 +11,7 @@ nav .brand-logo {
 }
 
 nav ul li:hover {
-    background-color: rgb(51, 175, 78);
+    background-color: rgb(157, 247, 179);
  }
 
 #headline {
@@ -44,7 +44,7 @@ nav ul li:hover {
 }
 
 .switch label input[type=checkbox]:checked+.lever:after {
-    background-color: #19b43b;
+    background-color: rgb(157, 247, 179);
  }
 
  /* Img in form */
@@ -107,7 +107,7 @@ nav ul li:hover {
 /* Profile */
 .recipe_header {
     color: #FFFFFF;
-    background-color: #000000;
+    background-color: rgb(157, 247, 179);
     text-align: center;
 }
 
@@ -119,16 +119,16 @@ nav ul li:hover {
     z-index: 99; 
     border: none; 
     outline: none; 
-    background-color: rgb(41, 221, 86);  
+    background-color: rgb(157, 247, 179);  
     color: white; 
     cursor: pointer; 
-    padding: 15px; 
-    border-radius: 10px; 
+    padding: 20px; 
+    border-radius: 100px; 
     font-size: 18px; 
   }
   
   #myBtn:hover {
-    background-color: rgb(157, 247, 179); 
+    background-color: rgb(207, 247, 217);
   }
 
  

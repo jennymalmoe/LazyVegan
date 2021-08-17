@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 
-  <div><h1 class="black-text center-align thin">Cook Like a Pro!</h1></div>
+  <h1 class="black-text center-align thin">Cook Like a Pro!</h1>
+  <p class="center-align">Eco Kitchen Products For Eco Friendly Living
+    Discover our range of eco kitchen products that are made with natural, organic, vegan, plastic-free, biodegradable and ethical materials and ingredients.</p>
 
  
   <div class="row">
@@ -18,7 +20,7 @@
           <p>{{ recipe.recipe_directions }}</p>
         </div>
         <div class="card-action">
-          <a href="#" class="waves-effect waves-light btn-small black"></i>View Recipe</a>
+          <a href="#" target="_blank" class="waves-effect waves-light btn-small black"></i>View Recipe</a>
         </div>
       </div>
     </div>
@@ -34,7 +36,7 @@
                 silicone reusable pouch, an ideal alternative to plastic ziplock bags.<br><br>Choose between many different sizes and shapes.  </p>
           </div>
           <div class="card-action">
-            <a href="https://www.peacewiththewild.co.uk/product/silicone-ziplock-pouch-1000ml/" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
+            <a href="https://www.peacewiththewild.co.uk/product/silicone-ziplock-pouch-1000ml/" target="_blank" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
           </div>
         </div>
       </div>
@@ -52,13 +54,13 @@
              USDA Certified Organic bamboo and Ethically & sustainably sourced.</p>
         </div>
         <div class="card-action">
-          <a href="https://www.peacewiththewild.co.uk/product/bambu-bamboo-travel-utensils/" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
+          <a href="https://www.peacewiththewild.co.uk/product/bambu-bamboo-travel-utensils/" target="_blank" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
         </div>
       </div>
     </div>
   
   
-  <!-- recipe card tacos-->
+  <!-- shop item 3 -->
     <div class="col s4 m4">
       <div class="card hoverable">
         <div class="card-image">
@@ -70,17 +72,18 @@
             the bowl will leave it tightly covered, leaving no gaps. GOTS certified organic cotton.</p>
         </div>
         <div class="card-action">
-          <a href="https://www.peacewiththewild.co.uk/product/your-green-kitchen-medium-cotton-bowl-cover/" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
+          <a href="https://www.peacewiththewild.co.uk/product/your-green-kitchen-medium-cotton-bowl-cover/" target="_blank" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
         </div>
       </div>
     </div>
   </div>
  
-    <!-- recipe card pancake -->
+    
   <div class="row">
     <!-- For loop logic of jinja template -->
     {% for recipe in recipes %}
     
+   
       <div class="col s3 s3">
         <div class="card hoverable">
           <div class="card-image">
@@ -90,58 +93,59 @@
           <p>{{ recipe.recipe_directions }}</p>
         </div>
         <div class="card-action">
-          <a href="https://www.kitchenaid.com/countertop-appliances/stand-mixers/tilt-head-stand-mixers/p.artisan-series-5-quart-tilt-head-stand-mixer.ksm150pspt.html?" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
+          <a href="https://www.kitchenaid.com/countertop-appliances/stand-mixers/tilt-head-stand-mixers/p.artisan-series-5-quart-tilt-head-stand-mixer.ksm150pspt.html?" target="_blank" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
         </div>
       </div>
     </div>
     {% endfor %}
-  
+
+      <!-- shop item 4 -->
       <div class="col s4 m4">
         <div class="card hoverable">
           <div class="card-image">
-            <img class="responsive-img" src="static/images/kitchen_aid.jpeg">
+            <img class="responsive-img" src="static/images/tongs.jpeg">
           </div>
           <div class="card-content">
-            <p><strong>Kitchen Aid</strong><br>Whether you need 9 dozen of your signature chocolate chips cookies or shredded tofu for
-            Taco Tuesday with friends, the KitchenAid has the capacity for every occasion.</p>
+            <p><strong>Large Bamboo Tongs</strong><br>Large bamboo tongs, a plastic-free, sustainable
+              and safe alternative to plastic utensils! Made from organic, natural bamboo. Vegan and 100% Plastic free.</p>
           </div>
           <div class="card-action">
-            <a href="https://www.kitchenaid.com/countertop-appliances/stand-mixers/tilt-head-stand-mixers/p.artisan-series-5-quart-tilt-head-stand-mixer.ksm150pspt.html?" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
+            <a href="https://www.peacewiththewild.co.uk/product/bambu-large-bamboo-tongs/" target="_blank" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
           </div>
         </div>
       </div>
     
   
-    <!-- recipe card burger-->
+   <!-- shop item 5 -->
    <div class="col s4 m4">
       <div class="card hoverable">
         <div class="card-image">
-          <img class="responsive-img" src="static/images/pot.jpeg">
+          <img class="responsive-img" src="static/images/oil.jpeg">
         </div>
         <div class="card-content">
-          <p><strong>Cast Iron Nonstick Dutch Oven</strong><br>The Crock-Pot is ideal for delicious dinners
-            for any occasion. This cookware's self-basting lid creates a continuous basting environment for
-            more flavorful meals.</p>
+          <p><strong>Premium 100% Pure Coconut Oil</strong>Coconuts are a rich source of Medium Chain
+            Triglycerides (MCTs), healthy fats which provide many health and fitness benefits.
+            Keto, Paleo, LCHF friendly.</p>
         </div>
         <div class="card-action">
-          <a href="https://www.surlatable.com/le-creuset-signature-275qt-oval-french-oven/PRO-3486412.html" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
+          <a href="https://www.peacewiththewild.co.uk/product/hunter-gather-premium-100-pure-mct-coconut-oil/" target="_blank" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
         </div>
       </div>
     </div>
   
   
-  <!-- recipe card tacos-->
+  <!-- shop item 6 -->
     <div class="col s4 m4">
       <div class="card hoverable">
         <div class="card-image">
-          <img class="responsive-img" src="static/images/kitchen.jpeg">
+          <img class="responsive-img" src="static/images/salt.jpeg">
         </div>
         <div class="card-content">
-          <p><strong>Cookware</strong><br>Choose from a superb assortment of accessories
-            for the kitchen.<br><br>This kitchenware makes life in the kitchen that little bit easier. </p>
+          <p><strong>Natural Dorset Sea Salt Flakes</strong>Hand-harvested from the pristine mineral rich,
+            and world-famous waters of the Jurassic coast. To be used within or to finish the cooking process.</p>
         </div>
         <div class="card-action">
-          <a href="https://www.westelm.co.uk/tableware/tableware-kitchen/kitchenware" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
+          <a href="https://www.peacewiththewild.co.uk/product/dorset-sea-salt-co-natural-dorset-sea-salt-flakes/" target="_blank" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
         </div>
       </div>
     </div>

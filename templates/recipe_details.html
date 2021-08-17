@@ -3,13 +3,13 @@
 
 
 <div>
-    <h4 class="recipe_header">Recipe Name: {{ recipe.recipe_name }}</h4>
-    <p><strong>{{ recipe.category_name }}</strong></p>
+    <h4 class="recipe_header thin">Recipe Name: {{ recipe.recipe_name }}</h4>
+    <h5> {{ recipe.category_name }}</h5>
     {{ recipe.recipe_img }}
-    <p><strong>Ingredients: {{ recipe.recipe_ingredients }}</strong></p>
-    <p><strong>Directions: {{ recipe.recipe_directions }}</strong></p>
+    <h5>Ingredients: {{ recipe.recipe_ingredients }}</h5>
+    <h5>Directions: {{ recipe.recipe_directions }}</h5>
     {{ recipe.gluten_free }}
-    <p><em>This recipe was added by: {{ recipe.created_by_name }}</em></p>
+    <h6><em>This recipe was added by: {{ recipe.created_by_name }}</em></h6>
 </div>  
 
 
