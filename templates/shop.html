@@ -3,6 +3,149 @@
 
   <div><h1 class="black-text center-align">Cook & Look Like a Pro!</h1></div>
 
+  <!-- recipe card pancake -->
+  <div class="row">
+    <!-- For loop logic of jinja template -->
+    {% for recipe in recipes %}
+    
+      <div class="col s3 s3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img class="responsive-img" src="static/images/pancake.jpg">
+            <span class="card-title card-panel green accent-4">{{ recipe.recipe_name }}</span>
+          </div>
+        <div class="card-content">
+          <p>{{ recipe.recipe_directions }}</p>
+        </div>
+        <div class="card-action">
+          <a href="#" class="waves-effect waves-light btn-small black"></i>View Recipe</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <!-- shop item 1-->
+      <div class="col s4 m4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img class="responsive-img" src="static/images/zip_bag.jpg">
+          </div>
+          <div class="card-content">
+            <p><strong>Silicone Ziplock Pouch.</strong><br>If you use zip lock bags then you will love this
+                silicone reusable pouch, an ideal alternative to plastic ziplock bags! </p>
+          </div>
+          <div class="card-action">
+            <a href="https://www.peacewiththewild.co.uk/product/silicone-ziplock-pouch-1000ml/" class="waves-effect waves-light btn-small black"></i>Buy It</a>
+          </div>
+        </div>
+      </div>
+    
   
+    <!-- shop item 2-->
+   <div class="col s4 m4">
+      <div class="card hoverable">
+        <div class="card-image">
+          <img class="responsive-img" src="static/images/bambu.jpeg">
+        </div>
+        <div class="card-content">
+          <p><strong>Bamboo Cutlery Set.</strong><br>Handy bamboo travel utensil set by Bambu, perfect for an on-the-go lifestyle.
+             Each item is made from a single piece of organic bamboo with a natural finish.
+             USDA Certified Organic bamboo and Ethically & sustainably sourced.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://www.peacewiththewild.co.uk/product/bambu-bamboo-travel-utensils/" class="waves-effect waves-light btn-small black"></i>Buy It</a>
+        </div>
+      </div>
+    </div>
+  
+  
+  <!-- recipe card tacos-->
+    <div class="col s4 m4">
+      <div class="card hoverable">
+        <div class="card-image">
+          <img class="responsive-img" src="static/images/bowl_cover.jpeg">
+        </div>
+        <div class="card-content">
+          <p><strong>Cotton Bowl Cover</strong><br>These reusable and washable cotton bowl covers fit nicely on
+            mixing and serving bowls. The elasticated cotton once stretched over
+            the bowl will leave it tightly covered, leaving no gaps. GOTS certified organic cotton. Handmade in Canada</p>
+        </div>
+        <div class="card-action">
+          <a href="https://www.peacewiththewild.co.uk/product/your-green-kitchen-medium-cotton-bowl-cover/" class="waves-effect waves-light btn-small black"></i>Buy It</a>
+        </div>
+      </div>
+    </div>
+  </div>
  
+    <!-- recipe card pancake -->
+  <div class="row">
+    <!-- For loop logic of jinja template -->
+    {% for recipe in recipes %}
+    
+      <div class="col s3 s3">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img class="responsive-img" src="static/images/kitchen_aid.jpeg">
+          </div>
+        <div class="card-content">
+          <p>{{ recipe.recipe_directions }}</p>
+        </div>
+        <div class="card-action">
+          <a href="https://www.kitchenaid.com/countertop-appliances/stand-mixers/tilt-head-stand-mixers/p.artisan-series-5-quart-tilt-head-stand-mixer.ksm150pspt.html?" class="waves-effect waves-light btn-small black"></i>Buy It</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  
+      <div class="col s4 m4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img class="responsive-img" src="static/images/kitchen_aid.jpeg">
+          </div>
+          <div class="card-content">
+            <p><strong>Kitchen Aid</strong><br>Whether you need 9 dozen of your signature chocolate chips cookies or shredded tofu for
+            Taco Tuesday with friends and family, the KitchenAid has the capacity for every occasion.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://www.kitchenaid.com/countertop-appliances/stand-mixers/tilt-head-stand-mixers/p.artisan-series-5-quart-tilt-head-stand-mixer.ksm150pspt.html?" class="waves-effect waves-light btn-small black"></i>Buy It</a>
+          </div>
+        </div>
+      </div>
+    
+  
+    <!-- recipe card burger-->
+   <div class="col s4 m4">
+      <div class="card hoverable">
+        <div class="card-image">
+          <img class="responsive-img" src="static/images/pot.jpeg">
+        </div>
+        <div class="card-content">
+          <p><strong>Cast Iron Nonstick Dutch Oven</strong><br>The Crock-Pot is ideal for delicious dinners
+            for any occasion. This cookware's self-basting lid creates a continuous basting environment for
+            more flavorful meals.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://www.surlatable.com/le-creuset-signature-275qt-oval-french-oven/PRO-3486412.html" class="waves-effect waves-light btn-small black"></i>Buy It</a>
+        </div>
+      </div>
+    </div>
+  
+  
+  <!-- recipe card tacos-->
+    <div class="col s4 m4">
+      <div class="card hoverable">
+        <div class="card-image">
+          <img class="responsive-img" src="static/images/kitchen.jpeg">
+        </div>
+        <div class="card-content">
+          <p><strong>Cookware</strong><br>Choose from a superb assortment of accessories exclusively
+            for the kitchen.This kitchenware makes life in the kitchen that little bit easier.</p>
+        </div>
+        <div class="card-action">
+          <a href="https://www.westelm.co.uk/tableware/tableware-kitchen/kitchenware" class="waves-effect waves-light btn-small black"></i>Buy It</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   {% endblock %}

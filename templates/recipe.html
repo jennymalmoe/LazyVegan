@@ -54,7 +54,7 @@
             <p><em>Added By:  {{ recipe.created_by_name }}</em></p>
           </div>
           <div class="card-action">
-        <!-- <a href="{{ url_for('recipe', _id=_id) }}" class="waves-effect waves-light btn-small black"></i>View Recipe</a> -->
+            <a href="{{ url_for('recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light btn-small black"></i>View Recipe</a>
           </div>
         </div>
       </div>

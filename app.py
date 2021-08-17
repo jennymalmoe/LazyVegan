@@ -139,12 +139,13 @@ def add_recipe():
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_recipe.html", categories=categories)
 
-#@app.route("/recipe/recipe_id>", methods=["GET", "POST"])
-#def recipe(recipe_id):
+@app.route("/recipe/<recipe_id>", methods=["GET", "POST"])
+def recipe(recipe_id):
 
-    #recipe = mongo.db.tasks.find_one({"_id": ObjectId(recipe_id)})
-    #recipe = mongo.db.recipe.find().sort("recipe_name", 1)
-    #return render_template("recipe.html", recipe=recipe)
+    recipe = mongo.db.recipe_collections.find_one({"recipe": ObjectId(recipe_id)})
+    return render_template("recipe_details.html", recipe=recipe)
+
+
 
 
 # How and where to run app
