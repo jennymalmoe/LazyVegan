@@ -3,24 +3,24 @@
 
   <h3 class="black-text center-align thin">Find a Recipe</h3>
   <p class="center-align">In the mood for a juicy Burger? Craving a Pizza? Taco-Time? Look no further! Or I mean... Search for your next meal right here:</p>
-
-  <div class="search row card-panel grey lighten-5">
-    <form action="{{ url_for('search') }}" method="post" class="col s12">
-        <div class="row valign-wrapper center-align">
-            <div class="input-field col s12 m8">
+    <!-- Search bar -->
+    <div class="search row card-panel grey lighten-5">
+      <form action="{{ url_for('search') }}" method="post" class="col s12">
+          <div class="row valign-wrapper center-align">
+              <div class="input-field col s12 m8">
                 <i class="fas fa-search prefix text-darken-4"></i>
                 <input type="text" name="query" id="query" minlength="3" class="validate" required>
                 <label for="query">Search Recipes</label>
-            </div>
-            <div class="col s12 m4">
+              </div>
+              <div class="col s12 m4">
                 <a href="{{ url_for('get_recipe') }}" class="red darken-4 btn text-shadow">Reset</a>
                 <button type="submit" class="green lighten-3 btn text-shadow">
                     <i class="fas fa-search left"></i> Search
                 </button>
-            </div>
-        </div>
-    </form>
-</div>
+              </div>
+          </div>
+      </form>
+    </div>
 
 <h3 class="black-text center-align thin">All Recipes</h3>
   
@@ -28,18 +28,24 @@
      and reducing the flavour! It can be absolutely amazing. If you’re trying to broaden your diet
      and eat more veggies, or cooking for a friend who avoids meat, these recipes are perfect.
      All recipes are fast and easy to follow, and worth doing even if dining alone.</p>
-
-
-
-  <!-- recipe card pancake -->
+  
   <div class="row">
-    <!-- For loop logic of jinja template -->
+    <!-- For loop logic of Jinja template -->
     {% for recipe in recipes %}
+
+
+    
+
   
       <div class="col s4 m4">
         <div class="card hoverable">
           <div class="card-image">
-            <img class="responsive-img" src="static/images/default.jpg">
+            {% if recipe.recipe_img %}
+              <img src="{{ recipe.recipe_img }}" class="responsive-img">
+            {% else %}
+              <img class="responsive-img" src="static/images/default.jpg">
+            {% endif %}
+            
             <span class="card-title card-panel green lighten-3 z-depth-5">{{ recipe.recipe_name }}</span>
 
             {% if recipe.is_gluten_free == "on" %}
@@ -59,7 +65,4 @@
       </div>
   
   {% endfor %}
-
-
-
 {% endblock %}

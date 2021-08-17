@@ -96,9 +96,9 @@ Find and share recipes, get inspired by the recipes and get inspired to add own 
 
 * Color scheme
 
-    The page consists of a white base with black and Island Green as secondary colors. Text and elements such as call to actions buttons and icons are black to make the text/information stand out and be as clear as possible. When hover buttons, they turn to the Island Green color to tie different elements of the sites together. The chosen colour scheme was specifically selected in order to define the vibe of the page. 
+    The page consists of a white base with black and light green as secondary colors. Text and elements such as call to actions buttons and icons are black to make the text/information stand out and be as clear as possible. When hover buttons, they turn to the light green color to tie different elements of the sites together. The chosen colour scheme was specifically selected in order to define the vibe of the page. 
 
-    Green is usually associated with healthy, organic and vegetarian food. The Island Green and white color combination is clean, crisp, and are associated with nature and environmental awareness. The Island Green color has a warm vibe while the supporting soft white lend a modern look. 
+    Green is usually associated with healthy, organic and vegetarian food. The green and white color combination is clean, crisp, and are associated with nature and environmental awareness. The green color has a warm vibe while the supporting soft white lend a modern look. 
     
     Since green is found commonly in nature, it makes it an excellent choice for recipes sites with healthy and plant based foods. Many Health food stores, Salad bars and Vegan restaurants chooses these kind of colors.
 

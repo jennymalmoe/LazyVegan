@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vegan fast food recipes">
+    <title>Lazy Vegan | Fast Food Recipes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" type="text/css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css">
+    <link rel="icon" href="static/images/fries.png" type="image/png"/>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css">
     {% block styles %}
     {% endblock %}
@@ -15,7 +18,7 @@
 <body>
 
     <header>
-        <!-- top navbar -->
+        <!-- Top navbar -->
         <nav class="nav-extended black">
             <div class="nav-wrapper">
             <a href="{{ url_for('get_recipe')}}" class="brand-logo">Lazy Vegan</a>
@@ -36,7 +39,7 @@
             </div>
         </nav>
           
-        <!-- mobile sidenav -->
+        <!-- Mobile sidenav -->
        <ul class="sidenav" id="mobile-demo">
            <li><h4 class="center-align light blue text text darken-2">Lazy Vegan</h4></li>
            <li><a href="{{ url_for('home')}}">Home</a></li>
@@ -54,7 +57,7 @@
     </header>
 
     <section>
-        <!-- flash messages -->
+        <!-- Flash messages -->
         {% with messages = get_flashed_messages() %}
             {% if messages %}
                 {% for message in messages %}
@@ -74,7 +77,7 @@
 
     <button class="z-depth-5" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-    <!-- footer -->
+    <!-- Footer -->
     <footer class="page-footer black center-align thin">
         Copyright©2021 | Jenny Borglin | All rights reserved
     </footer>
