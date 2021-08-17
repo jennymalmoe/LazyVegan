@@ -2,5 +2,15 @@
 {% block content %}
 
 
+<div>
+    <h4 class="recipe_header">Recipe Name: {{ recipe.recipe_name }}</h4>
+    <p><strong>{{ recipe.category_name }}</strong></p>
+    {{ recipe.recipe_img }}
+    <p><strong>Ingredients: {{ recipe.recipe_ingredients }}</strong></p>
+    <p><strong>Directions: {{ recipe.recipe_directions }}</strong></p>
+    {{ recipe.gluten_free }}
+    <p><em>This recipe was added by: {{ recipe.created_by_name }}</em></p>
+</div>  
+
 
 {% endblock %}

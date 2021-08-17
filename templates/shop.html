@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
 
-  <div><h1 class="black-text center-align">Cook & Look Like a Pro!</h1></div>
+  <div><h1 class="black-text center-align thin">Cook Like a Pro!</h1></div>
 
-  <!-- recipe card pancake -->
+ 
   <div class="row">
     <!-- For loop logic of jinja template -->
     {% for recipe in recipes %}
@@ -30,11 +30,11 @@
             <img class="responsive-img" src="static/images/zip_bag.jpg">
           </div>
           <div class="card-content">
-            <p><strong>Silicone Ziplock Pouch.</strong><br>If you use zip lock bags then you will love this
-                silicone reusable pouch, an ideal alternative to plastic ziplock bags! </p>
+            <p><strong>Silicone Ziplock Pouch</strong><br>If you use zip lock bags then you will love this
+                silicone reusable pouch, an ideal alternative to plastic ziplock bags.<br><br>Choose between many different sizes and shapes.  </p>
           </div>
           <div class="card-action">
-            <a href="https://www.peacewiththewild.co.uk/product/silicone-ziplock-pouch-1000ml/" class="waves-effect waves-light btn-small black"></i>Buy It</a>
+            <a href="https://www.peacewiththewild.co.uk/product/silicone-ziplock-pouch-1000ml/" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
           </div>
         </div>
       </div>
@@ -47,12 +47,12 @@
           <img class="responsive-img" src="static/images/bambu.jpeg">
         </div>
         <div class="card-content">
-          <p><strong>Bamboo Cutlery Set.</strong><br>Handy bamboo travel utensil set by Bambu, perfect for an on-the-go lifestyle.
+          <p><strong>Bamboo Cutlery Set</strong><br>Handy bamboo travel utensil set by Bambu, perfect for an on-the-go lifestyle.
              Each item is made from a single piece of organic bamboo with a natural finish.
              USDA Certified Organic bamboo and Ethically & sustainably sourced.</p>
         </div>
         <div class="card-action">
-          <a href="https://www.peacewiththewild.co.uk/product/bambu-bamboo-travel-utensils/" class="waves-effect waves-light btn-small black"></i>Buy It</a>
+          <a href="https://www.peacewiththewild.co.uk/product/bambu-bamboo-travel-utensils/" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
         </div>
       </div>
     </div>
@@ -67,10 +67,10 @@
         <div class="card-content">
           <p><strong>Cotton Bowl Cover</strong><br>These reusable and washable cotton bowl covers fit nicely on
             mixing and serving bowls. The elasticated cotton once stretched over
-            the bowl will leave it tightly covered, leaving no gaps. GOTS certified organic cotton. Handmade in Canada</p>
+            the bowl will leave it tightly covered, leaving no gaps. GOTS certified organic cotton.</p>
         </div>
         <div class="card-action">
-          <a href="https://www.peacewiththewild.co.uk/product/your-green-kitchen-medium-cotton-bowl-cover/" class="waves-effect waves-light btn-small black"></i>Buy It</a>
+          <a href="https://www.peacewiththewild.co.uk/product/your-green-kitchen-medium-cotton-bowl-cover/" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
         </div>
       </div>
     </div>
@@ -90,7 +90,7 @@
           <p>{{ recipe.recipe_directions }}</p>
         </div>
         <div class="card-action">
-          <a href="https://www.kitchenaid.com/countertop-appliances/stand-mixers/tilt-head-stand-mixers/p.artisan-series-5-quart-tilt-head-stand-mixer.ksm150pspt.html?" class="waves-effect waves-light btn-small black"></i>Buy It</a>
+          <a href="https://www.kitchenaid.com/countertop-appliances/stand-mixers/tilt-head-stand-mixers/p.artisan-series-5-quart-tilt-head-stand-mixer.ksm150pspt.html?" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
         </div>
       </div>
     </div>
@@ -103,10 +103,10 @@
           </div>
           <div class="card-content">
             <p><strong>Kitchen Aid</strong><br>Whether you need 9 dozen of your signature chocolate chips cookies or shredded tofu for
-            Taco Tuesday with friends and family, the KitchenAid has the capacity for every occasion.</p>
+            Taco Tuesday with friends, the KitchenAid has the capacity for every occasion.</p>
           </div>
           <div class="card-action">
-            <a href="https://www.kitchenaid.com/countertop-appliances/stand-mixers/tilt-head-stand-mixers/p.artisan-series-5-quart-tilt-head-stand-mixer.ksm150pspt.html?" class="waves-effect waves-light btn-small black"></i>Buy It</a>
+            <a href="https://www.kitchenaid.com/countertop-appliances/stand-mixers/tilt-head-stand-mixers/p.artisan-series-5-quart-tilt-head-stand-mixer.ksm150pspt.html?" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
           </div>
         </div>
       </div>
@@ -124,7 +124,7 @@
             more flavorful meals.</p>
         </div>
         <div class="card-action">
-          <a href="https://www.surlatable.com/le-creuset-signature-275qt-oval-french-oven/PRO-3486412.html" class="waves-effect waves-light btn-small black"></i>Buy It</a>
+          <a href="https://www.surlatable.com/le-creuset-signature-275qt-oval-french-oven/PRO-3486412.html" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
         </div>
       </div>
     </div>
@@ -137,11 +137,11 @@
           <img class="responsive-img" src="static/images/kitchen.jpeg">
         </div>
         <div class="card-content">
-          <p><strong>Cookware</strong><br>Choose from a superb assortment of accessories exclusively
-            for the kitchen.This kitchenware makes life in the kitchen that little bit easier.</p>
+          <p><strong>Cookware</strong><br>Choose from a superb assortment of accessories
+            for the kitchen.<br><br>This kitchenware makes life in the kitchen that little bit easier. </p>
         </div>
         <div class="card-action">
-          <a href="https://www.westelm.co.uk/tableware/tableware-kitchen/kitchenware" class="waves-effect waves-light btn-small black"></i>Buy It</a>
+          <a href="https://www.westelm.co.uk/tableware/tableware-kitchen/kitchenware" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
         </div>
       </div>
     </div>

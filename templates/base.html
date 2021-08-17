@@ -20,7 +20,7 @@
             <div class="nav-wrapper">
             <a href="{{ url_for('get_recipe')}}" class="brand-logo">Lazy Vegan</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
-            <ul class="right hide-on-med-and-down">
+            <ul class="right hide-on-med-and-down thin">
                 <li><a href="{{ url_for('home')}}">Home</a></li>
                 <li><a href="{{ url_for('get_recipe')}}">Recipes</a></li>
                 <li><a href="{{ url_for('shop')}}">Cook Like a Pro</a></li>
@@ -71,8 +71,11 @@
         {% endblock %}
     </main>
 
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     <!-- footer -->
-    <footer class="page-footer black center-align">
+    <footer class="page-footer black center-align thin">
         Copyright©2021 | Jenny Borglin | All rights reserved
     </footer>
    

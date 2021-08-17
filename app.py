@@ -24,11 +24,12 @@ def home():
     home = mongo.db.home.find()
     return render_template("home.html", home=home)
 
-@app.route("/")
+
 @app.route("/get_recipe")
 def get_recipe():
     recipes = mongo.db.recipe.find()
     return render_template("recipe.html", recipes=recipes)
+
 
 @app.route("/search", methods=["GET", "POST"])
 def search():
@@ -36,11 +37,12 @@ def search():
     recipes = list(mongo.db.recipe.find({"$text": {"$search": query}}))
     return render_template("recipe.html", recipes=recipes)
 
-@app.route("/")
+
 @app.route("/shop")
 def shop():
     home = mongo.db.shop.find()
     return render_template("shop.html", shop=shop)
+
 
 @app.route("/register", methods=["GET", "POST"])
 def register():
@@ -108,6 +110,7 @@ def profile(username):
 
     return redirect(url_for("login"))
 
+
 @app.route("/logout")
 def logout():
     # remove user from session cookies
@@ -125,6 +128,7 @@ def add_recipe():
             "recipe_name": request.form.get("recipe_name"),
             "recipe_img": request.form.get("recipe_img"),
             "recipe_url": request.form.get("recipe_url"),
+            "recipe_ingredients": request.form.get("recipe_ingredients"),
             "recipe_directions": request.form.get("recipe_directions"),
             "gluten_free": gluten_free, 
             "created_by_id": session["user_id"],
@@ -139,13 +143,13 @@ def add_recipe():
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("add_recipe.html", categories=categories)
 
+
 @app.route("/recipe/<recipe_id>", methods=["GET", "POST"])
 def recipe(recipe_id):
 
-    recipe = mongo.db.recipe_collections.find_one({"recipe": ObjectId(recipe_id)})
+    recipe = mongo.db.recipe.find_one({"_id": ObjectId(recipe_id)})
+    print(recipe)
     return render_template("recipe_details.html", recipe=recipe)
-
-
 
 
 # How and where to run app
