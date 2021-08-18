@@ -122,7 +122,7 @@ def logout():
 @app.route("/add_recipe.html", methods=["GET", "POST"])
 def add_recipe():
     if request.method == "POST":
-        gluten_free = "on" if request.form.get("gluten_free") else "off"
+        gluten_free = "Gluten Free" if request.form.get("gluten_free") else "Contains Gluten"
         recipe = {
             "category_name": request.form.get("category_name"),
             "recipe_name": request.form.get("recipe_name"),
@@ -146,9 +146,32 @@ def add_recipe():
 
 @app.route("/edit_recipe/<recipe_id>", methods=["GET", "POST"])
 def edit_recipe(recipe_id):
+    if request.method == "POST":
+        gluten_free = "on" if request.form.get("gluten_free") else "off"
+        submit = {
+            "category_name": request.form.get("category_name"),
+            "recipe_name": request.form.get("recipe_name"),
+            "recipe_img": request.form.get("recipe_img"),
+            "recipe_url": request.form.get("recipe_url"),
+            "recipe_ingredients": request.form.get("recipe_ingredients"),
+            "recipe_directions": request.form.get("recipe_directions"),
+            "gluten_free": gluten_free, 
+            "created_by_id": session["user_id"],
+            "created_by_name": session["user"]
+        }
+        mongo.db.recipe.update({"_id": ObjectId(recipe_id)}, submit)
+        flash("Recipe Successfully Updated")
+        
     recipe = mongo.db.recipe.find_one({"_id": ObjectId()})
     categories = mongo.db.categories.find().sort("category_name", 1)
     return render_template("edit_recipe.html", recipe=recipe, categories=categories)
+
+
+@app.route("/delete_recipe/<recipe_id>")
+def delete_recipe(recipe_id):
+    mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
+    flash("Recipe Successfully Deleted")
+    return redirect(url_for("get_recipe"))
 
 
 @app.route("/recipe/<recipe_id>", methods=["GET", "POST"])
