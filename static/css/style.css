@@ -1,22 +1,27 @@
+/* --- Font Import --- */
+@import url('https://fonts.googleapis.com/css2?family=Copse&family=Major+Mono+Display&display=swap');
+
 /* General */
+h1, h3, h4 {
+    font-family: Major Mono Display;
+}
+
 .flashes h4 {
     line-height: 2;
-    font-family: pacifico;
+    
 }
 
 /* Navbar */
+
 nav .brand-logo {
     padding-left: 60px;
-    font-family: pacifico;
+    font-family: Major Mono Display;
+
 }
 
 nav ul li:hover {
     background-color: rgb(157, 247, 179);
  }
-
-#headline {
-    font-family: pacifico;
-}
 
 /* Home page img and text */
 .girl {
@@ -24,6 +29,8 @@ nav ul li:hover {
 }
 
 .home-text {
+   padding-top: 80px;
+   padding-left: 40px;
    
 }
 
@@ -34,7 +41,7 @@ nav ul li:hover {
 }
 
 .profile {
-    font-family: pacifico;
+    font-family: Major Mono Display;
 }
 
 /* Switch in Add Recipe form */

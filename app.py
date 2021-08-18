@@ -52,7 +52,7 @@ def register():
             {"username": request.form.get("username").lower()})
 
         if existing_user:
-            flash("Username already exists")
+            flash("username already exists")
             return redirect(url_for("register"))
 
         register = {
@@ -63,7 +63,7 @@ def register():
 
         # put the new user into 'session' cookie
         session["user"] = request.form.get("username").lower()
-        flash("Registration Successful!")
+        flash("registration successful!")
         return redirect(url_for("profile", username=session["user"]))
 
     return render_template("register.html")
@@ -83,18 +83,18 @@ def login():
                         session["user"] = request.form.get("username").lower()
                         session["user_id"] = str(existing_user["_id"])
                         print(session)
-                        flash("Welcome, {}".format(
+                        flash("welcome, {}".format(
                             request.form.get("username")))
                         return redirect(url_for(
                             "profile", username=session["user"]))
             else:
                 # invalid password match
-                flash("Incorrect Username and/or Password")
+                flash("incorrect username and/or password")
                 return redirect(url_for("login"))
 
         else:
             # username doesn't exist
-            flash("Incorrect Username and/or Password")
+            flash("incorrect username and/or password")
             return redirect(url_for("login"))
 
     return render_template("login.html")
@@ -106,15 +106,22 @@ def profile(username):
     username = mongo.db.users.find_one(
         {"username": session["user"]})["username"]
     if session["user"]:
-        return render_template("profile.html", username=username)
+        recipes = list(mongo.db.recipe.find({'created_by_name': username}))
+        return render_template("profile.html", username=username, recipes=recipes)
+        
+
 
     return redirect(url_for("login"))
+
+
+
+
 
 
 @app.route("/logout")
 def logout():
     # remove user from session cookies
-    flash("You have been logged out")
+    flash("you have been logged out")
     session.pop("user")
     return redirect(url_for("login"))
 
@@ -136,7 +143,7 @@ def add_recipe():
         }
         print(session)
         mongo.db.recipe.insert_one(recipe)
-        flash("Recipe Successfully Added")
+        flash("recipe successfully added")
         
         return redirect(url_for("get_recipe"))
 
@@ -160,7 +167,7 @@ def edit_recipe(recipe_id):
             "created_by_name": session["user"]
         }
         mongo.db.recipe.update({"_id": ObjectId(recipe_id)}, submit)
-        flash("Recipe Successfully Updated")
+        flash("recipe successfully updated")
         
     recipe = mongo.db.recipe.find_one({"_id": ObjectId()})
     categories = mongo.db.categories.find().sort("category_name", 1)
@@ -170,7 +177,7 @@ def edit_recipe(recipe_id):
 @app.route("/delete_recipe/<recipe_id>")
 def delete_recipe(recipe_id):
     mongo.db.recipes.remove({"_id": ObjectId(recipe_id)})
-    flash("Recipe Successfully Deleted")
+    flash("recipe successfully deleted")
     return redirect(url_for("get_recipe"))
 
 

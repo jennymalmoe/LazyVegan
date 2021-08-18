@@ -5,7 +5,7 @@
         <div class="col s12 m8 offset-m2">
             <div class="card-panel">
                <h3 class="center-align black-text profile">
-                   {{ username }}'s Profile
+                   {{ username }}'s profile
                </h3> 
             </div>
         </div>
@@ -14,7 +14,7 @@
     <!-- Personal information block -->
     <main class="container">
         <div class="row user-profile-form">
-            <h3 class="center-align thin">Personal information</h3>
+            <h3 class="center-align thin">personal information</h3>
         </div>
     </main>
 
@@ -30,12 +30,43 @@
     {% endif %}
 
     <!-- When User has added Recipes -->
-    {% for recipe in recipes %}
-        <div class="col s3 center-align">
-            <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light green lighten-3 btn-small">Edit</a>
-            <a href="" class="waves-effect waves-light red darken-4 btn-small">Delete</a>
-        </div>
+    
+
+        <div class="row">
+            <!-- Jinja loop -->
+            {% for recipe in recipes %}
+          
+              <div class="col s4 m4">
+                <div class="card hoverable">
+                  <div class="card-image">
+                    {% if recipe.recipe_img %}
+                      <img src="{{ recipe.recipe_img }}" class="responsive-img">
+                    {% else %}
+                      <img class="responsive-img" src="static/images/default.jpg">
+                    {% endif %}
+                    
+                    <span class="card-title card-panel green lighten-3 z-depth-5">{{ recipe.recipe_name }}</span>
+        
+                    {% if recipe.is_gluten_free == "on" %}
+                            <i class="fas fa-exclamation-circle light-blue-text text-lighten-2 tooltipped"
+                                data-position="right" data-tooltip="Gluten Free!"></i>
+                    {% endif %}
+        
+                  </div>
+                  <div class="card-content">
+                    <p>{{ recipe.category_name }} suggestion</p>
+                    <p><em>Added By:  {{ recipe.created_by_name }}</em></p>
+                  </div>
+                  <div class="card-action">
+                    <a href="{{ url_for('recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light btn-small black"></i>View Recipe</a>
+                  </div>
+                </div>
+              </div>
+
     {% endfor %}
+
+
+
 
 
 {% endblock %}
