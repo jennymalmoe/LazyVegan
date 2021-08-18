@@ -11,15 +11,30 @@
         </div>
     </div>
 
+    <!-- Personal information block -->
     <main class="container">
-        <!-- Personal information block -->
         <div class="row user-profile-form">
             <h3 class="center-align thin">Personal information</h3>
-            
-
-
-
-
         </div>
     </main>
+
+
+    <!-- When User hasn't added any Recipes -->
+    {% if recipes|length == 0 %}
+        <div class="row">
+            <div class="col-12 profile-text center-align">
+              <p>Share Your favourite recipe with Us!</p>
+              <a href="{{ url_for('add_recipe') }}" class="waves-effect waves-light green lighten-3 btn">Add a recipe</a>
+            </div>
+        </div>
+    {% endif %}
+
+    <!-- When User has added Recipes -->
+    <div class="col s3 center-align">
+    <a href="" class="waves-effect waves-light green lighten-3 btn-small">Edit</a>
+    <a href="" class="waves-effect waves-light red darken-4 btn-small">Delete</a>
+    </div>
+
+
+
 {% endblock %}
