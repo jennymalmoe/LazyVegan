@@ -57,7 +57,7 @@ Create a web application that allows users to:
 * Edit their recipes (UPDATE)
 * Delete their recipes (DELETE)
     
-In addition to the goals above; also to promote a brand of cooking tools by linking them to the recipes. 
+In addition to the goals above; also to promote a brand of natural, eco-friendly and sustainable kitchen ware that goes hand in hand with Lazy Vegan approach. 
 
 Eventually the recipe database will increase in both recipes and users/visitors. The site offer users to interact by adding their own recipes that makes the user feel like being a part of "the community". An important business goal is to be able to contact users using their provided contact information, to offer them additional sales/marketing/offers. 
 
@@ -109,7 +109,7 @@ Find and share recipes, get inspired by the recipes and get inspired to add own 
     Major Mono Display is a monospaced geometric sans serif all-uppercase typeface which also has a complete set of constructivist display characters with a playful attitude. This font is a great choice for playful web typography, especially at large point-sizes. Major Mono Display is a clean but charmig and unconventional font that also gives the site a relaxed vibe. The combination of these fonts represents both the healthy, vegan side aswell as the relaxed fast food approach. 
 
 * Imagery
-    Images and the choices of the images is an important component of this site. Websites with eye catching, beautiful images that appeal to the public at first glance, tends to get much more views and interests than text dominated sites. 
+    Images and the choices of the images is an important component of this site. I chose contemporary, clean images that appeal to the target group. I have four appealing images at the home page to catch the visitors intrerest right away. 
 
 * Icons
     Icons used in footer to set the tone for the sites design approach.(ÄNDRA)

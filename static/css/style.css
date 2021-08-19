@@ -33,6 +33,7 @@ nav ul li:hover {
 
 .home-text {
    padding-top: 120px;
+   padding-left: 30px;
 }
 
 /* Searchbar in Recipe page */
@@ -40,6 +41,9 @@ nav ul li:hover {
     margin-top: 50px;
     margin-bottom: 30px;
 }
+
+
+
 
 .profile {
     font-family: Major Mono Display;
@@ -54,7 +58,14 @@ nav ul li:hover {
     background-color: rgb(157, 247, 179);
  }
 
- /* Img in form */
+/* Img in form */
+
+.card .card-image img {
+    min-height: 600px;
+    max-height: 600px;
+    object-fit: cover;
+}
+
  .img-container {
     background-image: -webkit-image-set(url("../images/white-texture.png") 1x, url("../images/white-texture-sm.png") 2x);
     background-repeat: no-repeat;
@@ -116,6 +127,12 @@ nav ul li:hover {
     color: #000000;
 }
 
+.addedby {
+    text-align: center;
+    background-color: rgb(250, 104, 6);
+    color: #FFFFFF;
+}
+
 #myBtn {
     display: none; 
     position: fixed; 
@@ -128,7 +145,7 @@ nav ul li:hover {
     color: white; 
     cursor: pointer; 
     padding: 20px; 
-    border-radius: 100px; 
+    border-radius: 1px; 
     font-size: 18px; 
   }
   
@@ -147,3 +164,12 @@ nav ul li:hover {
 .category-name {
     font-size: 25px;
 }
+
+ .responsive-img {
+    object-fit: contain;
+ }
+
+/* Recipe cards in Recipe page */
+ .cards {
+     margin: 0px;
+ }

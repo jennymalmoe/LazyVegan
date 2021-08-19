@@ -22,17 +22,15 @@
       </form>
     </div>
 
-<h3 class="black-text center-align thin">recipes</h3>
-  
+  <!-- all recipe cards -->
+  <h3 class="black-text center-align thin">recipes</h3>
   <p class="center-align">From juicy and succulent burgers to warm and salty French fries,
     we have everything you need for the perfect vegan meal. Enjoy! 
-    </p>
+  </p>
   
   <div class="row">
-    <!-- Jinja loop -->
     {% for recipe in recipes %}
-  
-      <div class="col s4 m4">
+      <div class="col s12 m6 l4 cards">
         <div class="card hoverable">
           <div class="card-image">
             {% if recipe.recipe_img %}
@@ -40,14 +38,14 @@
             {% else %}
               <img class="responsive-img" src="static/images/default.jpg">
             {% endif %}
-            
+        
             <span class="card-title card-panel green lighten-3 z-depth-5">{{ recipe.recipe_name }}</span>
 
             {% if recipe.is_gluten_free == "on" %}
-                    <i class="fas fa-exclamation-circle light-blue-text text-lighten-2 tooltipped"
-                        data-position="right" data-tooltip="Gluten Free!"></i>
-                {% endif %}
-
+                  <i class="fas fa-exclamation-circle light-blue-text text-lighten-2 tooltipped"
+                      data-position="right" data-tooltip="Gluten Free!"></i>
+            {% endif %}
+    
           </div>
           <div class="card-content">
             <p>{{ recipe.category_name }} suggestion</p>
@@ -57,7 +55,8 @@
             <a href="{{ url_for('recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light btn-small black"></i>View Recipe</a>
           </div>
         </div>
-      </div>
-  
-  {% endfor %}
+      </div>  
+    {% endfor %}
+  </div>
+    
 {% endblock %}

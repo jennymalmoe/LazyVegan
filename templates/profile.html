@@ -31,14 +31,15 @@
 
     <!-- When User has added Recipes -->
     
-
+    
         <div class="row">
-            <!-- Jinja loop -->
-            {% for recipe in recipes %}
           
+            {% for recipe in recipes %}
+            
               <div class="col s4 m4">
                 <div class="card hoverable">
                   <div class="card-image">
+                    <p class="addedby">Recipe added by {{ username }}!</p>
                     {% if recipe.recipe_img %}
                       <img src="{{ recipe.recipe_img }}" class="responsive-img">
                     {% else %}
