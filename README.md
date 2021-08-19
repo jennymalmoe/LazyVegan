@@ -104,7 +104,9 @@ Find and share recipes, get inspired by the recipes and get inspired to add own 
 
 * Typography
 
-    Copse font is the main font used throughout the site with Pacifico and Staatliches as headers fonts. Copse is a low-contrast slab serif that is a little soft around the edges, but with clear and sturdy posture (https://fonts.google.com/specimen/Copse?category=Serif&query=copse#glyphs) and feels modern and clean. It's subtle and it doesn´t take any attention away from the content. Pacifico is a fun brush script handwriting font that gives the site an easy going vibe. Staatliches is a clean but charmig and unconventional font that also gives the site a relaxed vibe. The combination of the three fonts represents both the healty, vegan side aswell as the relaxed fast food approach. 
+    Roboto font is the main font used throughout the site with Major Mono Display as headers font. Roboto has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. It's subtle and it doesn´t take any attention away from the content. This makes Roboto a more natural reading rhythm more commonly found in humanist and serif types. 
+    
+    Major Mono Display is a monospaced geometric sans serif all-uppercase typeface which also has a complete set of constructivist display characters with a playful attitude. This font is a great choice for playful web typography, especially at large point-sizes. Major Mono Display is a clean but charmig and unconventional font that also gives the site a relaxed vibe. The combination of these fonts represents both the healthy, vegan side aswell as the relaxed fast food approach. 
 
 * Imagery
     Images and the choices of the images is an important component of this site. Websites with eye catching, beautiful images that appeal to the public at first glance, tends to get much more views and interests than text dominated sites. 
