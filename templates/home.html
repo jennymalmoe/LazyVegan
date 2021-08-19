@@ -8,12 +8,12 @@
       <div class="row">
         <div class="col-6 my-5">
             <img class="girl responsive-img col-5" src="static/images/girl.jpg" alt="Blond young woman eating pizza">
-            <p class="home-text col-12 center-align">There is no need to spend unnecessary time and money taking your family
-            out to dinner when you can make restaurant quality dinners right in your own kitchen.
-            These fast food recipes are extremely simple to make and taste great.
-            No one will complain about what they will be eating for dinner when
-            you serve up these incredible dishes. From juicy and succulent burgers to warm and salty French fries,
-            we have everything you need for the perfect restaurant-style dinner at home.<br>Enjoy!</p>
+            <p class="home-text col-12 center-align">Try out our tasty vegan recipes! Vegan cooking is not about taking the meat away
+              and reducing the flavour! It can be absolutely amazing. If you’re trying to broaden your diet
+              and eat more veggies, or cooking for a friend who avoids meat, these recipes are perfect.
+              All recipes are fast and easy to follow, and worth doing even if dining alone.<br><br>
+              Sharing is caring! Want to share your favourite recipe with other Lazy Vegans?
+              Register/Log in to add your your best-loved recipe and help us build up the crème de la crème (vegan crème of course) of vegan cooking!</p>
           </div>   
       </div>        
     </div>
@@ -22,25 +22,7 @@
     
 <!-- Popular recipes example 1 --> 
 <div class="row">
-    <div class="col s4 m4">
-      <div class="card hoverable">
-        <div class="card-image">
-          <img class="responsive-img" src="static/images/pancake.jpg" alt="Someone is pouring syrup on pancakes">
-          <span class="card-title card-panel green lighten-3 z-depth-5">Vegan Pancakes</span>
-        </div>
-        <div class="card-content">
-          <p>These quick and easy pancakes require just 6 ingredients. 
-             Perfect for a lazy weekend morning! Melt-in-your-mouth, easy, light and fluffy 
-             vegan pancakes.</p>
-        </div>
-        <div class="card-action">
-          <a href="{{ url_for('get_recipe')}}" class="waves-effect waves-light btn-small black"></i>See All of Our Recipes</a>
-        </div>
-      </div>
-    </div>
-  
-  <!-- Popular recipes example 2 -->
- <div class="col s4 m4">
+  <div class="col s4 m4">
     <div class="card hoverable">
       <div class="card-image">
         <img class="responsive-img" src="static/images/burger.png" alt="A plate of hamburger with fries">
@@ -55,8 +37,27 @@
       </div>
     </div>
   </div>
+  
+  <!-- Popular recipes example 2 -->
+  <div class="col s4 m4">
+    <div class="card hoverable">
+      <div class="card-image">
+        <img class="responsive-img" src="static/images/pizza.png" alt="Someone is pouring syrup on pancakes">
+        <span class="card-title card-panel green lighten-3 z-depth-5">Caprece Pizza</span>
+      </div>
+      <div class="card-content">
+        <p>This vegan caprese pizza is a dream come true. Crisp and bubbly pizza crust is topped with zesty garlic,
+          homemade cashew mozzarella and lots of fresh basil</p>
+      </div>
+      <div class="card-action">
+        <a href="{{ url_for('get_recipe')}}" class="waves-effect waves-light btn-small black"></i>See All of Our Recipes</a>
+      </div>
+    </div>
+  </div>
 
-<!-- Popular recipes example 3 -->
+ 
+
+  <!-- Popular recipes example 3 -->
   <div class="col s4 m4">
     <div class="card hoverable">
       <div class="card-image">

@@ -5,7 +5,7 @@ body {
     font-family: Roboto;
 }
 
-h1, h3, h4 {
+h1, h3, h4, h5 {
     font-family: Major Mono Display;
 }
 
@@ -32,9 +32,7 @@ nav ul li:hover {
 }
 
 .home-text {
-   padding-top: 80px;
-   padding-left: 40px;
-   
+   padding-top: 120px;
 }
 
 /* Searchbar in Recipe page */
@@ -144,4 +142,8 @@ nav ul li:hover {
 
 .recipe_header {
     font-family: Roboto;
+}
+
+.category-name {
+    font-size: 25px;
 }

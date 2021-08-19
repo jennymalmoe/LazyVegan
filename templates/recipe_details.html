@@ -4,8 +4,8 @@
 
 <div>
     <h4 class="recipe_header">{{ recipe.recipe_name }}</h4>
-    <h5 class="thin">{{ recipe.category_name }}</h5>
-    <img src="{{ recipe.recipe_img }}">
+    <p class="category-name">{{ recipe.category_name }}</p>
+    <img src="{{ recipe.recipe_img }}" onerror="this.src='/static/images/default.jpg'"> 
     <p>Ingredients:<br> {{ recipe.recipe_ingredients }}</p>
     <p>Directions:<br> {{ recipe.recipe_directions }}</p>
     <em>{{ recipe.gluten_free }}</em>
