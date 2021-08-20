@@ -1,6 +1,7 @@
-/* --- Font Import --- */
-
+/* Font Import */
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto:ital,wght@0,300;0,700;1,900&display=swap');
+
+/* General */
 body {
 	font-family: Roboto;
 }
@@ -21,7 +22,6 @@ h5 {
 }
 
 /* Navbar */
-
 nav .brand-logo {
 	padding-left: 60px;
 	font-family: Major Mono Display;
@@ -31,9 +31,7 @@ nav ul li:hover {
 	background-color: rgb(157, 247, 179);
 }
 
-
 /* Home page img and text */
-
 .girl {
 	float: left;
 }
@@ -45,19 +43,12 @@ nav ul li:hover {
 
 
 /* Searchbar in Recipe page */
-
 .search {
 	margin-top: 50px;
 	margin-bottom: 30px;
 }
 
-.profile {
-	font-family: Major Mono Display;
-}
-
-
 /* Switch in Add Recipe form */
-
 .switch label input[type=checkbox]:checked+.lever {
 	background-color: #030303;
 }
@@ -66,9 +57,7 @@ nav ul li:hover {
 	background-color: rgb(157, 247, 179);
 }
 
-
 /* Img in form */
-
 .card .card-image img {
 	min-height: 600px;
 	max-height: 600px;
@@ -118,7 +107,6 @@ nav ul li:hover {
 
 
 /* Sticky Footer */
-
 body {
 	display: flex;
 	min-height: 100vh;
@@ -133,16 +121,14 @@ main {
 	padding-bottom: 20px;
 }
 
-
 /* Profile */
-
 .recipe_header {
 	color: #000000;
 }
 
 .addedby {
 	text-align: center;
-	background-color: rgb(250, 104, 6);
+	background-color: rgb(250, 165, 6);
 	color: #FFFFFF;
 }
 
@@ -170,6 +156,7 @@ main {
 	margin: 5px;
 }
 
+/* Recipe details */
 .recipe_header {
 	font-family: Roboto;
 }
@@ -182,17 +169,12 @@ main {
 	object-fit: contain;
 }
 
-
 /* Recipe cards in Recipe page */
 .cards {
 	margin: 0px;
 }
 
 /* If user added the recipe */
-#rec-btns {
-    padding: 20px 10px 5px 10px;
-    text-align: center;
-}
 .recipe-btn {
     display: flex;
     justify-content: center;
