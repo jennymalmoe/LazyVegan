@@ -3,7 +3,7 @@
 
 [View GitHub repository here!](https://github.com/jennymalmoe/###)
 
-![site on different devices](assets/images/mock_up.png) 
+![site on different devices](static/images/mock_up.png) 
 
 Super quick recipes for when you're feeling lazy.
 
@@ -14,10 +14,10 @@ Super quick recipes for when you're feeling lazy.
 ___
 
 1. [**User Experience**](#ux)
-* Project Goals
-* Business Goals
-* User Goals
-* User Stories
+    * Project Goals
+    * Business Goals
+    * User Goals
+    * User Stories
     * Design Choices
         * Color scheme
         * Typography
@@ -44,18 +44,18 @@ ___
     * GitHub Pages
     * Forking the GitHub Repository
     * Making a Local Clone
-    
+
 7. [**Credits**](#credits)
     * Code 
     * Content
     * Media
     * Acknowledgements
 
-## UX
-### Project Goals
+# UX
+## Project Goals
 The purpose of this project is to *"...build a full-stack site that allows your users to manage a common dataset about a particular domain"* using HTML, CSS, JavaScript, Python+Flask, MongoDB and possible additional libraries and external APIs.
 
-### Business Goals
+## Business Goals
 Create a web application that allows users to:
     
 * Add their own recipes to the website (CREATE)
@@ -67,10 +67,10 @@ In addition to the goals above; also to promote a brand of natural, eco-friendly
 
 Eventually the recipe database will increase in both recipes and users/visitors. The site offer users to interact by adding their own recipes that makes the user feel like being a part of "the community". The site promotes the vegan life style, showing that it doesn't have to be that hard to eat, even junk food that are vegan. 
 
-### User Goals
+## User Goals
 Find and share recipes, get inspired by the recipes and get inspired to add own recipes by the site which is signals a that a healty lifestyle doesn't have to be difficult. These easy recipes is done with minimal effort and is ready in no time! 
 
-### User Stories
+## User Stories
 
 * First Time Visitor Goals
 
@@ -98,7 +98,7 @@ Find and share recipes, get inspired by the recipes and get inspired to add own 
 
     * As a frequent visitor, I want to check to see if there are any newly added recipes.
 
-### Design Choices
+## Design Choices
 
 * Color scheme
 
@@ -124,18 +124,18 @@ Find and share recipes, get inspired by the recipes and get inspired to add own 
 * Icons
     Icons used in footer to set the tone for the sites design approach.(ÄNDRA)
 
-### Wireframes 
+## Wireframes 
 * [Mobile](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/mobile###) 
 * [Tablet](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/tablet###)
 * [Desktop](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/desktop###)
 
-## 2. Features
+# Features
 
 
-## 3. Database Design
+# Database Design
 MongoDB was used for this project and schema design was created. SE MOVIE BILD(ÄNDRA)
 
-## 4. Technologies Used
+# Technologies Used
 
 * Languages, Frameworks and Libraries
 
@@ -181,15 +181,15 @@ MongoDB was used for this project and schema design was created. SE MOVIE BILD(�
 * [MongoDB](https://www.mongodb.com/3) - used for database functionality.
 * [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) - used to host the database.
 
-## 5. Testing
+# Testing
 Testing information can be found in separate [testing.md file]()
 
-## 6. Deployment
+# Deployment
 * GitHub Pages
 * Forking the GitHub Repository
 * Making a Local Clone
 
-## 7. Credits
+# Credits
 * Code 
 * Content
 * Media

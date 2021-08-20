@@ -23,8 +23,9 @@ h5 {
 
 /* Navbar */
 nav .brand-logo {
-	padding-left: 60px;
+	padding-left: 30px;
 	font-family: Major Mono Display;
+	font-size: 21px;
 }
 
 nav ul li:hover {
