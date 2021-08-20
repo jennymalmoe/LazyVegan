@@ -48,27 +48,22 @@
             <div class="card-action">
                 <a href="{{ url_for('recipe', recipe_id=recipe._id) }}" class="waves-effect waves-light btn-small black">View Recipe</a>
             </div>
+
+            
+
         </div>
     </div>
     {% endfor %}
 </div>
+
 {% endblock %}
 
-<!-- recipe action -->
-{% for task in tasks %}
-    <div class="col s3"></div>
-        {% if session.user|lower == task.created_by|lower %}
-                        <a href="" class="btn-small green accent-4">Done</a>
-                        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small light-blue lighten-1">Edit</a>
-        {% endif %}
-    
 
-                <div class="col-6">
-                    <div class="recipe-btn red-btn">
-                        <a href="#" data-toggle="modal" data-target="#modal-{{ recipe._id }}" aria-label="Delete"><i class="fas fa-trash-alt"></i> Delete</a>
-                    </div>
-                </div>
-    </div>
+
+
+
+
+
             
     
             

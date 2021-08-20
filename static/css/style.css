@@ -1,6 +1,6 @@
 /* --- Font Import --- */
 
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto:ital,wght@0,300;0,700;1,900&display=swap');
 body {
 	font-family: Roboto;
 }
@@ -16,6 +16,9 @@ h5 {
 	line-height: 2;
 }
 
+.my-5 {
+	height: inherit;
+}
 
 /* Navbar */
 
@@ -36,8 +39,8 @@ nav ul li:hover {
 }
 
 .home-text {
-	padding-top: 120px;
-	padding-left: 30px;
+	padding-top: 60px;
+	padding-left: 20px;
 }
 
 
@@ -195,4 +198,8 @@ main {
     justify-content: center;
     margin: auto;
     margin-top: 10px;
+}
+
+.btn-edit {
+	padding-top: 20px;
 }

@@ -18,7 +18,7 @@
 <!-- When User hasn't added any Recipes -->
 {% if recipes|length == 0 %}
 <div class="row">
-    <div class="col-12 profile-text center-align">
+    <div class="col s12 profile-text center-align">
         <p>Oops there are no added recipes by you here. Let's share your favourite recipe right away! </p>
         <a href="{{ url_for('add_recipe') }}" class="waves-effect waves-light green lighten-3 btn">Add a recipe</a>
     </div>
@@ -34,7 +34,7 @@
             {% if recipe.recipe_img %}
             <img src="{{ recipe.recipe_img }}" alt="Recipe image" class="responsive-img">
             {% else %}
-            <img class="responsive-img" alt="Deafult image of a woman eating fries" src="static/images/default.jpg">
+            <img class="responsive-img" alt="Image of a woman eating fries" src="static/images/default.jpg">
             {% endif %}
             <span class="card-title card-panel green lighten-3 z-depth-5">{{ recipe.recipe_name }}</span>
             {% if recipe.is_gluten_free == "on" %}

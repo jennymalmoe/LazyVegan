@@ -115,9 +115,11 @@ Find and share recipes, get inspired by the recipes and get inspired to add own 
     Icons used in footer to set the tone for the sites design approach.(Ã„NDRA)
 
 ### Wireframes 
-* [Mobile](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/mobile) 
-* [Tablet](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/tablet)
-* [Desktop](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/desktop)
+* [Mobile](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/mobile###) 
+* [Tablet](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/tablet###)
+* [Desktop](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/desktop###)
+
+
 
 
 ## 3. Database Design
@@ -126,29 +128,34 @@ MongoDB was used for this project and schema design was created. SE MOVIE BILD(Ã
 ## 4. Technologies Used
 
 * Languages, Frameworks and Libraries
-    * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - used to create the site structure.
-    * [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) - used throughout the project mainly to make site responsive.
-    * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - used to create the styling throughout the site.
-    * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - used for the addition/deletion of ingredients and methods buttons. (STÃ„MMER DET?)
-    * [Python](https://www.python.org/) - used to write the logic that operates the site.
-    * [jQuery](https://jquery.com/) - used to activate the Materialize functionality.
-    * [Flask](https://flask.palletsprojects.com/en/1.1.x/) - used to manage the HTML more efficiently through the use of templates.(SKRIVA OM)
-    * [Materialize](https://materializecss.com/) - library used for styling and responsiveness. 
-    * [Heroku](https://www.heroku.com/home) - used for hosting website.
-    * [MongoDB](https://www.mongodb.com/3) - used for database functionality.
-    * [Google fonts](https://fonts.google.com/) - used to import fonts.
-    * [Font-Awesome](https://fontawesome.com/v4.7/) - used for icons.
 
-
-
+* [BSON](https://bsonspec.org/) - bson.objectid is a required dependency for MongoDB management system.
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - used to create the styling throughout the site.
+* [Google fonts](https://fonts.google.com/) - used to import fonts.
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - used to create the site structure.
+* [Flask](https://flask.palletsprojects.com/en/1.1.x/) - framework used to create and populate the templates.
+* [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - used for the sidenav, back-to-top button, image preview.
+* [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Jinja templating language was used to simplify and display backend data in html.
+* [jQuery](https://jquery.com/) - used to activate the Materialize functionality.
+* [Materialize](https://materializecss.com/) - library used for styling and responsiveness.
+* [PyMongo](https://pypi.org/project/pymongo/) - flask_pymongo was used for interacting with MongoDB database from Python.
+* [Python](https://www.python.org/) - used to write the logic that operates the site.
+* [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/) - used for password hashing and authentication.
+    
+    
 * Tools and Editors
 
-* [Am I Responsive](http://ami.responsivedesign.is/) - used for testing responsiveness of the site and mock up image.
+* [Am I Responsive](http://ami.responsivedesign.is/) - used to validate the responsiveness and mock up image.
 * [Balsamiq](https://balsamiq.com/) - used to create the wireframes.
 * [Chrome DevTools](https://developer.chrome.com/docs/devtools/)  - used Lighthouse to check sites performance and the dev tool to check responsiveness.
 * [Designwizard](https://www.designwizard.com/) - used for inspirations regarding color combinations.
+* [Font-Awesome](https://fontawesome.com/) - used for icons.
 * [FreeIcons](https://freeicons.io/) - used for icon in tab.
-* [Git](https://git-scm.com/) - used for version control.
+* [Git](https://git-scm.com/) - used for version control to commit to Git and push to Heroku.
+* [GitHub](https://github.com/) - remote repository for application code.
+* [Gitpod](https://gitpod.io/) - IDE used for development.
+* [Heroku](https://www.heroku.com/home) - cloud platform used to deploy application.
+* [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Jinja templating language was used to simplify and display backend data in html.
 * [JSHint](https://jshint.com/) - used to test JS code to ensure there were no errors.
 * [Unsplash](https://unsplash.com/) - Images used were obtained from Unsplash.
 * [PEP8](https://www.python.org/dev/peps/pep-0008/) - Used as style guide for Python code.
@@ -159,6 +166,10 @@ MongoDB was used for this project and schema design was created. SE MOVIE BILD(Ã
 * [Visual Studio Code](https://code.visualstudio.com/) - IDE used for code editing.
 * [W3C Validator](https://validator.w3.org/) - used to test HTML code to ensure there were no errors.
 * [W3C Validator CSS](https://validator.w3.org/) - used to test CSS code to ensure there were no errors.
+
+* Database Management
+* [MongoDB](https://www.mongodb.com/3) - used for database functionality.
+* [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) - used to host the database.
 
 ## 5. Testing
 Testing information can be found in separate [testing.md file]()
