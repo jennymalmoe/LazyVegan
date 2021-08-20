@@ -13,39 +13,45 @@ Super quick recipes for when you're feeling lazy.
 
 ___
 
-1. User Experience (UX) (OBS alla ska länkas)
-    * Project Goals
-    * Business Goals
-    * User Goals
-    * User Stories
+1. [**User Experience**](#ux)
+* Project Goals
+* Business Goals
+* User Goals
+* User Stories
     * Design Choices
         * Color scheme
         * Typography
         * Imagery
         * Icons
     * Wireframes
-2. Features
+
+2. [**Features**](#features)
     * Existing Features
     * Features Left to Implement
-3. Database Design
-4. Technologies Used
+
+3. [**Database Design**](#database-design)
+
+4. [**Technologies Used**](#technologies-used)
     * Languages 
     * Frameworks, Libraries & Programs
-5. Testing
+
+5. [**Testing**](#testing)
     * Testing User Stories from User Experience (UX) Section
     * Further Testing
     * Known Bugs
-6. Deployment
+
+6. [**Deployment**](#deployment)
     * GitHub Pages
     * Forking the GitHub Repository
     * Making a Local Clone
-7. Credits
+    
+7. [**Credits**](#credits)
     * Code 
     * Content
     * Media
     * Acknowledgements
 
-## 1. UX
+## UX
 ### Project Goals
 The purpose of this project is to *"...build a full-stack site that allows your users to manage a common dataset about a particular domain"* using HTML, CSS, JavaScript, Python+Flask, MongoDB and possible additional libraries and external APIs.
 
@@ -102,11 +108,15 @@ Find and share recipes, get inspired by the recipes and get inspired to add own 
     
     Since green is found commonly in nature, it makes it an excellent choice for recipes sites with healthy and plant based foods. Many Health food stores, Salad bars and Vegan restaurants chooses these kind of colors.
 
+    ![site on different devices](static/images/color_scheme.png)
+
 * Typography
 
     Roboto font is the main font used throughout the site with Major Mono Display as headers font. Roboto has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. It's subtle and it doesn´t take any attention away from the content. This makes Roboto a more natural reading rhythm more commonly found in humanist and serif types. 
     
     Major Mono Display is a monospaced geometric sans serif all-uppercase typeface which also has a complete set of constructivist display characters with a playful attitude. This font is a great choice for playful web typography, especially at large point-sizes. Major Mono Display is a clean but charmig and unconventional font that also gives the site a relaxed vibe. The combination of these fonts represents both the healthy, vegan side aswell as the relaxed fast food approach. 
+
+    ![site on different devices](static/images/fonts.png)
 
 * Imagery
     Images and the choices of the images is an important component of this site. I chose contemporary, clean images that appeal to the target group. I have four appealing images at the home page to catch the visitors intrerest right away. 
@@ -119,7 +129,7 @@ Find and share recipes, get inspired by the recipes and get inspired to add own 
 * [Tablet](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/tablet###)
 * [Desktop](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/desktop###)
 
-
+## 2. Features
 
 
 ## 3. Database Design
