@@ -107,7 +107,8 @@ def profile(username):
         {"username": session["user"]})["username"]
     if session["user"]:
         recipes = list(mongo.db.recipe.find({'created_by_name': username}))
-        return render_template("profile.html", username=username, recipes=recipes)
+        return render_template("profile.html",
+        username=username, recipes=recipes)
         
 
 

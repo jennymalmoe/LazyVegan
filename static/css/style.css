@@ -1,175 +1,187 @@
 /* --- Font Import --- */
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto:wght@300;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Roboto:wght@300;900&display=swap');
 body {
-    font-family: Roboto;
+	font-family: Roboto;
 }
 
-h1, h3, h4, h5 {
-    font-family: Major Mono Display;
+h1,
+h3,
+h4,
+h5 {
+	font-family: Major Mono Display;
 }
 
 .flashes h4 {
-    line-height: 2;
-    
+	line-height: 2;
 }
+
 
 /* Navbar */
 
 nav .brand-logo {
-    padding-left: 60px;
-    font-family: Major Mono Display;
-
+	padding-left: 60px;
+	font-family: Major Mono Display;
 }
 
 nav ul li:hover {
-    background-color: rgb(157, 247, 179);
- }
+	background-color: rgb(157, 247, 179);
+}
+
 
 /* Home page img and text */
+
 .girl {
-    float: left;
+	float: left;
 }
 
 .home-text {
-   padding-top: 120px;
-   padding-left: 30px;
+	padding-top: 120px;
+	padding-left: 30px;
 }
+
 
 /* Searchbar in Recipe page */
+
 .search {
-    margin-top: 50px;
-    margin-bottom: 30px;
+	margin-top: 50px;
+	margin-bottom: 30px;
 }
-
-
-
 
 .profile {
-    font-family: Major Mono Display;
+	font-family: Major Mono Display;
 }
 
+
 /* Switch in Add Recipe form */
+
 .switch label input[type=checkbox]:checked+.lever {
-    background-color: #030303;
+	background-color: #030303;
 }
 
 .switch label input[type=checkbox]:checked+.lever:after {
-    background-color: rgb(157, 247, 179);
- }
+	background-color: rgb(157, 247, 179);
+}
+
 
 /* Img in form */
 
 .card .card-image img {
-    min-height: 600px;
-    max-height: 600px;
-    object-fit: cover;
+	min-height: 600px;
+	max-height: 600px;
+	object-fit: cover;
 }
 
- .img-container {
-    background-image: -webkit-image-set(url("../images/white-texture.png") 1x, url("../images/white-texture-sm.png") 2x);
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-    margin: 0 auto 1rem auto;
-    padding: 15px;
-    max-width: 80%;
-    font-family: var(--accent-font);
-    font-size: 1.3em;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-
-    -webkit-box-shadow: var(--dark-box) 0px 0 10px;
-    -moz-box-shadow: var(--dark-box) 0 0 10px;
-    box-shadow: var(--dark-box) 0 0 10px;
+.img-container {
+	background-image: -webkit-image-set(url("../images/white-texture.png") 1x, url("../images/white-texture-sm.png") 2x);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	margin: 0 auto 1rem auto;
+	padding: 15px;
+	max-width: 80%;
+	font-family: var(--accent-font);
+	font-size: 1.3em;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-box-shadow: var(--dark-box) 0px 0 10px;
+	-moz-box-shadow: var(--dark-box) 0 0 10px;
+	box-shadow: var(--dark-box) 0 0 10px;
 }
+
 .img-container p {
-    margin: 1px;
+	margin: 1px;
 }
+
 .img-window {
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    max-height: 15rem;
-    max-width: 100%;    
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	max-height: 15rem;
+	max-width: 100%;
 }
+
 .new-img {
-    /* changed using onclick function */
-    display: none;
+	/* changed using onclick function */
+	display: none;
 }
 
- /* Sticky Footer */
- body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
 
-  main {
-    flex: 1 0 auto;
-  }
+/* Sticky Footer */
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
 
 .page-footer {
-    padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
+
 /* Profile */
+
 .recipe_header {
-    color: #000000;
+	color: #000000;
 }
 
 .addedby {
-    text-align: center;
-    background-color: rgb(250, 104, 6);
-    color: #FFFFFF;
+	text-align: center;
+	background-color: rgb(250, 104, 6);
+	color: #FFFFFF;
 }
 
 #myBtn {
-    display: none; 
-    position: fixed; 
-    bottom: 20px; 
-    right: 30px; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
-    background-color: rgb(157, 247, 179);  
-    color: white; 
-    cursor: pointer; 
-    padding: 20px; 
-    border-radius: 1px; 
-    font-size: 18px; 
-  }
-  
-  #myBtn:hover {
-    background-color: rgb(207, 247, 217);
-  }
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: rgb(157, 247, 179);
+	color: white;
+	cursor: pointer;
+	padding: 20px;
+	border-radius: 1px;
+	font-size: 18px;
+}
+
+#myBtn:hover {
+	background-color: rgb(207, 247, 217);
+}
 
 .btn-small {
-    margin: 5px;
+	margin: 5px;
 }
 
 .recipe_header {
-    font-family: Roboto;
+	font-family: Roboto;
 }
 
 .category-name {
-    font-size: 25px;
+	font-size: 25px;
 }
 
- .responsive-img {
-    object-fit: contain;
- }
+.responsive-img {
+	object-fit: contain;
+}
+
 
 /* Recipe cards in Recipe page */
- .cards {
-     margin: 0px;
- }
+
+.cards {
+	margin: 0px;
+}

@@ -1,78 +1,75 @@
 {% extends "base.html" %}
 {% block content %}
-
-  <h1 class="black-text center-align thin">lazy vegan<br>fast food recipes</h1>
-
-  <!-- Home page image and text -->
-    <div class="container">
-      <div class="row">
+<h1 class="black-text center-align thin">lazy vegan<br>fast food recipes</h1>
+<!-- Home page image and text -->
+<div class="container">
+    <div class="row">
         <div class="col-6 my-5">
             <img class="girl responsive-img col-5 z-depth-5" src="static/images/girl.jpg" alt="Blond young woman eating pizza">
             <p class="home-text col-12 center-align">Try out our tasty vegan recipes! Vegan cooking is not about taking the meat away
-              and reducing the flavour! It can be absolutely amazing. If you’re trying to broaden your diet
-              and eat more veggies, or cooking for a friend who avoids meat, these recipes are perfect.
-              All recipes are fast and easy to follow, and worth doing even if dining alone.<br><br>
-              Sharing is caring! Want to share your favourite recipe with other Lazy Vegans?
-              Register/Log in to add your your best-loved recipe and help us build up the crème de la crème (vegan crème of course) of vegan cooking!</p>
-          </div>   
-      </div>        
+                and reducing the flavour! It can be absolutely amazing. If you’re trying to broaden your diet
+                and eat more veggies, or cooking for a friend who avoids meat, these recipes are perfect.
+                All recipes are fast and easy to follow, and worth doing even if dining alone.<br><br>
+                Sharing is caring! Want to share your favourite recipe with other Lazy Vegans?
+                Register/Log in to add your your best-loved recipe and help us build up the crème de la crème (vegan crème of course) of vegan cooking!
+            </p>
+        </div>
     </div>
-    
-      <div><h3 class="black-text center-align thin">popular mouth-watering recipes</h3></div>
-    
+</div>
+<div>
+    <h3 class="black-text center-align thin">popular mouth-watering recipes</h3>
+</div>
 <!-- Popular recipes example 1 --> 
 <div class="row">
-  <div class="col s4 m4">
-    <div class="card hoverable">
-      <div class="card-image">
-        <img class="responsive-img" src="static/images/burger.png" alt="A plate of hamburger with fries">
-        <span class="card-title card-panel green lighten-3 z-depth-5">Juicy Vegan Burger</span>
-      </div>
-      <div class="card-content">
-        <p>These veggie burgers are packed with vegetables! See how to make homemade
-           veggie burgers that are hearty, flavorful and full of vegetables.</p>
-      </div>
-      <div class="card-action">
-        <a href="{{ url_for('get_recipe')}}" class="waves-effect waves-light btn-small black"></i>See All of Our Recipes</a>
-      </div>
+    <div class="col s4 m4">
+        <div class="card hoverable">
+            <div class="card-image">
+                <img class="responsive-img" src="static/images/burger.png" alt="A plate of hamburger with fries">
+                <span class="card-title card-panel green lighten-3 z-depth-5">Juicy Vegan Burger</span>
+            </div>
+            <div class="card-content">
+                <p>These veggie burgers are packed with vegetables! See how to make homemade
+                    veggie burgers that are hearty, flavorful and full of vegetables.
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="{{ url_for('get_recipe')}}" class="waves-effect waves-light btn-small black">See All of Our Recipes</a>
+            </div>
+        </div>
     </div>
-  </div>
-  
-  <!-- Popular recipes example 2 -->
-  <div class="col s4 m4">
-    <div class="card hoverable">
-      <div class="card-image">
-        <img class="responsive-img" src="static/images/pizza.png" alt="Someone is pouring syrup on pancakes">
-        <span class="card-title card-panel green lighten-3 z-depth-5">Caprece Pizza</span>
-      </div>
-      <div class="card-content">
-        <p>This vegan caprese pizza is a dream come true. Crisp and bubbly pizza crust is topped with zesty garlic,
-          homemade cashew mozzarella and lots of fresh basil</p>
-      </div>
-      <div class="card-action">
-        <a href="{{ url_for('get_recipe')}}" class="waves-effect waves-light btn-small black"></i>See All of Our Recipes</a>
-      </div>
+    <!-- Popular recipes example 2 -->
+    <div class="col s4 m4">
+        <div class="card hoverable">
+            <div class="card-image">
+                <img class="responsive-img" src="static/images/pizza.png" alt="Someone is pouring syrup on pancakes">
+                <span class="card-title card-panel green lighten-3 z-depth-5">Caprece Pizza</span>
+            </div>
+            <div class="card-content">
+                <p>This vegan caprese pizza is a dream come true. Crisp and bubbly pizza crust is topped with zesty garlic,
+                    homemade cashew mozzarella and lots of fresh basil
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="{{ url_for('get_recipe')}}" class="waves-effect waves-light btn-small black">See All of Our Recipes</a>
+            </div>
+        </div>
     </div>
-  </div>
-
- 
-
-  <!-- Popular recipes example 3 -->
-  <div class="col s4 m4">
-    <div class="card hoverable">
-      <div class="card-image">
-        <img class="responsive-img" src="static/images/taco.jpg" alt="Three tacos on a plate with salsa, nachos and a drink">
-        <span class="card-title card-panel green lighten-3 z-depth-5">Tacos</span>
-      </div>
-      <div class="card-content">
-        <p>Vegan tacos, made with corn or flour tortillas, black beans, corn, avocado, and vegan sour cream,
-           among other simple ingredients. Super healthy and filling.</p>
-      </div>
-      <div class="card-action">
-        <a href="{{ url_for('get_recipe')}}" class="waves-effect waves-light btn-small black"></i>See All of Our Recipes</a>
-      </div>
+    <!-- Popular recipes example 3 -->
+    <div class="col s4 m4">
+        <div class="card hoverable">
+            <div class="card-image">
+                <img class="responsive-img" src="static/images/taco.jpg" alt="Three tacos on a plate with salsa, nachos and a drink">
+                <span class="card-title card-panel green lighten-3 z-depth-5">Tacos</span>
+            </div>
+            <div class="card-content">
+                <p>Vegan tacos, made with corn or flour tortillas, black beans, corn, avocado, and vegan sour cream,
+                    among other simple ingredients. Super healthy and filling.
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="{{ url_for('get_recipe')}}" class="waves-effect waves-light btn-small black">See All of Our Recipes</a>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
-
 {% endblock %}

@@ -1,16 +1,12 @@
 {% extends "base.html" %}
 {% block content %}
-
-
 <div>
     <h4 class="recipe_header">{{ recipe.recipe_name }}</h4>
     <p class="category-name">{{ recipe.category_name }}</p>
-    <img src="{{ recipe.recipe_img }}" onerror="this.src='/static/images/default.jpg'"> 
+    <img src="{{ recipe.recipe_img }}" alt="Recipe image" onerror="this.src='/static/images/default.jpg'"> 
     <p>Ingredients:<br> {{ recipe.recipe_ingredients }}</p>
     <p>Directions:<br> {{ recipe.recipe_directions }}</p>
     <em>{{ recipe.gluten_free }}</em>
     <p><em>This recipe was added by: {{ recipe.created_by_name }}</em></p>
-</div>  
-
-
+</div>
 {% endblock %}

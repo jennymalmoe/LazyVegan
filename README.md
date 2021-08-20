@@ -59,7 +59,7 @@ Create a web application that allows users to:
     
 In addition to the goals above; also to promote a brand of natural, eco-friendly and sustainable kitchen ware that goes hand in hand with Lazy Vegan approach. 
 
-Eventually the recipe database will increase in both recipes and users/visitors. The site offer users to interact by adding their own recipes that makes the user feel like being a part of "the community". An important business goal is to be able to contact users using their provided contact information, to offer them additional sales/marketing/offers. 
+Eventually the recipe database will increase in both recipes and users/visitors. The site offer users to interact by adding their own recipes that makes the user feel like being a part of "the community". The site promotes the vegan life style, showing that it doesn't have to be that hard to eat, even junk food that are vegan. 
 
 ### User Goals
 Find and share recipes, get inspired by the recipes and get inspired to add own recipes by the site which is signals a that a healty lifestyle doesn't have to be difficult. These easy recipes is done with minimal effort and is ready in no time! 
@@ -127,6 +127,7 @@ MongoDB was used for this project and schema design was created. SE MOVIE BILD(Ã
 
 * Languages, Frameworks and Libraries
     * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) - used to create the site structure.
+    * [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) - used throughout the project mainly to make site responsive.
     * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - used to create the styling throughout the site.
     * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - used for the addition/deletion of ingredients and methods buttons. (STÃ„MMER DET?)
     * [Python](https://www.python.org/) - used to write the logic that operates the site.
@@ -150,6 +151,8 @@ MongoDB was used for this project and schema design was created. SE MOVIE BILD(Ã
 * [Git](https://git-scm.com/) - used for version control.
 * [JSHint](https://jshint.com/) - used to test JS code to ensure there were no errors.
 * [Unsplash](https://unsplash.com/) - Images used were obtained from Unsplash.
+* [PEP8](https://www.python.org/dev/peps/pep-0008/) - Used as style guide for Python code.
+* [PEP8online](http://pep8online.com/) - Used to check code for PEP8 requirements
 * [Pixelmator](https://www.pixelmator.com/mac/) - used to resize images.
 * [Postimages](https://postimages.org/) - used to create url for images. 
 * [RandomKeygen](https://randomkeygen.com/) - used to generate secure password to Secret Key. 

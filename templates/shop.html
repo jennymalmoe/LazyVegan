@@ -1,156 +1,143 @@
 {% extends "base.html" %}
 {% block content %}
-
-  <h1 class="black-text center-align thin">cook like a pro</h1>
-  <p class="center-align">Eco Kitchen Products For Eco Friendly Living
-    Discover our range of eco kitchen products that are made with natural, organic, vegan, plastic-free, biodegradable and ethical materials and ingredients.</p>
-
- 
-  <div class="row">
+<h1 class="black-text center-align thin">cook like a pro</h1>
+<p class="center-align">Eco Kitchen Products For Eco Friendly Living
+    Discover our range of eco kitchen products that are made with natural, organic, vegan, plastic-free, biodegradable and ethical materials and ingredients.
+</p>
+<div class="row">
     <!-- For loop logic of jinja template -->
     {% for recipe in recipes %}
-    
-      <div class="col s3 s3">
+    <div class="col s3 s3">
         <div class="card hoverable">
-          <div class="card-image">
-            <img class="responsive-img" src="static/images/pancake.jpg">
-            <span class="card-title card-panel green accent-4">{{ recipe.recipe_name }}</span>
-          </div>
-        <div class="card-content">
-          <p>{{ recipe.recipe_directions }}</p>
+            <div class="card-image">
+                <img class="responsive-img" alt="Image of pancake" src="static/images/pancake.jpg">
+                <span class="card-title card-panel green accent-4">{{ recipe.recipe_name }}</span>
+            </div>
+            <div class="card-content">
+                <p>{{ recipe.recipe_directions }}</p>
+            </div>
+            <div class="card-action">
+                <a href="#" target="_blank" class="waves-effect waves-light btn-small black">View Recipe</a>
+            </div>
         </div>
-        <div class="card-action">
-          <a href="#" target="_blank" class="waves-effect waves-light btn-small black"></i>View Recipe</a>
-        </div>
-      </div>
     </div>
     {% endfor %}
-
     <!-- Shop item 1-->
-      <div class="col s4 m4">
-        <div class="card hoverable">
-          <div class="card-image">
-            <img class="responsive-img" src="static/images/zip_bag.jpg" alt="Silicone ziplock pouch">
-          </div>
-          <div class="card-content">
-            <p><strong>Silicone Ziplock Pouch</strong><br><br>If you use zip lock bags then you will love this
-                silicone reusable pouch, an ideal alternative to plastic ziplock bags.<br><br>Choose between many different sizes and shapes.  </p>
-          </div>
-          <div class="card-action">
-            <a href="https://www.peacewiththewild.co.uk/product/silicone-ziplock-pouch-1000ml/" target="_blank" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
-          </div>
-        </div>
-      </div>
-    
-  
-    <!-- Shop item 2-->
-   <div class="col s4 m4">
-      <div class="card hoverable">
-        <div class="card-image">
-          <img class="responsive-img" src="static/images/bambu.jpeg" alt="Bamboo Cutlery Set">
-        </div>
-        <div class="card-content">
-          <p><strong>Bamboo Cutlery Set</strong><br><br>Handy bamboo travel utensil set by Bambu, perfect for an on-the-go lifestyle.
-             Each item is made from a single piece of organic bamboo with a natural finish.
-             USDA Certified Organic bamboo and Ethically & sustainably sourced.</p>
-        </div>
-        <div class="card-action">
-          <a href="https://www.peacewiththewild.co.uk/product/bambu-bamboo-travel-utensils/" target="_blank" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
-        </div>
-      </div>
-    </div>
-  
-  
-  <!-- Shop item 3 -->
     <div class="col s4 m4">
-      <div class="card hoverable">
-        <div class="card-image">
-          <img class="responsive-img" src="static/images/bowl_cover.jpeg" alt="Cotton Bowl Cover">
+        <div class="card hoverable">
+            <div class="card-image">
+                <img class="responsive-img" src="static/images/zip_bag.jpg" alt="Silicone ziplock pouch">
+            </div>
+            <div class="card-content">
+                <p><strong>Silicone Ziplock Pouch</strong><br><br>If you use zip lock bags then you will love this
+                    silicone reusable pouch, an ideal alternative to plastic ziplock bags.<br><br>Choose between many different sizes and shapes.  
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="https://www.peacewiththewild.co.uk/product/silicone-ziplock-pouch-1000ml/" target="_blank" class="waves-effect waves-light btn-small black">Buy Now</a>
+            </div>
         </div>
-        <div class="card-content">
-          <p><strong>Cotton Bowl Cover</strong><br><br>These reusable and washable cotton bowl covers fit nicely on
-            mixing and serving bowls. The elasticated cotton once stretched over
-            the bowl will leave it tightly covered, leaving no gaps.<br>GOTS certified organic cotton.</p>
-        </div>
-        <div class="card-action">
-          <a href="https://www.peacewiththewild.co.uk/product/your-green-kitchen-medium-cotton-bowl-cover/" target="_blank" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
-        </div>
-      </div>
     </div>
-  </div>
- 
-    
-  <div class="row">
+    <!-- Shop item 2-->
+    <div class="col s4 m4">
+        <div class="card hoverable">
+            <div class="card-image">
+                <img class="responsive-img" src="static/images/bambu.jpeg" alt="Bamboo Cutlery Set">
+            </div>
+            <div class="card-content">
+                <p><strong>Bamboo Cutlery Set</strong><br><br>Handy bamboo travel utensil set by Bambu, perfect for an on-the-go lifestyle.
+                    Each item is made from a single piece of organic bamboo with a natural finish.
+                    USDA Certified Organic bamboo and Ethically & sustainably sourced.
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="https://www.peacewiththewild.co.uk/product/bambu-bamboo-travel-utensils/" target="_blank" class="waves-effect waves-light btn-small black">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Shop item 3 -->
+    <div class="col s4 m4">
+        <div class="card hoverable">
+            <div class="card-image">
+                <img class="responsive-img" src="static/images/bowl_cover.jpeg" alt="Cotton Bowl Cover">
+            </div>
+            <div class="card-content">
+                <p><strong>Cotton Bowl Cover</strong><br><br>These reusable and washable cotton bowl covers fit nicely on
+                    mixing and serving bowls. The elasticated cotton once stretched over
+                    the bowl will leave it tightly covered, leaving no gaps.<br>GOTS certified organic cotton.
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="https://www.peacewiththewild.co.uk/product/your-green-kitchen-medium-cotton-bowl-cover/" target="_blank" class="waves-effect waves-light btn-small black">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
     <!-- For loop logic of jinja template -->
     {% for recipe in recipes %}
-    
-   
-      <div class="col s3 s3">
+    <div class="col s3 s3">
         <div class="card hoverable">
-          <div class="card-image">
-            <img class="responsive-img" src="static/images/kitchen_aid.jpeg" alt="Cotton Bowl Cover">
-          </div>
-        <div class="card-content">
-          <p>{{ recipe.recipe_directions }}</p>
+            <div class="card-image">
+                <img class="responsive-img" src="static/images/kitchen_aid.jpeg" alt="Cotton Bowl Cover">
+            </div>
+            <div class="card-content">
+                <p>{{ recipe.recipe_directions }}</p>
+            </div>
+            <div class="card-action">
+                <a href="https://www.kitchenaid.com/countertop-appliances/stand-mixers/tilt-head-stand-mixers/p.artisan-series-5-quart-tilt-head-stand-mixer.ksm150pspt.html?" target="_blank" class="waves-effect waves-light btn-small black">Buy Now</a>
+            </div>
         </div>
-        <div class="card-action">
-          <a href="https://www.kitchenaid.com/countertop-appliances/stand-mixers/tilt-head-stand-mixers/p.artisan-series-5-quart-tilt-head-stand-mixer.ksm150pspt.html?" target="_blank" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
-        </div>
-      </div>
     </div>
     {% endfor %}
-
-      <!-- Shop item 4 -->
-      <div class="col s4 m4">
-        <div class="card hoverable">
-          <div class="card-image">
-            <img class="responsive-img" src="static/images/tongs.jpeg" alt="Large Bamboo Tongs">
-          </div>
-          <div class="card-content">
-            <p><strong>Large Bamboo Tongs</strong><br><br>Large bamboo tongs, a plastic-free, sustainable
-              and safe alternative to plastic utensils! Made from organic, natural bamboo. Vegan and 100% Plastic free.</p>
-          </div>
-          <div class="card-action">
-            <a href="https://www.peacewiththewild.co.uk/product/bambu-large-bamboo-tongs/" target="_blank" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
-          </div>
-        </div>
-      </div>
-    
-  
-   <!-- Shop item 5 -->
-   <div class="col s4 m4">
-      <div class="card hoverable">
-        <div class="card-image">
-          <img class="responsive-img" src="static/images/oil.jpeg" alt="A large bottle of Coconut Oil">
-        </div>
-        <div class="card-content">
-          <p><strong>Premium 100% Pure Coconut Oil</strong><br><br>Coconuts are a rich source of Medium Chain
-            Triglycerides (MCTs), healthy fats which provide many health and fitness benefits.<br>
-            Keto, Paleo, LCHF friendly.</p>
-        </div>
-        <div class="card-action">
-          <a href="https://www.peacewiththewild.co.uk/product/hunter-gather-premium-100-pure-mct-coconut-oil/" target="_blank" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
-        </div>
-      </div>
-    </div>
-  
-  
-  <!-- Shop item 6 -->
+    <!-- Shop item 4 -->
     <div class="col s4 m4">
-      <div class="card hoverable">
-        <div class="card-image">
-          <img class="responsive-img" src="static/images/salt.jpeg" alt="A can of Sea Salt Flakes">
+        <div class="card hoverable">
+            <div class="card-image">
+                <img class="responsive-img" src="static/images/tongs.jpeg" alt="Large Bamboo Tongs">
+            </div>
+            <div class="card-content">
+                <p><strong>Large Bamboo Tongs</strong><br><br>Large bamboo tongs, a plastic-free, sustainable
+                    and safe alternative to plastic utensils! Made from organic, natural bamboo. Vegan and 100% Plastic free.
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="https://www.peacewiththewild.co.uk/product/bambu-large-bamboo-tongs/" target="_blank" class="waves-effect waves-light btn-small black">Buy Now</a>
+            </div>
         </div>
-        <div class="card-content">
-          <p><strong>Natural Dorset Sea Salt Flakes</strong><br><br>Hand-harvested from the pristine mineral rich,
-            and world-famous waters of the Jurassic coast.<br><br>To be used within or to finish the cooking process.</p>
-        </div>
-        <div class="card-action">
-          <a href="https://www.peacewiththewild.co.uk/product/dorset-sea-salt-co-natural-dorset-sea-salt-flakes/" target="_blank" class="waves-effect waves-light btn-small black"></i>Buy Now</a>
-        </div>
-      </div>
     </div>
-  </div>
-
-
-  {% endblock %}
+    <!-- Shop item 5 -->
+    <div class="col s4 m4">
+        <div class="card hoverable">
+            <div class="card-image">
+                <img class="responsive-img" src="static/images/oil.jpeg" alt="A large bottle of Coconut Oil">
+            </div>
+            <div class="card-content">
+                <p><strong>Premium 100% Pure Coconut Oil</strong><br><br>Coconuts are a rich source of Medium Chain
+                    Triglycerides (MCTs), healthy fats which provide many health and fitness benefits.<br>
+                    Keto, Paleo, LCHF friendly.
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="https://www.peacewiththewild.co.uk/product/hunter-gather-premium-100-pure-mct-coconut-oil/" target="_blank" class="waves-effect waves-light btn-small black">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Shop item 6 -->
+    <div class="col s4 m4">
+        <div class="card hoverable">
+            <div class="card-image">
+                <img class="responsive-img" src="static/images/salt.jpeg" alt="A can of Sea Salt Flakes">
+            </div>
+            <div class="card-content">
+                <p><strong>Natural Dorset Sea Salt Flakes</strong><br><br>Hand-harvested from the pristine mineral rich,
+                    and world-famous waters of the Jurassic coast.<br><br>To be used within or to finish the cooking process.
+                </p>
+            </div>
+            <div class="card-action">
+                <a href="https://www.peacewiththewild.co.uk/product/dorset-sea-salt-co-natural-dorset-sea-salt-flakes/" target="_blank" class="waves-effect waves-light btn-small black">Buy Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
