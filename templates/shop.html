@@ -5,23 +5,6 @@
     Discover our range of eco kitchen products that are made with natural, organic, vegan, plastic-free, biodegradable and ethical materials and ingredients.
 </p>
 <div class="row">
-    <!-- For loop logic of jinja template -->
-    {% for recipe in recipes %}
-    <div class="col s3 s3">
-        <div class="card hoverable">
-            <div class="card-image">
-                <img class="responsive-img" alt="Image of pancake" src="static/images/pancake.jpg">
-                <span class="card-title card-panel green accent-4">{{ recipe.recipe_name }}</span>
-            </div>
-            <div class="card-content">
-                <p>{{ recipe.recipe_directions }}</p>
-            </div>
-            <div class="card-action">
-                <a href="#" target="_blank" class="waves-effect waves-light btn-small black">View Recipe</a>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
     <!-- Shop item 1-->
     <div class="col s4 m4">
         <div class="card hoverable">
@@ -74,22 +57,6 @@
     </div>
 </div>
 <div class="row">
-    <!-- For loop logic of jinja template -->
-    {% for recipe in recipes %}
-    <div class="col s3 s3">
-        <div class="card hoverable">
-            <div class="card-image">
-                <img class="responsive-img" src="static/images/kitchen_aid.jpeg" alt="Cotton Bowl Cover">
-            </div>
-            <div class="card-content">
-                <p>{{ recipe.recipe_directions }}</p>
-            </div>
-            <div class="card-action">
-                <a href="https://www.kitchenaid.com/countertop-appliances/stand-mixers/tilt-head-stand-mixers/p.artisan-series-5-quart-tilt-head-stand-mixer.ksm150pspt.html?" target="_blank" class="waves-effect waves-light btn-small black">Buy Now</a>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
     <!-- Shop item 4 -->
     <div class="col s4 m4">
         <div class="card hoverable">
