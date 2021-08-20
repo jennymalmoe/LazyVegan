@@ -181,7 +181,18 @@ main {
 
 
 /* Recipe cards in Recipe page */
-
 .cards {
 	margin: 0px;
+}
+
+/* If user added the recipe */
+#rec-btns {
+    padding: 20px 10px 5px 10px;
+    text-align: center;
+}
+.recipe-btn {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
 }
