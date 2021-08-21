@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<h3 class="black-text center-align thin">Edit Recipe</h3>
+<h3 class="black-text center-align thin">edit recipe</h3>
 <div class="row card-panel grey lighten-5">
     <form class="col s12" method="POST" action="{{ url_for('edit_recipe', recipe_id=recipe._id) }}">
         <!-- categories -->
@@ -35,7 +35,7 @@
                 <i class="fas fa-camera-retro prefix"></i>
                 <input id="recipe_img" name="recipe_img" maxlength="1000"
                     type="url" class="validate" aria-describedby="recipe_img" pattern="https?://.+" onchange="recipeImg();">
-                <label for="recipe_img">Recipe Image <em>(copy and paste image url or use our default image by skipping this step)</em></label>
+                <label for="recipe_img">Recipe Image <em>(Copy and paste image url or use our default image by skipping this step Min height 100 px, Max height 600 px. Larger or smaller images may appear distorted)</em></label>
             </div>
             <div class="s12 new-img img-container">
                 <!-- image preview container -->
@@ -48,7 +48,7 @@
                 <i class="fas fa-list prefix"></i>
                 <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5"
                     maxlength="200" class="materialize-textarea validate" required>
-                {{- recipe.recipe_ingredients -}}
+                    {{- recipe.recipe_ingredients -}}
                 </textarea>
                 <label for="recipe_ingredients">Ingredients</label>
             </div>
@@ -59,7 +59,7 @@
                 <i class="fas fa-list-ol prefix"></i>
                 <textarea id="recipe_directions" name="recipe_directions" minlength="5"
                     maxlength="200" class="materialize-textarea validate" required>
-                {{- recipe.recipe_directions -}}
+                    {{- recipe.recipe_directions -}}
                 </textarea>
                 <label for="recipe_directions">Directions</label>
             </div>
@@ -70,13 +70,13 @@
                 <div class="switch">
                     <i class="fas fa-bread-slice"></i>
                     <label for="gluten_free">
-                    {% if recipe.is_gluten_free == "on" %}
-                    <input type="checkbox" id="gluten_free" name="gluten_free" checked>
-                    {% else% }
-                    <input type="checkbox" id="gluten_free" name="gluten_free">
-                    {% endif %}
-                    <span class="lever"></span>
-                    Gluten-Free
+                        {% if recipe.is_gluten_free == "on" %}
+                            <input type="checkbox" id="gluten_free" name="gluten_free" checked>
+                        {% else %}
+                            <input type="checkbox" id="gluten_free" name="gluten_free">
+                        {% endif %}
+                            <span class="lever"></span>
+                             Gluten-Free
                     </label>
                 </div>
             </div>
@@ -84,19 +84,17 @@
         <!-- submit btn -->
         <div class="row">
             <div class="col s12 center-align">
-                {% if session.user|lower == recipe.created_by|lower %}
                 <!-- cancel btn -->
-                <a href="{{ url_for('get_recipe') }}" class="btn-large red darken-4 text-shadow">
-                Cancel<i class="fas fa-edit right"></i>
-                </a>
-                <button type="submit" class="btn-large green lighten-3 z-depth-5 text-shadow">
-                Edit Recipe<i class="fas fa-edit right"></i>
-                </button>
-                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-large red darken-4 text-shadow">
-                Delete<i class="fas fa-edit right"></i></a>
+                {% if session.user|lower == recipe.created_by_name|lower %}
+                    <a href="{{ url_for('get_recipe') }}" class="btn-large red darken-4 text-shadow">
+                    Cancel<i class="fas fa-edit right"></i></a>
+                    <!-- edit btn -->
+                    <button href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" type="submit" class="btn-large green lighten-3 z-depth-5 text-shadow">
+                    Edit Recipe<i class="fas fa-edit right"></i></button>
                 {% endif %}
             </div>
         </div>
     </form>
 </div>
+
 {% endblock %}

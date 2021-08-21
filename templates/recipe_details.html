@@ -8,11 +8,13 @@
     <p>Directions:<br> {{ recipe.recipe_directions }}</p>
     <em>{{ recipe.gluten_free }}</em>
     <p><em>This recipe was added by: {{ recipe.created_by_name }}</em></p>
-    {% if session.user == recipe.created_by_name %}
-                
-                <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small green lighten-3 z-depth-5">Edit</a>
-                <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small red darken-4 z-depth-5">Delete</a>
-             {% endif %}
+    {% if session.user == recipe.created_by_name %}    
+    <div class="edit-btn"> 
+        <a href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" class="btn-small green lighten-3 z-depth-5">Edit</a>
+        <a href="{{ url_for('delete_recipe', recipe_id=recipe._id) }}" class="btn-small red darken-4 z-depth-5">Delete</a>
+    </div>
+    {% endif %}
 
 </div>
+
 {% endblock %}

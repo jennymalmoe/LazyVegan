@@ -155,7 +155,7 @@ MongoDB was used for this project and schema design was created. SE MOVIE BILD(Ã
     
 * Tools and Editors
 
-* [Am I Responsive](http://ami.responsivedesign.is/) - used to validate the responsiveness and mock up image.
+* [Am I Responsive](http://ami.responsivedesign.is/) - used to validate the responsiveness. 
 * [Balsamiq](https://balsamiq.com/) - used to create the wireframes.
 * [Chrome DevTools](https://developer.chrome.com/docs/devtools/)  - used Lighthouse to check sites performance and the dev tool to check responsiveness.
 * [Designwizard](https://www.designwizard.com/) - used for inspirations regarding color combinations.
@@ -173,6 +173,7 @@ MongoDB was used for this project and schema design was created. SE MOVIE BILD(Ã
 * [Pixelmator](https://www.pixelmator.com/mac/) - used to resize images.
 * [Postimages](https://postimages.org/) - used to create url for images. 
 * [RandomKeygen](https://randomkeygen.com/) - used to generate secure password to Secret Key. 
+* [TechSini](https://techsini.com/) - mockup generator used for preview of the  website.
 * [Visual Studio Code](https://code.visualstudio.com/) - IDE used for code editing.
 * [W3C Validator](https://validator.w3.org/) - used to test HTML code to ensure there were no errors.
 * [W3C Validator CSS](https://validator.w3.org/) - used to test CSS code to ensure there were no errors.

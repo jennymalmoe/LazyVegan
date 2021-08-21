@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
-<h3 class="black-text center-align thin">find a recipe</h3>
+<h3 class="black-text center-align thin find-header">find a recipe</h3>
 <p class="center-align">In the mood for a juicy Burger? Craving a Pizza? Taco-Time? Look no further! Or I mean... Search for your next meal right here:</p>
+
 <!-- search bar -->
 <div class="search row card-panel grey lighten-5">
     <form action="{{ url_for('search') }}" method="post" class="col s12">
@@ -20,9 +21,10 @@
         </div>
     </form>
 </div>
+
 <!-- all recipe cards -->
-<h3 class="black-text center-align thin">recipes</h3>
-<p class="center-align">From juicy and succulent burgers to warm and salty French fries,
+<h3 class="black-text center-align thin recipe-header">recipes</h3>
+<p class="center-align rec-text">From juicy and succulent burgers to warm and salty French fries,
     we have everything you need for the perfect vegan meal. Enjoy! 
 </p>
 <div class="row">
