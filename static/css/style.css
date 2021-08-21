@@ -8,8 +8,7 @@ body {
 
 h1,
 h3,
-h4,
-h5 {
+h4 {
 	font-family: Major Mono Display;
 }
 
@@ -40,6 +39,11 @@ nav ul li:hover {
 .home-text {
 	padding-top: 30px;
 	padding-left: 20px;
+}
+
+.register-btn {
+	padding-top: 40px;
+	padding-left: 160px;
 }
 
 /* Header search bar*/
@@ -143,6 +147,10 @@ main {
 }
 
 /* Profile */
+.profile-page {
+	padding-top: 30px;
+}
+
 .recipe_header {
 	color: #000000;
 }
