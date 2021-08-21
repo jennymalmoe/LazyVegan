@@ -1,7 +1,8 @@
 # Lazy Vegan Fast Food Recipes!
-[View live website here!](https://jennymalmoe.github.io/###/)
 
-[View GitHub repository here!](https://github.com/jennymalmoe/###)
+[View live website here!](###)
+
+[View GitHub repository here!](###)
 
 ![site on different devices](static/images/mock_up.png) 
 
@@ -162,7 +163,7 @@ MongoDB was used for this project and schema design was created. SE MOVIE BILD(Ã
 * [Font-Awesome](https://fontawesome.com/) - used for icons.
 * [FreeIcons](https://freeicons.io/) - used for icon in tab.
 * [Git](https://git-scm.com/) - used for version control to commit to Git and push to Heroku.
-* [GitHub](https://github.com/) - remote repository for application code.
+* [GitHub](https://github.com/) - used to store the projects code after being pushed from Git.
 * [Gitpod](https://gitpod.io/) - IDE used for development.
 * [Heroku](https://www.heroku.com/home) - cloud platform used to deploy application.
 * [Jinja](https://jinja.palletsprojects.com/en/3.0.x/) - Jinja templating language was used to simplify and display backend data in html.
@@ -186,7 +187,7 @@ MongoDB was used for this project and schema design was created. SE MOVIE BILD(Ã
 Testing information can be found in separate [testing.md file]()
 
 # Deployment
-* GitHub Pages
+* GitHub Pages (se ex)
 * Forking the GitHub Repository
 * Making a Local Clone
 
