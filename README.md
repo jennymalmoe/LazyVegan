@@ -68,6 +68,11 @@ Create a web application that allows users to:
 * Edit their recipes (UPDATE)
 * Delete their recipes (DELETE)
     
+The purpose is to get both people who aldready eats vegan and those who don't yet, inspired by the delicious recipes. 
+
+So the site targets a very broad group of people, of all ages, genders, cooking skills (both those who likes to cook but especially thos who is looking for easy recipes) and as well both vegans and those who are not. 
+One of the simplest but most important benefits of a broad market is the ability to target a larger number of total prospects with this site. The more total interested visitors you reach out to, the better. 
+
 In addition to the goals above; also to promote a brand of natural, eco-friendly and sustainable kitchen ware that goes hand in hand with Lazy Vegan approach. 
 
 Eventually the recipe database will increase in both recipes and users/visitors. The site offer users to interact by adding their own recipes that makes the user feel like being a part of "the community". The site promotes the vegan life style, showing that it doesn't have to be that hard to eat, even junk food that are vegan. 
@@ -93,31 +98,36 @@ Find and share recipes. Get inspired by the recipes and get inspired to add/shar
     * As a returning visitor, I want to be able to easily register if I didn't last time visiting. 
     * As a returning visitor, I want to be able to easily log in, if I registered last time visiting. 
     * As a returning visitor, I want to be able to create, read, update, delete and search for recipes.
-    * As a returning visitor, I want to be able to reach out to siteowner for possibel collaboration or businessdeals.  
+    * As a returning visitor, I want to be able to reach out to siteowner for any possible questions.
 
 * Frequent Visitor Goals
 
-    * As a frequent visitor, I want to check to see if there are any newly added recipes.
+    * As a frequent visitor, I want to get inspired by newly added recipes. 
+    * As a frequent visitor, I want it to be quick and easy to add new recipes.
 
 ## Design Choices
 
 * Color scheme
 
-    The page consists of a white base with black and light green as secondary colors. Text and elements such as call to actions buttons and icons are black to make the text/information stand out and be as clear as possible. When hover buttons, they turn to the light green color to tie different elements of the sites together. The chosen colour scheme was specifically selected in order to define the vibe of the page. 
-
-    Green is usually associated with healthy, organic and vegetarian food. The green and white color combination is clean, crisp, and are associated with nature and environmental awareness. The green color has a warm vibe while the supporting soft white lend a modern look. 
+    The page consists of a white base with black, light green and orange as accent colors. Button at home page is orange to draw the visitors attention to it since it's the first thing they see when entering the site. Main purpose is to get a large base of Lazy Vegans that adds recipes so the ramount of recipes increases.
     
-    Since green is found commonly in nature, it makes it an excellent choice for recipes sites with healthy and plant based foods. Many Health food stores, Salad bars and Vegan restaurants chooses these kind of colors.
+    When hover buttons, they turn to the light green color to tie different elements of the sites together. The chosen colour scheme was specifically selected in order to define the vibe of the page. 
 
-    ![site on different devices](static/images/color_scheme.png)
+    Green is usually associated with healthy, organic and vegetarian food. The green and white color combination is clean, crisp, and are associated with nature and environmental awareness. The green color has a warm vibe while the supporting soft white lend a modern look. Since green is found commonly in nature, it makes it an excellent choice for recipes sites with healthy and plant based foods. Many Health food stores, Salad bars and Vegan restaurants chooses these kind of colors.
+    
+    Orange calls to mind feelings of enthusiasm and warmth. Orange has very high visibility, you can use it to draw attention and highlight the most important elements of your design. Orange is very effective for promoting especially food and kitchen products.
+    
+    
+
+    ![Color scheme](static/images/color_scheme.png)
 
 * Typography
 
-    Roboto font is the main font used throughout the site with Major Mono Display as headers font. Roboto has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. It's subtle and it doesn´t take any attention away from the content. This makes Roboto a more natural reading rhythm more commonly found in humanist and serif types. 
+    Roboto font is the main font used throughout the site with Major Mono Display used to headers. Roboto has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. It's subtle and it doesn´t take any attention away from the content. This makes Roboto a more natural reading rhythm more commonly found in humanist and serif types. 
     
-    Major Mono Display is a monospaced geometric sans serif all-uppercase typeface which also has a complete set of constructivist display characters with a playful attitude. This font is a great choice for playful web typography, especially at large point-sizes. Major Mono Display is a clean but charmig and unconventional font that also gives the site a relaxed vibe. The combination of these fonts represents both the healthy, vegan side aswell as the relaxed fast food approach. 
+    Major Mono Display is a monospaced geometric sans serif all-uppercase typeface with a playful attitude. This font is a great choice for playful web typography.. Major Mono Display is a clean but charming and unconventional font that also gives the site a relaxed vibe. The combination of these fonts represents both the healthy, vegan side aswell as the relaxed fast food approach. 
 
-    ![site on different devices](static/images/fonts.png)
+    ![Fonts](static/images/fonts.png)
 
 * Imagery
     Images and the choices of the images is an important component of this site. I chose contemporary, clean images that appeal to the target group. I have four appealing images at the home page to catch the visitors intrerest right away. 
@@ -131,7 +141,7 @@ Find and share recipes. Get inspired by the recipes and get inspired to add/shar
 * [Desktop](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/desktop###)
 
 # Features
-
+left to implement collab business deals sponsorship
 
 # Database Design
 MongoDB was used for this project and schema design was created. SE MOVIE BILD(ÄNDRA)
