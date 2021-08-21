@@ -6,7 +6,7 @@
 
 ![site on different devices](static/images/mock_up.png) 
 
-Super quick recipes for when you're feeling lazy.
+Super quick, yummy, vegan recipes for when you're feeling lazy. These easy recipes is done with minimal effort and is ready in no time! 
 
 
 
@@ -54,7 +54,11 @@ ___
 
 # UX
 ## Project Goals
-The purpose of this project is to *"...build a full-stack site that allows your users to manage a common dataset about a particular domain"* using HTML, CSS, JavaScript, Python+Flask, MongoDB and possible additional libraries and external APIs.
+The purpose of this project is to 
+
+*"...build a full-stack site that allows your users to manage a common dataset about a particular domain"* using HTML, CSS, JavaScript, Python+Flask, MongoDB and possible additional libraries and external APIs. 
+
+*"Design a front end for a data-driven web application that meets accessibility guidelines, follows the principles of UX design, meets its given purpose and provides a set of user interactions"*
 
 ## Business Goals
 Create a web application that allows users to:
@@ -69,30 +73,26 @@ In addition to the goals above; also to promote a brand of natural, eco-friendly
 Eventually the recipe database will increase in both recipes and users/visitors. The site offer users to interact by adding their own recipes that makes the user feel like being a part of "the community". The site promotes the vegan life style, showing that it doesn't have to be that hard to eat, even junk food that are vegan. 
 
 ## User Goals
-Find and share recipes, get inspired by the recipes and get inspired to add own recipes by the site which is signals a that a healty lifestyle doesn't have to be difficult. These easy recipes is done with minimal effort and is ready in no time! 
+Find and share recipes. Get inspired by the recipes and get inspired to add/share own recipes at the site which is signals a that a vegan lifestyle doesn't have to be difficult. 
 
 ## User Stories
 
 * First Time Visitor Goals
 
-    * As a first time visitor, I want to easily grasp the sites purpose.
+    * As a first time visitor, I want to easily understand the main purpose of the site.
+    * As a first time visitor, I want the site navigation to be intutive, user friendly and over all ease-of-use.
+    * As a first time visitor, I want to be inspired and taken by surprise regarding this new way of thinking about vegan food.
     * As a first time visitor, I want to find easy vegan fast food recipes.
     * As a first time visitor, I want to be inspired by the site, the recipes and the design. Get a positive feel. 
-    * As a first time visitor, I want the site navigation to be intutive, user friendly and over all ease-of-use.
-    * As a first time visitor, I want to be able to register as a new user.
-    * As a first time visitor, I want to be able to log in and out (since I registered).
-    * As a first time visitor, I want to be able to read the recipes (added by siteowner and users).
-    * As a first time visitor, I want to be able to search for recipes.
-    * As a first time visitor, I want to add recipes.
-    * As a first time visitor, I want to be able to edit/update the recipes I've added. 
-    * As a first time visitor, I want to be able to delete recipes I've added.
-    * As a first time visitor, I want to locate their social media links to be able to follow and get  a feel for the credibility of the site. 
+    * As a first time visitor, I want to be able to create, read, update, delete and search for recipes.
+    * As a first time visitor, I want to be able to take part of this community/recipe bank by be able to register. 
+    * As a first time visitor, I want to locate some sort of social media links to be able to follow and get a feel for the credibility of the site. 
 
 * Returning Visitor Goals
 
     * As a returning visitor, I want to be able to easily register if I didn't last time visiting. 
     * As a returning visitor, I want to be able to easily log in, if I registered last time visiting. 
-    * As a returning visitor, I want to be able to read, add, update, delete and search for recipes.
+    * As a returning visitor, I want to be able to create, read, update, delete and search for recipes.
     * As a returning visitor, I want to be able to reach out to siteowner for possibel collaboration or businessdeals.  
 
 * Frequent Visitor Goals
