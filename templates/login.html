@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+<!-- Log In page header -->
 <h3 class="center-align black-text thin">log in</h3>
 <div class="row">
     <form class="col s12 m8 offset-m2" method="POST" action="{{ url_for('login') }}">
@@ -22,7 +23,7 @@
                     <label for="password">Password</label>
                 </div>
             </div>
-            <!-- Login -->
+            <!-- Log in btn-->
             <div class="row">
                 <button type="submit" class="col s12 btn-large green lighten-3 z-depth-5">
                 Log In <i class="fas fa-sign-in-alt"></i>
@@ -31,7 +32,7 @@
         </div>
     </form>
 </div>
-<!-- Subtext -->
+<!-- Register Account text -->
 <div class="row">
     <div class="col s12">
         <p class="center-align">

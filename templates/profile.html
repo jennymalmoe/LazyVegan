@@ -4,46 +4,47 @@
     <div class="col s12 m8 offset-m2">
         <div class="card-panel">
             <h2 class="center-align black-text profile">
+                <!-- Profile page header -->
                 {{ username }}'s Profile Page
             </h2>
         </div>
     </div>
 </div>
-<!-- Personal information block -->
+<!-- Profile greeting -->
 <main class="container">
     <div class="row user-profile-form">
         <h5 class="center-align thin">Thank you {{ username }} for being a part of Lazy Vegan community!</h5>
     </div>
 </main>
-<!-- When User hasn't added any Recipes -->
+<!-- When User hasn't added any recipes -->
 {% if recipes|length == 0 %}
-<div class="row">
-    <div class="col s12 profile-text center-align">
-        <p>Oops there are no added recipes by you here. Let's share your favourite recipe right away! </p>
-        <a href="{{ url_for('add_recipe') }}" class="waves-effect waves-light green lighten-3 btn">Add a recipe</a>
+    <div class="row">
+        <div class="col s12 profile-text center-align">
+            <p>Oops there are no added recipes by you here. Let's share your favourite recipe right away! </p>
+            <a href="{{ url_for('add_recipe') }}" class="waves-effect waves-light green lighten-3 btn">Add a recipe</a>
+        </div>
+            <img src="/static/images/pepper.png" class="col s6" alt="Image of a red pepper">
+            <img src="/static/images/pepper_turned.png" class="col s6" alt="Image of a red pepper">     
     </div>
-        <img src="/static/images/pepper.png" class="col s6" alt="Image of a red pepper">
-        <img src="/static/images/pepper_turned.png" class="col s6" alt="Image of a red pepper">     
-</div>
 {% endif %}
-<!-- When User has added Recipes --> 
+<!-- When User has added recipes --> 
 <div class="row">
 {% for recipe in recipes %}
-<div class="col s4 m4">
-    <div class="card hoverable">
-        <div class="card-image">
-            <p class="addedby">Recipe added by {{ username }}!</p>
+    <div class="col s4 m4">
+        <div class="card hoverable">
+            <div class="card-image">
+                <p class="addedby">Recipe added by {{ username }}!</p>
             {% if recipe.recipe_img %}
-            <img src="{{ recipe.recipe_img }}" alt="Recipe image" class="responsive-img">
+                <img src="{{ recipe.recipe_img }}" alt="Recipe image" class="responsive-img">
             {% else %}
-            <img class="responsive-img" alt="Image of a woman eating fries" src="static/images/default.jpg">
+                <img class="responsive-img" alt="Image of a woman eating fries" src="static/images/default.jpg">
             {% endif %}
-            <span class="card-title card-panel green lighten-3 z-depth-5">{{ recipe.recipe_name }}</span>
+                <span class="card-title card-panel green lighten-3 z-depth-5">{{ recipe.recipe_name }}</span>
             {% if recipe.is_gluten_free == "on" %}
-            <i class="fas fa-exclamation-circle light-blue-text text-lighten-2 tooltipped"
+                <i class="fas fa-exclamation-circle light-blue-text text-lighten-2 tooltipped"
                 data-position="right" data-tooltip="Gluten Free!"></i>
             {% endif %}
-        </div>
+            </div>
         <div class="card-content">
             <p>{{ recipe.category_name }} suggestion</p>
             <p><em>Added By:  {{ recipe.created_by_name }}</em></p>
