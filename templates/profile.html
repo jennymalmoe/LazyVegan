@@ -23,9 +23,6 @@
             <p>Oops there are no added recipes by you here. Let's share your favourite recipe right away! </p>
             <a href="{{ url_for('add_recipe') }}" class="waves-effect waves-light green lighten-3 btn">Add a recipe</a>
         </div>
-            <div class="water-hydrant">
-                <img src="/static/images/vegan_diet.jpg" class="col s4 responsive-img" alt="Image of a yellow fire water hydrant">    
-            </div>
     </div>
 {% endif %}
 <!-- When User has added recipes --> 
@@ -38,7 +35,7 @@
             {% if recipe.recipe_img %}
                 <img src="{{ recipe.recipe_img }}" alt="Recipe image" class="responsive-img">
             {% else %}
-                <img class="responsive-img" alt="Image of a woman eating fries" src="static/images/default.jpg">
+                <img class="responsive-img" alt="Image of a woman eating fries" src="{{ url_for('static', filename='images/default.jpg')}}">
             {% endif %}
                 <span class="card-title card-panel green lighten-3 z-depth-5">{{ recipe.recipe_name }}</span>
             {% if recipe.is_gluten_free == "on" %}

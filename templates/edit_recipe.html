@@ -35,6 +35,7 @@
             <div class="input-field col s12">
                 <i class="fas fa-camera-retro prefix"></i>
                 <input id="recipe_img" name="recipe_img" maxlength="1000"
+                    value="{{ recipe.recipe_img }}" placeholder="{{ recipe.recipe_img }}"
                     type="url" class="validate" aria-describedby="recipe_img" pattern="https?://.+" onchange="recipeImg();">
                 <label for="recipe_img">Recipe Image <em>(Copy and paste image url or use our default image by skipping this step Min height 100 px, Max height 600 px. Larger or smaller images may appear distorted)</em></label>
             </div>
@@ -87,12 +88,17 @@
             <div class="col s12 center-align">
                 <!-- Cancel btn -->
                 {% if session.user|lower == recipe.created_by_name|lower %}
-                    <a href="{{ url_for('get_recipe') }}" class="btn-small red darken-4 text-shadow">
-                    Cancel<i class="fas fa-edit right"></i></a>
+                    <a href="{{ url_for('get_recipe') }}" class="btn-small red darken-4 z-depth-5 text-shadow">
+                    Cancel</i></a>
                     <!-- Edit btn -->
                     <button href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" type="submit" class="btn-small green lighten-3 z-depth-5 text-shadow">
-                    Edit Recipe<i class="fas fa-edit right"></i></button>
+                    Save Changes</i></button>
                 {% endif %}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <a href="" target="_blank" class="orange darken-1 btn-small z-depth-5 text-shadow">Back to Recipe Page</a>
             </div>
         </div>
     </form>
