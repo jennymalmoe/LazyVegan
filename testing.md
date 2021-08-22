@@ -14,5 +14,11 @@ Frequent Visitor Goals
 
 Further Testing
 
-Known Bugs
+Known Bugs:
+
 The developer ran into several issues during the development of the site. These are the most distinguishing ones, along with either the solution or idea to implement in the future:
+
+buggar 
+image url didnt show when edited a recipe, missed to have a placeholder and value in the input for the img. added value="{{ recipe.recipe_img }}"
+﻿placeholder="{{ recipe.recipe_img }}" and works. 
+
