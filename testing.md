@@ -23,3 +23,13 @@ image url didnt show when edited a recipe, missed to have a placeholder and valu
 ﻿placeholder="{{ recipe.recipe_img }}" and works. 
 home text and img had an col-12 removed and replaced by col s12
 
+
+Testing länkar
+
+JSHint (JS file passed validator)
+PEP8 online
+W3C HTML Validator (all pages passed validator)
+W3C CSS Validator (css file passed validator)
+
+
+

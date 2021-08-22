@@ -53,6 +53,7 @@ ___
     * Acknowledgements
 
 # UX
+
 ## Project Goals
 The purpose of this project is to 
 
@@ -81,7 +82,6 @@ Eventually the recipe database will increase in both recipes and users/visitors.
 Find and share recipes. Get inspired by the recipes and get inspired to add/share own recipes at the site which is signals a that a vegan lifestyle doesn't have to be difficult. 
 
 ## User Stories
-
 * First Time Visitor Goals
 
     * As a first time visitor, I want to easily understand the main purpose of the site.
@@ -106,7 +106,6 @@ Find and share recipes. Get inspired by the recipes and get inspired to add/shar
     * As a frequent visitor, I want it to be quick and easy to add new recipes.
 
 ## Design Choices
-
 * Color scheme
 
     The page consists of a white base with black, light green and orange as accent colors. Button at home page is orange to draw the visitors attention to it since it's the first thing they see when entering the site. Main purpose is to get a large base of Lazy Vegans that adds recipes so the ramount of recipes increases.
@@ -117,8 +116,6 @@ Find and share recipes. Get inspired by the recipes and get inspired to add/shar
     
     Orange calls to mind feelings of enthusiasm and warmth. Orange has very high visibility, you can use it to draw attention and highlight the most important elements of your design. Orange is very effective for promoting especially food and kitchen products.
     
-    
-
     ![Color scheme](static/images/color_scheme.png)
 
 * Typography
@@ -136,22 +133,37 @@ Find and share recipes. Get inspired by the recipes and get inspired to add/shar
     All icons (except the one at the tab which is taken from FreeIcons) used are taken from Font Awsome. I have decided to choose icons for the search button, back to top icon, add buttons, log in button, log out button, cancel button, edit button, register button and social media link (Pinterest) in the footer.
 
 ## Wireframes 
-* [Mobile](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/mobile/wireframes_mobile.pages) 
+
+
+* [Mobile](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/mobile/wireframes_mobile.pdf) 
 * [Tablet](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/tablet/wireframes_tablet.pdf)
 * [Desktop](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/desktop/wireframes_desktop.pdf)
 
+**Post wireframes design changes:**
+While the project relied on these wireframes, there are some differences between the wireframes and the final product. 
+
+* Only register button at Home page and no Log In button.
+* I choose to only have one social media channel in footer.
+* There is no qoute at the bottom of Home page.
+* There are no category buttons at Recipe page.
+* Recipe cards at Recipe page has a little bit of different styling than in wireframes. 
+* No user information in Profile page. 
+* Slightly different layout of the recipes after you clicked to view recipe.
+
+
 # Features
+
 ## Existing Features 
+
+Every page of the website features a consistently responsive and intuitive layout and navigational system:
+
+**General features**
 * Fixed navbar to be seen at all times.
 * Footer on all pages.  
 * Responsive site on all devices. 
-
-**Navbar** 
 * Fixed on top of the page on all device sizes.
 * Shown as a collapsible navbar (hamburger button) triggered at tablets and mobile devices. 
 * Search bar allowing visitors to search for recipes. 
-
-**Footer**
 * Visitor can contact Lazy Vegan (mail) by clicking at mail address in footer.
 * Visitor/Users can follow Lazy Vegan at Pinterest by clicking Pinterest icon.
 
@@ -216,25 +228,19 @@ Find and share recipes. Get inspired by the recipes and get inspired to add/shar
 ## Features left to implement
 * Email notification functionality for users to be alerted when a new recipe is added.
 * Be able to search through categories, kind of food (italian, mexican etc).
+* Ability to reset an account password.
 * User profile picture functionality, allowing users to add profile pictures.
 * Allowing/Enabling users to comment the recipes.
 * Present more information about the benefits for being a vegan and living a vegan lifestyle.
 * Easier to get contacted by business partners regarding any collaboration, business deals and sponsorship.
-* Get more contact information about the registered users to be able to reach out (news letters, offers etc).
+* Get more contact information about the registered users to be able to reach out (newsletters, offers etc).
 * Some kind of chatt/forum for the community to grow. 
 
-# Database Design
-MongoDB was used for this project and schema design was created. SE MOVIE BILD(ÄNDRA)
+# Database
+MongoDB Atlas is used as database backend for storing user and recipes details. There are three collections; 
 
-MongoDB Atlas is used as my database backend for storing user and recipes details. There are three collections, "categories", "users" and "recipes". 
-* Categories holds the four different categories; Breakfast, Lunch, Dinner and Dessert.
-* Users holds the session details - id, username and password. 
-* Recipes holds all of the added recipes and their details, such as "Recipe Name", "Added by", "Ingredients" etc.
-
-Database schema
-
-Users collection:
-
+## Database schema
+![Database](static/images/db_scheme.png)
 
 # Technologies Used
 

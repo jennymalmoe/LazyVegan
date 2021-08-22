@@ -73,13 +73,8 @@ main {
 	float: left;
 }
 
-/*.home-text {
-	padding-top: 30px;
-}
-
-.register-btn {
-	padding-top: 30px;
-	padding-left: 100px;
+.popular-card {
+	height: 870px;
 }
 
 /* RECIPE PAGE*/
