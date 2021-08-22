@@ -73,13 +73,13 @@ main {
 	float: left;
 }
 
-.home-text {
-	padding-top: 130px;
+/*.home-text {
+	padding-top: 30px;
 }
 
 .register-btn {
 	padding-top: 30px;
-	padding-left: 170px;
+	padding-left: 100px;
 }
 
 /* RECIPE PAGE*/
@@ -249,18 +249,32 @@ padding-bottom: 30px;
 }
 
 /* Media queries */
-/* Desktop */
-@media screen and (max-width: 1200px) {
+/* Desktop extra large screens*/
+@media screen and (max-width: 2000px) {
 	.register-btn {
-		padding-left: 0px;
-		padding-top: 0px;
+		padding-left: 140px;
+		padding-top: 15px;
+	}
+	.home-text {
+		padding-top: 90px;
+	}
+	}
+
+/* Desktop */
+@media screen and (max-width: 1300px) {
+	.register-btn {
+		padding-left: 100px;
+		padding-top: 1px;
+	}
+	.home-text {
+		padding-top: 15px;
 	}
 	}
 
 /* Tablets Ipad*/
 @media screen and (max-width: 1024px) {
 	.register-btn {
-		padding-left: 70px;
+		padding-left: 90px;
 		padding-top: 1px;
 	}
 	.home-text {
