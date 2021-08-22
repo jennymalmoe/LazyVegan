@@ -16,10 +16,6 @@ h4 {
 	line-height: 2;
 }
 
-.my-5 {
-	height: inherit;
-}
-
 /* Back to top btn */
 #myBtn {
 	display: none;
@@ -78,11 +74,11 @@ main {
 }
 
 .home-text {
-	padding-top: 60px;
+	padding-top: 130px;
 }
 
 .register-btn {
-	padding-top: 20px;
+	padding-top: 30px;
 	padding-left: 170px;
 }
 
@@ -137,6 +133,14 @@ padding-bottom: 30px;
 /* Shop text */
 .shop-text {
 	padding-bottom: 20px;
+}
+
+.shop-card {
+	height: 950px;
+}
+
+.shop-btn {
+	margin-top: 5px;
 }
 
 /* ADD RECIPE PAGE*/
@@ -247,27 +251,28 @@ padding-bottom: 30px;
 /* Media queries */
 /* Desktop */
 @media screen and (max-width: 1200px) {
-	
-	
+	.register-btn {
+		padding-left: 0px;
+		padding-top: 0px;
+	}
 	}
 
 /* Tablets Ipad*/
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
 	.register-btn {
-	padding-left: 70px;
-	padding-top: 5px;
+		padding-left: 70px;
+		padding-top: 1px;
 	}
-
 	.home-text {
-		padding-top: 0px;
+		padding-top: 1px;
 	}
 	}
 
 /* Tablets Ipad*/
 @media screen and (max-width: 768px) {
 	.register-btn {
-	padding-left: 75px;
-	padding-top: 5px;
+		padding-left: 80px;
+		padding-top: 5px;
 	}
 	.home-text {
 		padding-top: 10px;
@@ -277,7 +282,7 @@ padding-bottom: 30px;
 /* Mobile */
 @media screen and (max-width: 480px) {
 	.register-btn {
-	padding-left: 90px;
+		padding-left: 90px;
 	}
 	}
 

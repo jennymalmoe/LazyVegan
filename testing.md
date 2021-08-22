@@ -21,4 +21,5 @@ The developer ran into several issues during the development of the site. These 
 buggar 
 image url didnt show when edited a recipe, missed to have a placeholder and value in the input for the img. added value="{{ recipe.recipe_img }}"
 ﻿placeholder="{{ recipe.recipe_img }}" and works. 
+home text and img had an col-12 removed and replaced by col s12
 
