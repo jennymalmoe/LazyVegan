@@ -86,8 +86,8 @@ Find and share recipes. Get inspired by the recipes and get inspired to add/shar
 
     * As a first time visitor, I want to easily understand the main purpose of the site.
     * As a first time visitor, I want the site navigation to be intutive, user friendly and over all ease-of-use.
-    * As a first time visitor, I want to be inspired and taken by surprise regarding this new way of thinking about vegan food.
-    * As a first time visitor, I want to find easy vegan fast food recipes.
+    * As a first time visitor, I want to be inspired and taken by surprise regarding this new way of thinking about vegan food (easy fast food recipes).
+    * As a first time visitor, I want to easily access the recipes.
     * As a first time visitor, I want to be inspired by the site, the recipes and the design. Get a positive feel. 
     * As a first time visitor, I want to be able to create, read, update, delete and search for recipes.
     * As a first time visitor, I want to be able to take part of this community/recipe bank by be able to register. 
@@ -130,25 +130,115 @@ Find and share recipes. Get inspired by the recipes and get inspired to add/shar
     ![Fonts](static/images/fonts.png)
 
 * Imagery
-    Images and the choices of the images is an important component of this site. I chose contemporary, clean images that appeal to the target group. I have four appealing images at the home page to catch the visitors intrerest right away. 
+    Images and the choices of the images is an important component of this site. I chose contemporary, clean images that appeal most audiences. I have four appealing images at the home page to catch the visitors intrerest right away. I use lot of space around images and content to get the visitor an uncluttered and comfortable browsing experience on all device sizes.
 
 * Icons
-    Icons used in footer to set the tone for the sites design approach.(Ã„NDRA)
+    All icons (except the one at the tab which is taken from FreeIcons) used are taken from Font Awsome. I have decided to choose icons for the search button, back to top icon, add buttons, log in button, log out button, cancel button, edit button, register button and social media link (Pinterest) in the footer.
 
 ## Wireframes 
-* [Mobile](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/mobile###) 
-* [Tablet](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/tablet###)
-* [Desktop](https://github.com/jennymalmoe/MSP3/tree/main/wireframes/desktop###)
+* [Mobile](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/mobile/wireframes_mobile.pages) 
+* [Tablet](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/tablet/wireframes_tablet.pdf)
+* [Desktop](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/desktop/wireframes_desktop.pdf)
 
 # Features
-left to implement collab business deals sponsorship
+## Existing Features 
+* Fixed navbar to be seen at all times.
+* Footer on all pages.  
+* Responsive site on all devices. 
+
+**Navbar** 
+* Fixed on top of the page on all device sizes.
+* Shown as a collapsible navbar (hamburger button) triggered at tablets and mobile devices. 
+* Search bar allowing visitors to search for recipes. 
+
+**Footer**
+* Visitor can contact Lazy Vegan (mail) by clicking at mail address in footer.
+* Visitor/Users can follow Lazy Vegan at Pinterest by clicking Pinterest icon.
+
+**Home Page**
+* Features a modern design and eye catching image.
+* Visitor/Users can get redirected directly to Recipe page. 
+* Registration, visitors allows to register.
+
+**Recipe Page**
+* Visitors/Users can search for recipes.
+* Features a clean search bar for user to search. 
+* Visitors/Users can read recipes.
+* Visitors/Users can see who added the recipes.
+
+**Shop Page**
+* Kitchen ware is presented and visitor can get inspired by the products and get redirected to the site and buy the products.
+* Features some examples of products that goes hand in hand with the rest of the sites purpose; eco and vegan friendly kitchen ware.
+
+**Log In Page**
+* Log In is possible after registered.
+* User gets a success message when loged in to verify user stated right username and password.
+* Features a clean log in form for user to log in.
+* Users can be redirected directly to Registration Page if not already registered.
+* Users can contact Lazy Vegan (mail).
+* User get redirected to Profile Page after login in.
+
+**Log Out**
+* User get redirected to Log In Page after login in.
+* User gets a success message when loged out to verify user loged out.
+* Features a clean log out form for user to log out.
+
+**Register Page**
+* Registration, visiters allows to register.
+* User gets a "welcome message" at Profile page when registered to verify user registration. 
+* Features a clean registration form for visitor to sign up.
+* Visitor can be redirected directly to Log In Page if already registered.
+* Visitor can contact Lazy Vegan (mail).
+* User get redirected to Profile Page after registered.
+
+**Profile Page**
+* Users can see own added recipes. 
+* If user hasn't added any recipes, a suggestion to do that is presented along with a button to redirect directly to Add Recipe page. 
+* Users can edit, delete and add recipes. 
+
+**Add Recipes**
+* User can choose between four categories, add a recipe name, image url, choose to use default image insted of own image, see a preview of that image url, add ingredients and directions for the recipe, tell if it is a gluten free recipe or not.
+* User gets a success message when added a recipe to verify adding recipe completed.
+* Features a clean form for user to add a recipe.
+* Done adding recipe get redirected to Recipe Page.
+
+**Edit Recipe**
+* Edit one or more sections in the recipe (only recipes added by user her self).
+* User gets a success message when edited a recipe to verify updated recipe completed.
+* Delete a recipe (only recipes added by user her self).
+* Features a clean form for user to edit, delete or cancel.
+* Each section is pre-filled with data provided when adding recipe in first place. 
+* Done editing recipe get redirected to Recipe Page.
+
+**Delete Recipe**
+* User gets a success message when deleting a recipe to verify recipe now deleted. 
+
+## Features left to implement
+* Email notification functionality for users to be alerted when a new recipe is added.
+* Be able to search through categories, kind of food (italian, mexican etc).
+* User profile picture functionality, allowing users to add profile pictures.
+* Allowing/Enabling users to comment the recipes.
+* Present more information about the benefits for being a vegan and living a vegan lifestyle.
+* Easier to get contacted by business partners regarding any collaboration, business deals and sponsorship.
+* Get more contact information about the registered users to be able to reach out (news letters, offers etc).
+* Some kind of chatt/forum for the community to grow. 
 
 # Database Design
 MongoDB was used for this project and schema design was created. SE MOVIE BILD(Ã„NDRA)
 
+MongoDB Atlas is used as my database backend for storing user and recipes details. There are three collections, "categories", "users" and "recipes". 
+* Categories holds the four different categories; Breakfast, Lunch, Dinner and Dessert.
+* Users holds the session details - id, username and password. 
+* Recipes holds all of the added recipes and their details, such as "Recipe Name", "Added by", "Ingredients" etc.
+
+Database schema
+
+Users collection:
+
+
 # Technologies Used
 
-* Languages, Frameworks and Libraries
+**Languages, Frameworks and Libraries**
 
 * [BSON](https://bsonspec.org/) - bson.objectid is a required dependency for MongoDB management system.
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - used to create the styling throughout the site.
@@ -164,7 +254,7 @@ MongoDB was used for this project and schema design was created. SE MOVIE BILD(Ã
 * [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/) - used for password hashing and authentication.
     
     
-* Tools and Editors
+**Tools and Editors**
 
 * [Am I Responsive](http://ami.responsivedesign.is/) - used to validate the responsiveness. 
 * [Balsamiq](https://balsamiq.com/) - used to create the wireframes.
@@ -197,15 +287,83 @@ MongoDB was used for this project and schema design was created. SE MOVIE BILD(Ã
 Testing information can be found in separate [testing.md file]()
 
 # Deployment
-* GitHub Pages (se ex)
-* Forking the GitHub Repository
-* Making a Local Clone
+
+Requirements to deploy:
+
+* An IDE (Gitpod)
+* Python3 (In order to to run the application and use Flask)
+* PIP3 (To install all application imports, such as Flask and OS)
+* A template folder (To link app routes)
+* A database (MongoDB Atlas)
+
+## MongoDB Configuration
+1. Login to your MongoDB Account.
+2. From Clusters tab, click on Connect.
+3. Select Connect to your application.
+4. Select Python as Driver and choose Version 3.6 or later
+5. Create a new env.py file in your project, paste and save the connection link and variables.
+
+![mongo](static/images/mongo_db.png)
+
+6. Create an instance of PyMongo
+
+![py_mongo](static/images/py_mongo.png)
+
+## Deploy project to Heroku
+1. Before deploying your project create a requirements.txt file by running the following command in the CLI;
+
+![pip3](static/images/pip3.png)
+
+2. Create a Procfile file by running the following command in the CLI;
+
+![procfile](static/images/procfile.png)
+
+3. Log in to [Heroku](https://dashboard.heroku.com/apps).
+4. Select "New" on your dashboard and then select "Create new app".
+5. Choose a name for your application, select your region, and then click "Create app".
+6. From the app dashboard, navigate to "Deploy" tab.
+7. From Deployment method Click on "Github" and click "Search" then select your repository name.
+8. Once you select your repository, click on "Connect".
+9. After you connected to your repository, click on "Settings" tab on your app dashboard, and click on "Reveal Config Vars" and add your configuration variables to Heroku.
+10. Navigate to "Deploy" tab, and from Manual deploy choose your master branch, and click "Deploy Branch".
+11. After you deploy your branch "Enable Automatic Deploys".
+12. Site is successfully deployed, any futher changes will automatically be updated everytime they are commited and pushed on Github.
+
+## Forking the GitHub Repository
+
+You can fork a GitHub Repository to make a copy of the original repository. You can make changes and review this copy without it affects the original repository; 
+1. Log in to GitHub and locate the GitHub Repository. 
+2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button. 
+3. You should now have a copy of the original repository in your GitHub account.
+
+
+## Making a Local Clone
+1. Log in to GitHub and locate the GitHub Repository.
+2. Under the repository name, click "Clone or download".
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
+4. Open Git Bash
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type git clone, and then paste the URL you copied in Step 3.
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+7. Press Enter. Your local clone will be created.
+$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+> Cloning into `CI-Clone`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
 
 # Credits
 * Code 
 * Content
 * Media
 * Acknowledgements
+* My mentor Oluwaseun Owonikoko for helpfull feedback througout the project.
+* Code Institute tutor support.
+* Fellow students on Slack for a helping hand when I've got stuck.
+* Google.
+
+Site for educational purposes only.
 
 
 

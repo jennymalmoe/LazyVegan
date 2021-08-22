@@ -15,3 +15,4 @@ Frequent Visitor Goals
 Further Testing
 
 Known Bugs
+The developer ran into several issues during the development of the site. These are the most distinguishing ones, along with either the solution or idea to implement in the future:
