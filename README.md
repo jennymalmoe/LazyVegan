@@ -440,8 +440,8 @@ Making a copy of the original repository on our GitHub account to view or to mak
 8. Once you select your repository, click on "Connect".
 9. After you connected to your repository, click on "Settings" tab on your app dashboard, and click on "Reveal Config Vars" and add your configuration variables to Heroku.
 10. Navigate to "Deploy" tab, and from Manual deploy choose your master branch, and click "Deploy Branch".
-11. After you deploy your branch "Enable Automatic Deploys".
-12. Site is successfully deployed, any futher changes will automatically be updated everytime they are commited and pushed on Github.
+11. After you deployed your branch "Enable Automatic Deploys".
+12. Site is successfully deployed, any further changes will automatically be updated everytime they are commited and pushed on Github.
 
 <br>
 
