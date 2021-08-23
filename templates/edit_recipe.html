@@ -50,7 +50,7 @@
                 <i class="fas fa-list prefix"></i>
                 <textarea id="recipe_ingredients" name="recipe_ingredients" minlength="5"
                     maxlength="200" class="materialize-textarea validate" required>
-                    {{- recipe.recipe_ingredients -}}
+                {{- recipe.recipe_ingredients -}}
                 </textarea>
                 <label for="recipe_ingredients">Ingredients</label>
             </div>
@@ -61,7 +61,7 @@
                 <i class="fas fa-list-ol prefix"></i>
                 <textarea id="recipe_directions" name="recipe_directions" minlength="5"
                     maxlength="200" class="materialize-textarea validate" required>
-                    {{- recipe.recipe_directions -}}
+                {{- recipe.recipe_directions -}}
                 </textarea>
                 <label for="recipe_directions">Directions</label>
             </div>
@@ -72,13 +72,13 @@
                 <div class="switch">
                     <i class="fas fa-bread-slice"></i>
                     <label for="gluten_free">
-                        {% if recipe.is_gluten_free == "on" %}
-                            <input type="checkbox" id="gluten_free" name="gluten_free" checked>
-                        {% else %}
-                            <input type="checkbox" id="gluten_free" name="gluten_free">
-                        {% endif %}
-                            <span class="lever"></span>
-                             Gluten-Free
+                    {% if recipe.is_gluten_free == "on" %}
+                        <input type="checkbox" id="gluten_free" name="gluten_free" checked>
+                    {% else %}
+                        <input type="checkbox" id="gluten_free" name="gluten_free">
+                    {% endif %}
+                        <span class="lever"></span>
+                    Gluten-Free
                     </label>
                 </div>
             </div>
@@ -90,9 +90,9 @@
                 {% if session.user|lower == recipe.created_by_name|lower %}
                     <a href="{{ url_for('get_recipe') }}" class="btn-small red darken-4 z-depth-5 text-shadow">
                     Cancel</a>
-                    <!-- Edit btn -->
+                <!-- Edit btn -->
                     <button href="{{ url_for('edit_recipe', recipe_id=recipe._id) }}" type="submit" class="btn-small green lighten-3 z-depth-5 text-shadow">
-                    Save Changes</button>
+                Save Changes</button>
                 {% endif %}
             </div>
         </div>
@@ -103,5 +103,4 @@
         </div>
     </form>
 </div>
-
 {% endblock %}

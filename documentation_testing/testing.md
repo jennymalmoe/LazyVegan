@@ -24,6 +24,7 @@
       - **JSHint Results**
       - **PEP8 Online Validator Results**
   * Manual Testing
+
 3. [**Bugs Discovered**](#bugs-discovered)
 
 <br>

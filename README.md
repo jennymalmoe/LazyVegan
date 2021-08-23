@@ -276,7 +276,7 @@ Every page of the website features a consistently responsive and intuitive layou
 
 <br>
 
-# Database
+# Database Design
 
 <br>
 

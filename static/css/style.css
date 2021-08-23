@@ -279,7 +279,8 @@ padding-bottom: 30px;
 /* Mobile */
 @media screen and (max-width: 480px) {
 	.search-section {
-		flex-direction: column;
+		display: flex;
+	flex-direction: row;
 	}
 	}
 
