@@ -91,7 +91,7 @@ Find and share recipes. Get inspired by the recipes and get inspired to add/shar
     * As a first time visitor, I want to be inspired by the site, the recipes and the design. Get a positive feel. 
     * As a first time visitor, I want to be able to create, read, update, delete and search for recipes.
     * As a first time visitor, I want to be able to take part of this community/recipe bank by be able to register. 
-    * As a first time visitor, I want to locate some sort of social media links to be able to follow and get a feel for the credibility of the site. 
+    * As a first time visitor, I want to locate some sort of contact information or social media links to be able to follow and get a feel for the credibility of the site. 
 
 * Returning Visitor Goals
 
@@ -290,7 +290,7 @@ MongoDB Atlas is used as database backend for storing user and recipes details. 
 * [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) - used to host the database.
 
 # Testing
-Testing information can be found in separate [testing.md file]()
+See separate [testing.md file](./testing.md)
 
 # Deployment
 
@@ -318,11 +318,11 @@ Requirements to deploy:
 ## Deploy project to Heroku
 1. Before deploying your project create a requirements.txt file by running the following command in the CLI;
 
-![pip3](static/images/pip3.png)
+    **pip3 freeze --local > requirements.txt**
 
 2. Create a Procfile file by running the following command in the CLI;
 
-![procfile](static/images/procfile.png)
+    **echo web: python app.py > Procfile**
 
 3. Log in to [Heroku](https://dashboard.heroku.com/apps).
 4. Select "New" on your dashboard and then select "Create new app".
@@ -335,39 +335,21 @@ Requirements to deploy:
 11. After you deploy your branch "Enable Automatic Deploys".
 12. Site is successfully deployed, any futher changes will automatically be updated everytime they are commited and pushed on Github.
 
-## Forking the GitHub Repository
-
-You can fork a GitHub Repository to make a copy of the original repository. You can make changes and review this copy without it affects the original repository; 
-1. Log in to GitHub and locate the GitHub Repository. 
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button. 
-3. You should now have a copy of the original repository in your GitHub account.
-
 
 ## Making a Local Clone
-1. Log in to GitHub and locate the GitHub Repository.
+1. Log in to GitHub and locate the GitHub Repository
 2. Under the repository name, click "Clone or download".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
 5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type git clone, and then paste the URL you copied in Step 3.
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+6. Type **git clone**, and then paste the URL you copied in Step 3.
 7. Press Enter. Your local clone will be created.
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
-> Cloning into `CI-Clone`...
-> remote: Counting objects: 10, done.
-> remote: Compressing objects: 100% (8/8), done.
-> remove: Total 10 (delta 1), reused 10 (delta 1)
-> Unpacking objects: 100% (10/10), done.
 
 # Credits
-* Code 
-* Content
-* Media
-* Acknowledgements
 * My mentor Oluwaseun Owonikoko for helpfull feedback througout the project.
 * Code Institute tutor support.
 * Fellow students on Slack for a helping hand when I've got stuck.
-* Google.
+* Google!
 
 Site for educational purposes only.
 

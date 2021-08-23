@@ -237,12 +237,6 @@ padding-bottom: 30px;
 	color: #000000;
 }
 
-.water-hydrant {
-	size: 300px;
-	padding-left: 510px;
-	padding-top: 120px;
-}
-
 /* Media queries */
 /* Desktop extra large screens*/
 @media screen and (max-width: 2000px) {
@@ -294,5 +288,6 @@ padding-bottom: 30px;
 		padding-left: 90px;
 	}
 	}
+
 
 	
