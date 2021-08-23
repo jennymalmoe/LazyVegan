@@ -178,13 +178,13 @@ As seen there where no other errors. Error showed below;
 
 - __Edit Recipe__
 <p align="center">
-  <img src="" >
+  <img src="html_validator/html_editrecipe.png" >
 </p>
 
 
-- __Recipe Details__
+- __View Recipe__
 <p align="center">
-  <img src="" >
+  <img src="html_validator/html_viewrecipe.png" >
 </p>
 
 </details>
