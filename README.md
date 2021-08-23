@@ -2,9 +2,9 @@
 
 <br>
 
-[View live website here!](###)
+[View live website here!](https://flask-milestone-3-project.herokuapp.com/home)
 
-[View GitHub repository here!](###)
+[View GitHub repository here!](https://github.com/jennymalmoe/MSP3)
 
 <br>
 
@@ -183,6 +183,7 @@ While the project relied on these wireframes, there are some differences between
 * No user information in Profile page. 
 * Slightly different layout of the recipes after you clicked to view recipe.
 
+<br>
 
 # Features
 
@@ -369,11 +370,11 @@ Requirements to deploy:
 <br>
 
 ## MongoDB Configuration
-1. Login to your MongoDB Account.
+1. Login to your [MongoDB](https://www.mongodb.com/) Account.
 2. From Clusters tab, click on Connect.
 3. Select Connect to your application.
 4. Select Python as Driver and choose Version 3.6 or later
-5. Create a new env.py file in your project, paste and save the connection link and variables.
+5. Create a new env python file in your project, paste and save the connection link and variables.
 
 ![mongo](static/images/mongo_db.png)
 
@@ -383,8 +384,8 @@ Requirements to deploy:
 
 <br>
 
-## Deploy to GitHub Pages from GitHib repository
-1. Log into GitHub
+## GitHub Pages
+1. Log into [GitHub](https://github.com/)
 2. From the list of repositories, select the repository wanting to deploy.
 3. From the menu items near the top of bthe page, select "Settings"
 4. Scroll down to the GitHub Pages section.
@@ -394,16 +395,24 @@ Requirements to deploy:
 
 <br>
 
-## How to run this project locally
+## Forking the GitHub Repository
+Making a copy of the original repository on our GitHub account to view or to make changes without affecting the original repository;
+1. Log into [GitHub](https://github.com/) and locate the repository.
+2. At the top of the Repository, just above the "Settings" button on the menu, locate the "Fork" button.
+3. You should now have a copy of the original repository in your GitHub account.
+
+<br>
+
+## Making a Local Clone
 1. Install the Gitpod Browser Extentions for Chrome.
 2. After installation, restart the browser. 
-3. Log in to Gitpod with your gitpod account.
+3. Log in to [Gitpod](https://www.gitpod.io/) with your gitpod account.
 4. Navigate to the Project GitHub repository.
 5. Click the green "Gitpod" button in the top right corner of the repository.
 6. This triggers a new gitpod workspace to be created from the code in GitHub where you can work locally.
 
-### To work on the project code within a local IDE 
-1. Log in to GitHub and locate the GitHub Repository.
+## To work on the project code within a local IDE 
+1. Log in to [GitHub](https://github.com/) and locate the GitHub Repository.
 2. Under the repository name, click "Clone or download".
 3. In the clone with HTTPs section, copy the clone URL for the repository.
 4. Open the terminal in your local IDE.

@@ -3,7 +3,8 @@
 ## Lazy Vegan Fast Food Recipes!
 
 <br>
-[View live website here!](###)
+
+[View live website here!](https://flask-milestone-3-project.herokuapp.com/home)
 
 [View README.md here!](https://github.com/jennymalmoe/MSP3/blob/main/README.md)
 
@@ -11,23 +12,25 @@
 
 ## Contents Table
 
-1. [**Testing User Stories from UX Design Section**](#user-stories)
+1. [**Testing User Stories from UX Design Section**](#testing-user-stories-from-ux-design-section)
     - **First Time Visitor Goals**
     - **Returning Visitor Goals**
     - **Frequent User Goals**
 
 2. [**Testing**](#testing)
+
+* Automated testing
     - **W3C Markup Validator Results**
     - **W3C CSS Validator Results**
     - **JSHint Results**
     - **PEP8 Online Validator Results**
-    - **Debugging**
+* Manual testing
 
-3. [**Further Manual Testing**](#further-manual-testing)
+3. [**Debugging**](#debugging)
 
 <br>
 
-## 1. Testing User Stories from UX Design Section
+# 1. Testing User Stories from UX Design Section
 
 <br>
 
@@ -119,9 +122,15 @@
 
 ![Recipe page](/documentation_testing/img_testing/testing_recipes.png)
 
-## 1. Testing
+# 2. Testing
 
 <br>
+
+### Automated Testing
+
+<br>
+
+To make make it easier to validate the html (since using jinja templating language which results in errors in online validators), I copied the code from "View page source" and pasted it in "The W3C Markup Validation".
 
 <details><summary><b>Click here for HTML Validator results</b></summary>
 
@@ -196,7 +205,7 @@
 </p>
 </details>
 
-<details><summary><b>PEP8 Online results</b></summary>
+<details><summary><b>Click here for PEP8 Online results</b></summary>
 
 - __PEP8 Online Results__
 <p align="center">
@@ -206,11 +215,9 @@
 
 <br>
 
-### Debugging
-
 <br>
 
-### Further Manual Testing
+### Manual Testing
 
 <br>
 
@@ -363,6 +370,11 @@
 
 <br>
 
+## 3. Debugging
+
+* Solved bugs
+* Unsolved bugs
+
 #### __[Back to Contents Table](#contents-table)__ 
 
 
@@ -374,17 +386,10 @@ vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 
 The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
 
-* W3C Markup Validator - Results
-* W3C CSS Validator - Results
-jshint
 
-Testing User Stories from User Experience (UX) Section (se ex)
 
-First Time Visitor Goals
-Returning Visitor Goals
-Frequent Visitor Goals
 
-Further Testing
+
 
 Known Bugs:
 
