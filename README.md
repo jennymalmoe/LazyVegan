@@ -383,6 +383,36 @@ Requirements to deploy:
 
 <br>
 
+## Deploy to GitHub Pages from GitHib repository
+1. Log into GitHub
+2. From the list of repositories, select the repository wanting to deploy.
+3. From the menu items near the top of bthe page, select "Settings"
+4. Scroll down to the GitHub Pages section.
+5. Under "Source" click the drop-down menu labbelled "None" and select "Master Branch"
+6. On selecting "Master Branch" the page is automatically refreshed, website is now deplyed. 
+7. Scroll back down to the GitHub Pages section to retrieve the link to the deployed site. 
+
+<br>
+
+## How to run this project locally
+1. Install the Gitpod Browser Extentions for Chrome.
+2. After installation, restart the browser. 
+3. Log in to Gitpod with your gitpod account.
+4. Navigate to the Project GitHub repository.
+5. Click the green "Gitpod" button in the top right corner of the repository.
+6. This triggers a new gitpod workspace to be created from the code in GitHub where you can work locally.
+
+### To work on the project code within a local IDE 
+1. Log in to GitHub and locate the GitHub Repository.
+2. Under the repository name, click "Clone or download".
+3. In the clone with HTTPs section, copy the clone URL for the repository.
+4. Open the terminal in your local IDE.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type **git clone**, and then paste the URL you copied in Step 3.
+7. Press Enter. Your local clone will be created.
+
+<br>
+
 ## Heroku Deployment
 1. Before deploying your project create a requirements.txt file by running the following command in the CLI;
 
@@ -403,25 +433,6 @@ Requirements to deploy:
 10. Navigate to "Deploy" tab, and from Manual deploy choose your master branch, and click "Deploy Branch".
 11. After you deploy your branch "Enable Automatic Deploys".
 12. Site is successfully deployed, any futher changes will automatically be updated everytime they are commited and pushed on Github.
-
-<br>
-
-## How to run this project locally
-1. Install the Gitpod Browser Extentions for Chrome.
-2. After installation, restart the browser. 
-3. Log in to Gitpod with your gitpod account.
-4. Navigate to the Project GitHub repository.
-5. Click the green "Gitpod" button in the top right corner of the repository.
-6. This triggers a new gitpod workspace to be created from the code in GitHub where you can work locally.
-
-### To work on the project code within a local IDE 
-1. Log in to GitHub and locate the GitHub Repository.
-2. Under the repository name, click "Clone or download".
-3. In the clone with HTTPs section, copy the clone URL for the repository.
-4. Open the terminal in your local IDE.
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type **git clone**, and then paste the URL you copied in Step 3.
-7. Press Enter. Your local clone will be created.
 
 <br>
 
