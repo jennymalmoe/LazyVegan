@@ -130,27 +130,51 @@
 
 <br>
 
-To make make it easier to validate the html (since using jinja templating language which results in errors in online validators), I copied the code from "View page source" and pasted it in "The W3C Markup Validation".
+To make make it easier to validate the html, since using jinja templating language throughout all pages, which results in errors in online validators. I copied the code from "View page source" and pasted it in "The W3C Markup Validation". Still one error keept showing at every page (due to jinja templating language) when run in validator. The section showed in page source because of the div and h4 (I guess). This also happend when validated profile page. 
+
+As seen there where no other errors. Error showed below;
+
+![Returning "Error"](html_validator/error_in_validator.png)
+
+<br>
 
 <details><summary><b>Click here for HTML Validator results</b></summary>
 
 - __Home__
 <p align="center">
-  <img src="" >
+  <img src="html_validator/html_home.png" >
 </p>
 
 
 - __Recipe__
 <p align="center">
-  <img src="" >
+  <img src="html_validator/html_recipe.png" >
 </p>
 
-
-- __Add Recipe__
+- __Shop__
 <p align="center">
-  <img src="" >
+  <img src="html_validator/html_shop.png" >
 </p>
 
+- __Log In__
+<p align="center">
+  <img src="html_validator/html_login.png" >
+</p>
+
+- __Register__
+<p align="center">
+  <img src="html_validator/html_register.png" >
+</p>
+
+- __Add Recipes__
+<p align="center">
+  <img src="html_validator/html_addrecipe.png" >
+</p>
+
+- __Profile__
+<p align="center">
+  <img src="html_validator/html_profile.png" >
+</p>
 
 - __Edit Recipe__
 <p align="center">
@@ -159,30 +183,6 @@ To make make it easier to validate the html (since using jinja templating langua
 
 
 - __Recipe Details__
-<p align="center">
-  <img src="" >
-</p>
-
-
-- __Shop__
-<p align="center">
-  <img src="" >
-</p>
-
-
-- __Log In__
-<p align="center">
-  <img src="" >
-</p>
-
-
-- __Register__
-<p align="center">
-  <img src="" >
-</p>
-
-
-- __Profile__
 <p align="center">
   <img src="" >
 </p>
