@@ -383,20 +383,21 @@ Requirements to deploy:
 
 <br>
 
-## Deploy project to Heroku
+## Heroku Deployment
 1. Before deploying your project create a requirements.txt file by running the following command in the CLI;
 
-    **pip3 freeze --local > requirements.txt**
+    ![pip freeze](static/images/pip_freeze.png)
 
 2. Create a Procfile file by running the following command in the CLI;
 
-    **echo web: python app.py > Procfile**
+    ![procfile](static/images/echo.png)
 
+3. git add and git commit the new requirements and Procfile and then git push the project to GitHub.
 3. Log in to [Heroku](https://dashboard.heroku.com/apps).
 4. Select "New" on your dashboard and then select "Create new app".
 5. Choose a name for your application, select your region, and then click "Create app".
 6. From the app dashboard, navigate to "Deploy" tab.
-7. From Deployment method Click on "Github" and click "Search" then select your repository name.
+7. From Deployment method select "Github" and confirm the linking of the Heroku app by clicking "Search" then select your repository name.
 8. Once you select your repository, click on "Connect".
 9. After you connected to your repository, click on "Settings" tab on your app dashboard, and click on "Reveal Config Vars" and add your configuration variables to Heroku.
 10. Navigate to "Deploy" tab, and from Manual deploy choose your master branch, and click "Deploy Branch".
@@ -405,11 +406,19 @@ Requirements to deploy:
 
 <br>
 
-## Making a Local Clone
-1. Log in to GitHub and locate the GitHub Repository
+## How to run this project locally
+1. Install the Gitpod Browser Extentions for Chrome.
+2. After installation, restart the browser. 
+3. Log in to Gitpod with your gitpod account.
+4. Navigate to the Project GitHub repository.
+5. Click the green "Gitpod" button in the top right corner of the repository.
+6. This triggers a new gitpod workspace to be created from the code in GitHub where you can work locally.
+
+### To work on the project code within a local IDE 
+1. Log in to GitHub and locate the GitHub Repository.
 2. Under the repository name, click "Clone or download".
-3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
-4. Open Git Bash
+3. In the clone with HTTPs section, copy the clone URL for the repository.
+4. Open the terminal in your local IDE.
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type **git clone**, and then paste the URL you copied in Step 3.
 7. Press Enter. Your local clone will be created.
