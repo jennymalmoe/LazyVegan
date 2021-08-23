@@ -81,7 +81,7 @@ Create a web application that allows users to:
 * Edit their recipes (UPDATE)
 * Delete their recipes (DELETE)
     
-The purpose is to get both people who aldready eats vegan and those who don't yet, inspired by the delicious recipes. 
+**The purpose is to get both people who aldready eats vegan and those who don't yet, inspired to try (more/new) vegan food by the delicious recipes. Vegan food doesn't have to be only beans and lenses, on the contrary it could be really greasy, tasty and easy to make dishes.**
 
 So the site targets a very broad group of people, of all ages, genders, cooking skills (both those who likes to cook but especially thos who is looking for easy recipes) and as well both vegans and those who are not. 
 One of the simplest but most important benefits of a broad market is the ability to target a larger number of total prospects with this site. The more total interested visitors you reach out to, the better. 
