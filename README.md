@@ -1,14 +1,18 @@
 # Lazy Vegan Fast Food Recipes!
 
+<br>
+
 [View live website here!](###)
 
 [View GitHub repository here!](###)
+
+<br>
 
 ![site on different devices](static/images/mock_up.png) 
 
 Super quick, yummy, vegan recipes for when you're feeling lazy. These easy recipes is done with minimal effort and is ready in no time! 
 
-
+<br>
 
 ## Table of contents
 
@@ -52,9 +56,14 @@ ___
     * Media
     * Acknowledgements
 
+<br>
+
 # UX
 
 ## Project Goals
+
+<br>
+
 The purpose of this project is to 
 
 *"...build a full-stack site that allows your users to manage a common dataset about a particular domain"* using HTML, CSS, JavaScript, Python+Flask, MongoDB and possible additional libraries and external APIs. 
@@ -62,6 +71,9 @@ The purpose of this project is to
 *"Design a front end for a data-driven web application that meets accessibility guidelines, follows the principles of UX design, meets its given purpose and provides a set of user interactions"*
 
 ## Business Goals
+
+<br>
+
 Create a web application that allows users to:
     
 * Add their own recipes to the website (CREATE)
@@ -79,9 +91,15 @@ In addition to the goals above; also to promote a brand of natural, eco-friendly
 Eventually the recipe database will increase in both recipes and users/visitors. The site offer users to interact by adding their own recipes that makes the user feel like being a part of "the community". The site promotes the vegan life style, showing that it doesn't have to be that hard to eat, even junk food that are vegan. 
 
 ## User Goals
+
+<br>
+
 Find and share recipes. Get inspired by the recipes and get inspired to add/share own recipes at the site which is signals a that a vegan lifestyle doesn't have to be difficult. 
 
 ## User Stories
+
+<br>
+
 * First Time Visitor Goals
 
     * As a first time visitor, I want to easily understand the main purpose of the site.
@@ -93,6 +111,8 @@ Find and share recipes. Get inspired by the recipes and get inspired to add/shar
     * As a first time visitor, I want to be able to take part of this community/recipe bank by be able to register. 
     * As a first time visitor, I want to locate some sort of contact information or social media links to be able to follow and get a feel for the credibility of the site. 
 
+<br>
+
 * Returning Visitor Goals
 
     * As a returning visitor, I want to be able to easily register if I didn't last time visiting. 
@@ -100,12 +120,19 @@ Find and share recipes. Get inspired by the recipes and get inspired to add/shar
     * As a returning visitor, I want to be able to create, read, update, delete and search for recipes.
     * As a returning visitor, I want to be able to reach out to siteowner for any possible questions.
 
+<br>
+
 * Frequent Visitor Goals
 
     * As a frequent visitor, I want to get inspired by newly added recipes. 
     * As a frequent visitor, I want it to be quick and easy to add new recipes.
 
+<br>
+
 ## Design Choices
+
+<br>
+
 * Color scheme
 
     The page consists of a white base with black, light green and orange as accent colors. Button at home page is orange to draw the visitors attention to it since it's the first thing they see when entering the site. Main purpose is to get a large base of Lazy Vegans that adds recipes so the ramount of recipes increases.
@@ -127,10 +154,14 @@ Find and share recipes. Get inspired by the recipes and get inspired to add/shar
     ![Fonts](static/images/fonts.png)
 
 * Imagery
+
     Images and the choices of the images is an important component of this site. I chose contemporary, clean images that appeal most audiences. I have four appealing images at the home page to catch the visitors intrerest right away. I use lot of space around images and content to get the visitor an uncluttered and comfortable browsing experience on all device sizes.
 
 * Icons
+
     All icons (except the one at the tab which is taken from FreeIcons) used are taken from Font Awsome. I have decided to choose icons for the search button, back to top icon, add buttons, log in button, log out button, cancel button, edit button, register button and social media link (Pinterest) in the footer.
+
+<br>
 
 ## Wireframes 
 
@@ -138,6 +169,8 @@ Find and share recipes. Get inspired by the recipes and get inspired to add/shar
 * [Mobile](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/mobile/wireframes_mobile.pdf) 
 * [Tablet](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/tablet/wireframes_tablet.pdf)
 * [Desktop](https://github.com/jennymalmoe/MSP3/blob/main/wireframes/desktop/wireframes_desktop.pdf)
+
+<br>
 
 **Post wireframes design changes:**
 While the project relied on these wireframes, there are some differences between the wireframes and the final product. 
@@ -154,6 +187,8 @@ While the project relied on these wireframes, there are some differences between
 # Features
 
 ## Existing Features 
+
+<br>
 
 Every page of the website features a consistently responsive and intuitive layout and navigational system:
 
@@ -225,6 +260,8 @@ Every page of the website features a consistently responsive and intuitive layou
 **Delete Recipe**
 * User gets a success message when deleting a recipe to verify recipe now deleted. 
 
+<br>
+
 ## Features left to implement
 * Email notification functionality for users to be alerted when a new recipe is added.
 * Be able to search through categories, kind of food (italian, mexican etc).
@@ -236,15 +273,28 @@ Every page of the website features a consistently responsive and intuitive layou
 * Get more contact information about the registered users to be able to reach out (newsletters, offers etc).
 * Some kind of chatt/forum for the community to grow. 
 
+<br>
+
 # Database
+
+<br>
+
 MongoDB Atlas is used as database backend for storing user and recipes details. There are three collections; 
+
+<br>
 
 ## Database schema
 ![Database](static/images/db_scheme.png)
 
+<br>
+
 # Technologies Used
 
+<br>
+
 **Languages, Frameworks and Libraries**
+
+<br>
 
 * [BSON](https://bsonspec.org/) - bson.objectid is a required dependency for MongoDB management system.
 * [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) - used to create the styling throughout the site.
@@ -259,8 +309,11 @@ MongoDB Atlas is used as database backend for storing user and recipes details. 
 * [Python](https://www.python.org/) - used to write the logic that operates the site.
 * [Werkzeug](https://werkzeug.palletsprojects.com/en/2.0.x/) - used for password hashing and authentication.
     
-    
+<br>
+
 **Tools and Editors**
+
+<br>
 
 * [Am I Responsive](http://ami.responsivedesign.is/) - used to validate the responsiveness. 
 * [Balsamiq](https://balsamiq.com/) - used to create the wireframes.
@@ -285,14 +338,25 @@ MongoDB Atlas is used as database backend for storing user and recipes details. 
 * [W3C Validator](https://validator.w3.org/) - used to test HTML code to ensure there were no errors.
 * [W3C Validator CSS](https://validator.w3.org/) - used to test CSS code to ensure there were no errors.
 
-* Database Management
+<br>
+
+### Database Management
+
+<br>
+
 * [MongoDB](https://www.mongodb.com/3) - used for database functionality.
 * [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) - used to host the database.
 
+<br>
+
 # Testing
-See separate [testing.md file](./testing.md)
+See separate [testing.md file](documentation_testing/testing.md)
+
+<br>
 
 # Deployment
+
+<br>
 
 Requirements to deploy:
 
@@ -301,6 +365,8 @@ Requirements to deploy:
 * PIP3 (To install all application imports, such as Flask and OS)
 * A template folder (To link app routes)
 * A database (MongoDB Atlas)
+
+<br>
 
 ## MongoDB Configuration
 1. Login to your MongoDB Account.
@@ -314,6 +380,8 @@ Requirements to deploy:
 6. Create an instance of PyMongo
 
 ![py_mongo](static/images/py_mongo.png)
+
+<br>
 
 ## Deploy project to Heroku
 1. Before deploying your project create a requirements.txt file by running the following command in the CLI;
@@ -335,6 +403,7 @@ Requirements to deploy:
 11. After you deploy your branch "Enable Automatic Deploys".
 12. Site is successfully deployed, any futher changes will automatically be updated everytime they are commited and pushed on Github.
 
+<br>
 
 ## Making a Local Clone
 1. Log in to GitHub and locate the GitHub Repository
@@ -344,6 +413,8 @@ Requirements to deploy:
 5. Change the current working directory to the location where you want the cloned directory to be made.
 6. Type **git clone**, and then paste the URL you copied in Step 3.
 7. Press Enter. Your local clone will be created.
+
+<br>
 
 # Credits
 * My mentor Oluwaseun Owonikoko for helpfull feedback througout the project.

@@ -77,6 +77,11 @@ main {
 	height: 870px;
 }
 
+.register-btn {
+	display: flex;
+	justify-content: center;
+}
+
 /* RECIPE PAGE*/
 /* Header search bar*/
 .find-header {
@@ -90,6 +95,11 @@ main {
 
 .search-text {
 	padding-bottom: 20px;
+}
+
+.search-section {
+	display: flex;
+	flex-direction: row;
 }
 
 /* Recipe page text */
@@ -240,10 +250,6 @@ padding-bottom: 30px;
 /* Media queries */
 /* Desktop extra large screens*/
 @media screen and (max-width: 2000px) {
-	.register-btn {
-		padding-left: 140px;
-		padding-top: 15px;
-	}
 	.home-text {
 		padding-top: 90px;
 	}
@@ -251,10 +257,6 @@ padding-bottom: 30px;
 
 /* Desktop */
 @media screen and (max-width: 1300px) {
-	.register-btn {
-		padding-left: 100px;
-		padding-top: 1px;
-	}
 	.home-text {
 		padding-top: 15px;
 	}
@@ -262,10 +264,6 @@ padding-bottom: 30px;
 
 /* Tablets Ipad*/
 @media screen and (max-width: 1024px) {
-	.register-btn {
-		padding-left: 90px;
-		padding-top: 1px;
-	}
 	.home-text {
 		padding-top: 1px;
 	}
@@ -273,19 +271,15 @@ padding-bottom: 30px;
 
 /* Tablets Ipad*/
 @media screen and (max-width: 768px) {
-	.register-btn {
-		padding-left: 80px;
-		padding-top: 5px;
-	}
 	.home-text {
-		padding-top: 10px;
+		padding-top: 1px;
 	}
 	}
 
 /* Mobile */
 @media screen and (max-width: 480px) {
-	.register-btn {
-		padding-left: 90px;
+	.search-section {
+		flex-direction: column;
 	}
 	}
 
