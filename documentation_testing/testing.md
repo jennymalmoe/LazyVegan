@@ -18,19 +18,17 @@
     - **Frequent User Goals**
 
 2. [**Testing**](#testing)
-
-* Automated testing
-    - **W3C Markup Validator Results**
-    - **W3C CSS Validator Results**
-    - **JSHint Results**
-    - **PEP8 Online Validator Results**
-* Manual testing
-
-3. [**Debugging**](#debugging)
+  * Automated Testing
+      - **W3C Markup Validator Results**
+      - **W3C CSS Validator Results**
+      - **JSHint Results**
+      - **PEP8 Online Validator Results**
+  * Manual Testing
+3. [**Bugs Discovered**](#bugs-discovered)
 
 <br>
 
-# 1. Testing User Stories from UX Design Section
+# Testing User Stories from UX Design Section
 
 <br>
 
@@ -122,7 +120,7 @@
 
 ![Recipe page](/documentation_testing/img_testing/testing_recipes.png)
 
-# 2. Testing
+# Testing
 
 <br>
 
@@ -130,11 +128,19 @@
 
 <br>
 
-To make make it easier to validate the html, since using jinja templating language throughout all pages, which results in errors in online validators. I copied the code from "View page source" and pasted it in "The W3C Markup Validation". Still one error keept showing at every page (due to jinja templating language) when run in validator. The section showed in page source because of the div and h4 (I guess). This also happend when validated profile page. 
+To make make it easier to validate html code, since using jinja templating language throughout all pages, which results in errors in online validators. I copied the code from "View page source" and pasted it in "The W3C Markup Validation". Still one error keept showing at every page (due to jinja templating language) when run in validator. The section showed in page source because of the div and h4 (I guess). This also happend (due to jinja templating) when validated profile page (see screenshots below). 
 
-As seen there where no other errors. Error showed below;
+As seen there where no other errors.
 
+<br>
+
+Returning error:
 ![Returning "Error"](html_validator/error_in_validator.png)
+
+Profile Page errors due to jinja template language as well:
+<br>
+![Returning "Error"](html_validator/error_profilepage_1.png)
+![Returning "Error"](html_validator/error_profilepage_2.png)
 
 <br>
 
@@ -180,7 +186,6 @@ As seen there where no other errors. Error showed below;
 <p align="center">
   <img src="html_validator/html_editrecipe.png" >
 </p>
-
 
 - __View Recipe__
 <p align="center">
@@ -370,43 +375,17 @@ As seen there where no other errors. Error showed below;
 
 <br>
 
-## 3. Debugging
+# Bugs Discovered
 
-* Solved bugs
-* Unsolved bugs
+**Solved Bugs**
+
+The developer ran into several issues during the development of the site. These are the most distinguishing ones, along with the solution:
+
+* Image URL didn't show when edited a recipe. It turned out that there needed to be placeholder and value in the input tag for the image. When *value="{{ recipe.recipe_img }}"* and *placeholder="{{ recipe.recipe_img }}"* was added, image URL showed as expected as pre-filled content in edit form. 
+* Intro text and image in Home page had col-12 added to their div's. They were removed and replaced by col s12 as use Materialize design and not Bootstrap.
+* Register button in Home page wasn't centered as expected in medium and small screensizes. This was solved adding a new main class in stylesheet:" .search-section". Then added display:flex and flex-direction:row to that class, as well as added display:flex and flex-direction: row in the media query for small devices. 
+
+
+<br>
 
 #### __[Back to Contents Table](#contents-table)__ 
-
-
-
-
-
-
-vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
-
-The W3C Markup Validator and W3C CSS Validator Services were used to validate every page of the project to ensure there were no syntax errors in the project.
-
-
-
-
-
-
-Known Bugs:
-
-The developer ran into several issues during the development of the site. These are the most distinguishing ones, along with either the solution or idea to implement in the future:
-
-buggar 
-image url didnt show when edited a recipe, missed to have a placeholder and value in the input for the img. added value="{{ recipe.recipe_img }}"
-﻿placeholder="{{ recipe.recipe_img }}" and works. 
-home text and img had an col-12 removed and replaced by col s12
-
-
-Testing länkar
-
-JSHint (JS file passed validator)
-PEP8 online
-W3C HTML Validator (all pages passed validator)
-W3C CSS Validator (css file passed validator)
-
-
-
