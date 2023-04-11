@@ -2,8 +2,6 @@
 
 <br>
 
-[View live website here!](https://flask-milestone-3-project.herokuapp.com/home)
-
 [View GitHub repository here!](https://github.com/jennymalmoe/MSP3)
 
 <br>
@@ -453,7 +451,7 @@ Making a copy of the original repository on our GitHub account to view or to mak
 
 Site for educational purposes only.
 
-
+[View live website here!](https://flask-milestone-3-project.herokuapp.com/home)
 
 
 
